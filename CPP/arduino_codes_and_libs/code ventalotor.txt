@@ -1,0 +1,94 @@
+#include <LiquidCrystal.h>
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+#define lm35_room 0
+#define lm35_body 1
+
+#define fan 6
+#define ventilator 7
+#define oxy 8
+#define buzzer 9
+
+void setup() 
+{
+  Serial.begin(9600);
+  
+  lcd.begin(16,2);
+  lcd.print("Initializing...");
+  delay(1000);
+  lcd.clear();
+
+  pinMode(fan,OUTPUT);
+  pinMode(ventilator,OUTPUT);
+  pinMode(buzzer,OUTPUT);
+
+  digitalWrite(fan,LOW);
+  digitalWrite(ventilator,LOW);
+}
+
+void loop() 
+{
+  room_temperature();
+  body_temperature();
+  oxymeter();
+}
+
+void room_temperature()
+{
+  lcd.clear();
+  int room_temp=(analogRead(lm35_room)*0.488);
+  lcd.setCursor(0,0);
+  lcd.print("Room Temp: ");
+  lcd.print(room_temp);
+  Serial.println(room_temp);
+  if(room_temp>30)
+  {
+    digitalWrite(fan,HIGH);
+    lcd.setCursor(0,1);
+    lcd.print("Fan Status: ON");
+  }
+  else if(room_temp<28)
+  {
+    digitalWrite(fan,LOW);
+  }
+  delay(2000);
+}
+
+void body_temperature()
+{
+  lcd.clear();
+  int body_temp=(analogRead(lm35_body)*0.488);
+  lcd.setCursor(0,0);
+  lcd.print("Body Temp: ");
+  lcd.print(body_temp);
+  Serial.println(body_temp);
+  if(body_temp>36)
+  {
+    digitalWrite(buzzer,HIGH);
+    lcd.setCursor(0,1);
+    lcd.print("FEVER!!!");
+  }
+  else if(body_temp<37)
+  {
+    digitalWrite(buzzer,LOW);
+  }
+  delay(2000);
+}
+
+void oxymeter()
+{
+  lcd.clear();
+  if(digitalRead(oxy)==1)
+  {
+    Serial.println("Pumping Air");
+    lcd.setCursor(0,0);
+    lcd.print("Pumping Air");
+    digitalWrite(ventilator,HIGH);
+    delay(2000);
+  }
+  else
+  {
+    digitalWrite(ventilator,LOW);
+  }
+}
