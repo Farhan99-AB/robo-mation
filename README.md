@@ -7,7 +7,7 @@ Welcome to **Robo-Mation**, a repository showcasing innovative robotics and auto
 The repository is structured into the following sections:
 
 - **RoboticsAndAutomationProjects/**  
-  Contains Arduino-based projects demonstrating robotics and automation solutions, including line-following bots, maze solvers, and emergency response systems.
+  Contains Arduino-based projects demonstrating robotics and automation solutions including Smart Home Solutions, Industrial Automation, and Emergency Response Systems.
 
 - **AIAndDataProjects/**  
   Features Python projects focused on AI, machine learning, and data processing, highlighting applications in image classification and data engineering.
