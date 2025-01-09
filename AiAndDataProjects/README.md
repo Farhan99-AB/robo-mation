@@ -1,5 +1,14 @@
-**AI_DL_Assignments**  
-This folder contains assignments that cover fundamental concepts of Artificial Intelligence (AI) and Deep Learning (DL).  
+# AI and Data Projects
 
-**Lung_Cancer_Classification**  
-This folder includes a project utilizing ResNet-50 for the classification of lung cancer images.  
+This folder includes Python-based projects focused on AI and data processing. These projects demonstrate advanced machine learning techniques and their applications.
+
+## Setup Instructions
+
+1. Navigate to the project folder.
+2. Install the required dependencies:
+3. Run the Python scripts and analyze the results.
+   
+## Dependencies
+- Python 3.x
+- TensorFlow/Keras
+- OpenCV
