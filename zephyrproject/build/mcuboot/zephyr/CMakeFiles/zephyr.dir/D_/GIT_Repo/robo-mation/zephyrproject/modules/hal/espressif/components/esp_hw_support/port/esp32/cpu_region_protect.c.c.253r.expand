@@ -1,0 +1,142 @@
+
+;; Function esp_cpu_configure_region_protection (esp_cpu_configure_region_protection, funcdef_no=1, decl_uid=1766, cgraph_uid=2, symbol_order=1)
+
+Partition 0: size 20 align 4
+	illegal_regions
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0000000005a87900 *.LC0>)
+        (nil)))
+(insn 8 7 9 2 (set (reg:SI 47)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 48)
+        (reg/f:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 49)
+        (const_int 20 [0x14])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 12 a12)
+        (reg:SI 49)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 11 a11)
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 10 a10)
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41]  <function_decl 00000000059bdd00 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41]  <function_decl 00000000059bdd00 __builtin_memcpy>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+(insn 15 14 16 2 (set (reg:SI 50)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":16:15 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:5 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:10 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:26 -1
+     (nil))
+(insn 20 19 3 2 (set (reg:SI 43 [ ivtmp$9 ])
+        (reg/f:SI 37 virtual-stack-vars)) -1
+     (nil))
+(insn 3 20 32 2 (set (reg/v:SI 44 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:17 -1
+     (nil))
+(code_label 32 3 21 4 2 (nil) [1 uses])
+(note 21 32 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 22 21 23 4 (var_location:SI i (reg/v:SI 44 [ i ])) -1
+     (nil))
+(debug_insn 23 22 24 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":18:9 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":18:9 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 10 a10)
+        (mem:SI (reg:SI 43 [ ivtmp$9 ]) [0 MEM[(int *)_15]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":18:9 -1
+     (nil))
+(call_insn 26 25 27 4 (call (mem:SI (symbol_ref:SI ("mpu_hal_set_region_access") [flags 0x41]  <function_decl 0000000005b72300 mpu_hal_set_region_access>) [0 mpu_hal_set_region_access S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":18:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("mpu_hal_set_region_access") [flags 0x41]  <function_decl 0000000005b72300 mpu_hal_set_region_access>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(debug_insn 27 26 28 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:82 -1
+     (nil))
+(insn 28 27 29 4 (set (reg/v:SI 44 [ i ])
+        (plus:SI (reg/v:SI 44 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:82 -1
+     (nil))
+(debug_insn 29 28 30 4 (var_location:SI i (reg/v:SI 44 [ i ])) -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:26 -1
+     (nil))
+(insn 31 30 33 4 (set (reg:SI 43 [ ivtmp$9 ])
+        (plus:SI (reg:SI 43 [ ivtmp$9 ])
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:26 -1
+     (nil))
+(jump_insn 33 31 34 4 (set (pc)
+        (if_then_else (ne (reg/v:SI 44 [ i ])
+                (const_int 5 [0x5]))
+            (label_ref 32)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":17:26 -1
+     (int_list:REG_BR_PROB 894749068 (nil))
+ -> 32)
+(note 34 33 35 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 35 34 36 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":21:5 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 11 a11)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":21:5 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:SI 10 a10)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":21:5 -1
+     (nil))
+(call_insn 38 37 0 5 (call (mem:SI (symbol_ref:SI ("mpu_hal_set_region_access") [flags 0x41]  <function_decl 0000000005b72300 mpu_hal_set_region_access>) [0 mpu_hal_set_region_access S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c":21:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("mpu_hal_set_region_access") [flags 0x41]  <function_decl 0000000005b72300 mpu_hal_set_region_access>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))

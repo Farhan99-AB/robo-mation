@@ -1,0 +1,540 @@
+
+;; Function arch_printk_char_out (arch_printk_char_out, funcdef_no=367, decl_uid=6287, cgraph_uid=368, symbol_order=367)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 43 [ c ])
+        (reg:SI 2 a2 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":48:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":49:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":52:2 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":52:9 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":53:1 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":53:1 -1
+     (nil))
+
+;; Function char_out (char_out, funcdef_no=372, decl_uid=6310, cgraph_uid=373, symbol_order=373)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 14.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 44 [ c ])
+        (reg:SI 2 a2 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":96:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 45 [ ctx_p ])
+        (reg:SI 3 a3 [ ctx_p ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":96:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":97:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:9 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_char_out") [flags 0x2]  <var_decl 000000000720b1b0 _char_out>)
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:SI 47)
+        (mem/f/c:SI (reg/f:SI 46) [16 _char_out+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:9 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 10 a10)
+        (reg/v:SI 44 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:9 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 47) [0 *_char_out$0_1 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:9 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 13 12 17 2 (set (reg:SI 43 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":98:9 -1
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 2 a2)
+        (reg:SI 43 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":99:1 -1
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":99:1 -1
+     (nil))
+
+;; Function __printk_hook_install (__printk_hook_install, funcdef_no=368, decl_uid=5881, cgraph_uid=369, symbol_order=369)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 42 [ fn ])
+        (reg:SI 2 a2 [ fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":59:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":60:2 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 43)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":60:12 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_char_out") [flags 0x2]  <var_decl 000000000720b1b0 _char_out>)
+        (nil)))
+(insn 8 7 0 2 (set (mem/f/c:SI (reg/f:SI 43) [16 _char_out+0 S4 A32])
+        (reg/v/f:SI 42 [ fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":60:12 -1
+     (nil))
+
+;; Function __printk_get_hook (__printk_get_hook, funcdef_no=369, decl_uid=5883, cgraph_uid=370, symbol_order=370)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":65:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":65:9 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_char_out") [flags 0x2]  <var_decl 000000000720b1b0 _char_out>)
+        (nil)))
+(insn 7 6 8 2 (set (reg/f:SI 45)
+        (mem/f/c:SI (reg/f:SI 44) [16 _char_out+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":65:9 -1
+     (nil))
+(insn 8 7 12 2 (set (reg/f:SI 42 [ <retval> ])
+        (reg/f:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":65:9 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 2 a2)
+        (reg/f:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":66:1 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":66:1 -1
+     (nil))
+
+;; Function vprintk (vprintk, funcdef_no=373, decl_uid=2344, cgraph_uid=374, symbol_order=374)
+
+Partition 0: size 16 align 4
+	console
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 42 [ fmt ])
+        (reg:SI 2 a2 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":102:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 16 [0x10])) [18 ap+0 S4 A32])
+        (reg:SI 3 a3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":102:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [18 ap+4 S4 A32])
+        (reg:SI 4 a4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":102:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 24 [0x18])) [18 ap+8 S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":102:1 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 6 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":103:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":108:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:3 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 43)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 44)
+        (const_int 16 [0x10])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 12 a12)
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 10 a10)
+        (reg:SI 43)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 0000000005a4e200 __builtin_memset>) [0 __builtin_memset S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 0000000005a4e200 __builtin_memset>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+(insn 18 17 19 2 (set (reg:SI 45)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:QI 46)
+        (const_int 2 [0x2])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:QI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 2 [0x2])) [0 console.flags+0 S1 A16])
+        (reg:QI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 47)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [14 console.put+0 S4 A32])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":132:8 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:3 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 16 [0x10])) [18 ap+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [18 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 14 a14)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 24 [0x18])) [18 ap+8 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 11 a11)
+        (reg/v/f:SI 42 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 10 a10)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (nil))
+(call_insn 29 28 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("vfprintf") [flags 0x41]  <function_decl 0000000005a58900 vfprintf>) [0 __builtin_vfprintf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":134:10 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vfprintf") [flags 0x41]  <function_decl 0000000005a58900 vfprintf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list (use (reg:SI 14 a14))
+                (expr_list (use (reg:SI 13 a13))
+                    (expr_list (use (reg:SI 12 a12))
+                        (nil)))))))
+
+;; Function z_impl_k_str_out (z_impl_k_str_out, funcdef_no=374, decl_uid=5855, cgraph_uid=375, symbol_order=375)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 7 failed.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 48 [ c ])
+        (reg:SI 2 a2 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":147:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 49 [ n ])
+        (reg:SI 3 a3 [ n ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":147:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":148:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI i (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:9 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 45 [ ivtmp$35 ])
+        (reg/v/f:SI 48 [ c ])) -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 46 [ _16 ])
+        (plus:SI (reg/v:SI 49 [ n ])
+            (reg:SI 45 [ ivtmp$35 ]))) -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (label_ref 24)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:2 -1
+     (nil)
+ -> 24)
+(barrier 13 12 28)
+(code_label 28 13 14 4 8 (nil) [1 uses])
+(note 14 28 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 15 14 16 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 50)
+        (zero_extend:SI (mem:QI (reg:SI 45 [ ivtmp$35 ]) [0 MEM[(char *)_17]+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (nil))
+(insn 17 16 18 4 (set (reg/f:SI 51)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_char_out") [flags 0x2]  <var_decl 000000000720b1b0 _char_out>)
+        (nil)))
+(insn 18 17 19 4 (set (reg/f:SI 52)
+        (mem/f/c:SI (reg/f:SI 51) [16 _char_out+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 10 a10)
+        (reg:SI 50)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (nil))
+(call_insn 20 19 21 4 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 52) [0 *_char_out$1_1 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":154:3 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 21 20 22 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:22 -1
+     (nil))
+(debug_insn 22 21 23 4 (var_location:SI i (plus:SI (minus:SI (reg:SI 45 [ ivtmp$35 ])
+            (reg/v/f:SI 48 [ c ]))
+        (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:22 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 45 [ ivtmp$35 ])
+        (plus:SI (reg:SI 45 [ ivtmp$35 ])
+            (const_int 1 [0x1]))) -1
+     (nil))
+(code_label 24 23 25 5 7 (nil) [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 5 (var_location:SI i (minus:SI (reg:SI 45 [ ivtmp$35 ])
+        (reg/v/f:SI 48 [ c ]))) -1
+     (nil))
+(debug_insn 27 26 29 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:16 -1
+     (nil))
+(jump_insn 29 27 30 5 (set (pc)
+        (if_then_else (ne (reg:SI 45 [ ivtmp$35 ])
+                (reg:SI 46 [ _16 ]))
+            (label_ref 28)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":153:16 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 28)
+(note 30 29 0 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+
+;; Function printk (printk, funcdef_no=375, decl_uid=2341, cgraph_uid=376, symbol_order=376)
+
+Partition 0: size 12 align 4
+	ap
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 13 4 14 2 (set (reg:SI 44)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 14 13 9 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 9 14 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [0  S4 A32])
+        (reg:SI 3 a3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 24 [0x18])) [0  S4 A32])
+        (reg:SI 4 a4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 28 [0x1c])) [0  S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 12 11 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 32 [0x20])) [0  S4 A32])
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 15 12 2 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 36 [0x24])) [0  S4 A32])
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 2 15 3 2 (set (reg/v/f:SI 42 [ fmt ])
+        (reg:SI 2 a2 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":193:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":194:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 8 7 16 2 (set (reg:SI 43)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 16 8 17 2 (set (reg:SI 45)
+        (plus:SI (reg/f:SI 37 virtual-stack-vars)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [10 MEM[(struct  *)&ap].__va_reg+0 S4 A32])
+        (reg:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 46)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int -32 [0xffffffffffffffe0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:SI (reg/f:SI 37 virtual-stack-vars) [10 MEM[(struct  *)&ap].__va_stk+0 S4 A128])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 47)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [5 MEM[(struct  *)&ap].__va_ndx+0 S4 A64])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":196:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 11 a11)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [18 ap+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [18 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [18 ap+8 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 42 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (nil))
+(call_insn 27 26 28 2 (call (mem:SI (symbol_ref:SI ("vprintk") [flags 0x3]  <function_decl 0000000006836f00 vprintk>) [0 vprintk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":198:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vprintk") [flags 0x3]  <function_decl 0000000006836f00 vprintk>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list (use (reg:SI 13 a13))
+            (expr_list (use (reg:SI 12 a12))
+                (expr_list (use (reg:SI 11 a11))
+                    (nil))))))
+(debug_insn 28 27 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/printk.c":200:2 -1
+     (nil))

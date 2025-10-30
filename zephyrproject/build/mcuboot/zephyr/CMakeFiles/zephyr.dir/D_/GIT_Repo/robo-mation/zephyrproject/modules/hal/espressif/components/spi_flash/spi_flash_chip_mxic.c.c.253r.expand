@@ -1,0 +1,375 @@
+
+;; Function spi_flash_chip_mxic_probe (spi_flash_chip_mxic_probe, funcdef_no=45, decl_uid=3752, cgraph_uid=46, symbol_order=45)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Edge 2->5 redirected to 8
+Edge 3->5 redirected to 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 32 from 8 to 9.
+Redirecting jump 36 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 26.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 45 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":16:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 46 [ flash_id ])
+        (reg:SI 3 a3 [ flash_id ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":16:1 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":18:5 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:QI MFG_ID (const_int -62 [0xffffffffffffffc2])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":18:19 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":19:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 47)
+        (lshiftrt:SI (reg/v:SI 46 [ flash_id ])
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":19:18 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 48)
+        (const_int 194 [0xc2])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":19:8 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:SI 47)
+                (reg:SI 48))
+            (label_ref:SI 35)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":19:8 62 {*btrue}
+     (int_list:REG_BR_PROB 375809644 (nil))
+ -> 35)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":22:5 -1
+     (nil))
+(insn 20 17 21 4 (set (reg:SI 49)
+        (const_int 15 [0xf])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":22:8 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 50)
+        (mem:SI (plus:SI (reg/v/f:SI 45 [ chip ])
+                (const_int 16 [0x10])) [1 chip_6(D)->read_mode+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":22:8 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (geu (reg:SI 49)
+                (reg:SI 50))
+            (label_ref:SI 39)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":22:8 64 {*ubtrue}
+     (int_list:REG_BR_PROB 840525100 (nil))
+ -> 39)
+(note 23 22 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 23 32 5 (set (reg:SI 44 [ <retval> ])
+        (const_int 261 [0x105])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":20:16 -1
+     (nil))
+(jump_insn 32 5 33 5 (set (pc)
+        (label_ref:SI 28)) 84 {jump}
+     (nil)
+ -> 28)
+(barrier 33 32 35)
+(code_label 35 33 34 6 3 (nil) [1 uses])
+(note 34 35 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 34 36 6 (set (reg:SI 44 [ <retval> ])
+        (const_int 261 [0x105])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":20:16 -1
+     (nil))
+(jump_insn 36 7 37 6 (set (pc)
+        (label_ref:SI 28)) 84 {jump}
+     (nil)
+ -> 28)
+(barrier 37 36 39)
+(code_label 39 37 38 7 4 (nil) [1 uses])
+(note 38 39 6 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 6 38 28 7 (set (reg:SI 44 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":27:12 -1
+     (nil))
+(code_label 28 6 31 9 1 (nil) [2 uses])
+(note 31 28 29 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 29 31 30 9 (set (reg/i:SI 2 a2)
+        (reg:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":28:1 -1
+     (nil))
+(insn 30 29 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":28:1 -1
+     (nil))
+
+;; Function spi_flash_chip_mxic_detect_size (spi_flash_chip_mxic_detect_size, funcdef_no=46, decl_uid=3757, cgraph_uid=47, symbol_order=46)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+Edge 2->8 redirected to 11
+Edge 5->7 redirected to 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 61.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (reg/v/f:SI 50 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":31:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 51 [ size ])
+        (reg:SI 3 a3 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":31:1 -1
+     (nil))
+(note 4 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 11 4 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":32:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/v:SI 46 [ id ])
+        (mem:SI (plus:SI (reg/v/f:SI 50 [ chip ])
+                (const_int 24 [0x18])) [1 chip_9(D)->chip_id+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":32:14 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI id (reg/v:SI 46 [ id ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":32:14 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":33:5 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 47 [ _13 ])
+        (and:SI (reg/v:SI 46 [ id ])
+            (const_int 65535 [0xffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:14 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 54)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 55)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 53)
+        (if_then_else:SI (eq (reg:SI 47 [ _13 ])
+                (const_int 0 [0]))
+            (reg:SI 54)
+            (reg:SI 55))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:QI 52)
+        (subreg:QI (reg:SI 53) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 56)
+        (zero_extend:SI (reg:QI 52))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:8 -1
+     (nil))
+(jump_insn 22 21 75 2 (set (pc)
+        (if_then_else (ne (reg:SI 56)
+                (const_int 0 [0]))
+            (label_ref:SI 70)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:8 62 {*btrue}
+     (int_list:REG_BR_PROB 116608372 (nil))
+ -> 70)
+(note 75 22 23 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 23 75 24 4 (set (reg:SI 60)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (expr_list:REG_EQUAL (const_int -65535 [0xffffffffffff0001])
+        (nil)))
+(insn 24 23 25 4 (set (reg:SI 59)
+        (plus:SI (reg:SI 47 [ _13 ])
+            (reg:SI 60))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 61)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 62)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 58)
+        (if_then_else:SI (eq (reg:SI 59)
+                (const_int 0 [0]))
+            (reg:SI 61)
+            (reg:SI 62))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 57)
+        (subreg:QI (reg:SI 58) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:35 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 63)
+        (zero_extend:SI (reg:QI 57))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:8 -1
+     (nil))
+(jump_insn 30 29 31 4 (set (pc)
+        (if_then_else (ne (reg:SI 63)
+                (const_int 0 [0]))
+            (label_ref:SI 70)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":37:8 62 {*btrue}
+     (int_list:REG_BR_PROB 130814860 (nil))
+ -> 70)
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 32 31 33 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":41:5 -1
+     (nil))
+(insn 33 32 34 5 (set (reg/v:SI 45 [ mem_density ])
+        (and:SI (reg/v:SI 46 [ id ])
+            (const_int 255 [0xff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":41:14 -1
+     (nil))
+(debug_insn 34 33 35 5 (var_location:SI mem_density (reg/v:SI 45 [ mem_density ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":41:14 -1
+     (nil))
+(debug_insn 35 34 38 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":42:5 -1
+     (nil))
+(insn 38 35 39 5 (set (reg:SI 64)
+        (const_int 48 [0x30])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":42:8 -1
+     (nil))
+(jump_insn 39 38 40 5 (set (pc)
+        (if_then_else (geu (reg:SI 64)
+                (reg/v:SI 45 [ mem_density ]))
+            (label_ref 44)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":42:8 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 44)
+(note 40 39 41 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 41 40 42 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":43:9 -1
+     (nil))
+(insn 42 41 43 6 (set (reg/v:SI 45 [ mem_density ])
+        (plus:SI (reg/v:SI 45 [ mem_density ])
+            (const_int -32 [0xffffffffffffffe0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":43:21 -1
+     (nil))
+(debug_insn 43 42 44 6 (var_location:SI mem_density (reg/v:SI 45 [ mem_density ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":43:21 -1
+     (nil))
+(code_label 44 43 45 7 7 (nil) [1 uses])
+(note 45 44 46 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 7 (var_location:SI mem_density (reg/v:SI 45 [ mem_density ])) -1
+     (nil))
+(debug_insn 47 46 50 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:5 -1
+     (nil))
+(insn 50 47 51 7 (set (reg:SI 65)
+        (const_int 31 [0x1f])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:55 -1
+     (nil))
+(jump_insn 51 50 52 7 (set (pc)
+        (if_then_else (ltu (reg:SI 65)
+                (reg/v:SI 45 [ mem_density ]))
+            (label_ref:SI 74)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:55 64 {*ubtrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 74)
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 8 (set (reg:SI 66)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:55 -1
+     (nil))
+(insn 54 53 71 8 (set (reg:SI 48 [ _18 ])
+        (ashift:SI (reg:SI 66)
+            (reg/v:SI 45 [ mem_density ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:55 -1
+     (nil))
+(jump_insn 71 54 72 8 (set (pc)
+        (label_ref 55)) -1
+     (nil)
+ -> 55)
+(barrier 72 71 74)
+(code_label 74 72 73 9 10 (nil) [1 uses])
+(note 73 74 5 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 5 73 55 9 (set (reg:SI 48 [ _18 ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":46:55 -1
+     (nil))
+(code_label 55 5 56 10 8 (nil) [1 uses])
+(note 56 55 57 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 57 56 8 10 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":47:5 -1
+     (nil))
+(insn 8 57 67 10 (set (reg:SI 49 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":47:12 -1
+     (nil))
+(jump_insn 67 8 68 10 (set (pc)
+        (label_ref 58)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":47:12 -1
+     (nil)
+ -> 58)
+(barrier 68 67 70)
+(code_label 70 68 69 11 9 (nil) [2 uses])
+(note 69 70 6 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 6 69 7 11 (set (reg:SI 48 [ _18 ])
+        (const_int 0 [0])) -1
+     (nil))
+(insn 7 6 58 11 (set (reg:SI 49 [ <retval> ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":38:16 -1
+     (expr_list:REG_EQUAL (const_int 24581 [0x6005])
+        (nil)))
+(code_label 58 7 59 12 6 (nil) [1 uses])
+(note 59 58 60 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 64 12 (set (mem:SI (reg/v/f:SI 51 [ size ]) [1 *size_11(D)+0 S4 A32])
+        (reg:SI 48 [ _18 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":33:11 -1
+     (nil))
+(insn 64 60 65 12 (set (reg/i:SI 2 a2)
+        (reg:SI 49 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":48:1 -1
+     (nil))
+(insn 65 64 0 12 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":48:1 -1
+     (nil))
+
+;; Function spi_flash_chip_mxic_get_caps (spi_flash_chip_mxic_get_caps, funcdef_no=47, decl_uid=3768, cgraph_uid=48, symbol_order=48)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 10.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":61:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":62:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI caps_flags (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":62:22 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":66:5 -1
+     (nil))
+(insn 9 8 13 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":66:12 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":67:1 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c":67:1 -1
+     (nil))

@@ -1,0 +1,224 @@
+
+;; Function cbputc (cbputc, funcdef_no=373, decl_uid=6663, cgraph_uid=374, symbol_order=373)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 17.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 4 2 (set (reg:SI 47)
+        (reg:SI 2 a2 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":16:1 -1
+     (nil))
+(insn 4 2 3 2 (set (reg/v/f:SI 48 [ _s ])
+        (reg:SI 3 a3 [ _s ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":16:1 -1
+     (nil))
+(insn 3 4 5 2 (set (reg/v:SI 46 [ c ])
+        (zero_extend:SI (subreg:QI (reg:SI 47) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":16:1 -1
+     (nil))
+(note 5 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":17:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI s (reg/v/f:SI 48 [ _s ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":17:18 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":19:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 49)
+        (mem/f:SI (plus:SI (reg/v/f:SI 48 [ _s ])
+                (const_int 16 [0x10])) [11 MEM[(struct cb_bits *)_s_4(D)].out+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":19:3 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 11 a11)
+        (mem/f:SI (plus:SI (reg/v/f:SI 48 [ _s ])
+                (const_int 20 [0x14])) [10 MEM[(struct cb_bits *)_s_4(D)].ctx+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":19:3 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 10 a10)
+        (reg/v:SI 46 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":19:3 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 49) [0 *_1 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":19:3 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":20:2 -1
+     (nil))
+(insn 16 15 20 2 (set (reg:SI 45 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":20:9 -1
+     (nil))
+(insn 20 16 21 2 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":21:1 -1
+     (nil))
+(insn 21 20 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":21:1 -1
+     (nil))
+
+;; Function cbvprintf (cbvprintf, funcdef_no=374, decl_uid=6433, cgraph_uid=375, symbol_order=374)
+
+Partition 0: size 24 align 4
+	s
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 35.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 7 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 7 11 8 2 (set (reg:SI 46)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 8 7 2 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 2 8 3 2 (set (reg/v/f:SI 43 [ out ])
+        (reg:SI 2 a2 [ out ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 44 [ ctx ])
+        (reg:SI 3 a3 [ ctx ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 45 [ fp ])
+        (reg:SI 4 a4 [ fp ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 32 [0x20])) [17 ap+0 S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 6 5 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 36 [0x24])) [17 ap+4 S4 A32])
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(insn 9 6 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 40 [0x28])) [17 ap+8 S4 A32])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":24:1 -1
+     (nil))
+(note 10 9 13 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 13 10 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:2 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 47)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 48)
+        (const_int 16 [0x10])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 12 a12)
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 10 a10)
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 000000000595e200 __builtin_memset>) [0 __builtin_memset S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 000000000595e200 __builtin_memset>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+(insn 20 19 21 2 (set (reg:SI 49)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:QI 50)
+        (const_int 2 [0x2])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:QI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 2 [0x2])) [0 s.f.flags+0 S1 A16])
+        (reg:QI 50)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 51)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [15 s.f.put+0 S4 A32])
+        (reg:SI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 25 24 26 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 16 [0x10])) [11 s.out+0 S4 A128])
+        (reg/v/f:SI 43 [ out ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [10 s.ctx+0 S4 A32])
+        (reg/v/f:SI 44 [ ctx ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":25:17 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:2 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 32 [0x20])) [17 ap+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 36 [0x24])) [17 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 14 a14)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 40 [0x28])) [17 ap+8 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 11 a11)
+        (reg/v/f:SI 45 [ fp ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 10 a10)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(call_insn 33 32 34 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("vfprintf") [flags 0x41]  <function_decl 0000000005969900 vfprintf>) [0 __builtin_vfprintf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vfprintf") [flags 0x41]  <function_decl 0000000005969900 vfprintf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list (use (reg:SI 14 a14))
+                (expr_list (use (reg:SI 13 a13))
+                    (expr_list (use (reg:SI 12 a12))
+                        (nil)))))))
+(insn 34 33 38 2 (set (reg:SI 42 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":30:9 -1
+     (nil))
+(insn 38 34 39 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":31:1 -1
+     (nil))
+(insn 39 38 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/cbprintf.c":31:1 -1
+     (nil))

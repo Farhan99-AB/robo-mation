@@ -1,0 +1,2144 @@
+
+;; Function z_timer_expiration_handler (z_timer_expiration_handler, funcdef_no=447, decl_uid=5028, cgraph_uid=448, symbol_order=448)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+Edge 5->8 redirected to 16
+Edge 6->8 redirected to 17
+Purged non-fallthru edges from bb 23
+Purged non-fallthru edges from bb 37
+Purged non-fallthru edges from bb 43
+Predictions for insn 71 bb 4
+  no prediction heuristics: 50.00%  exec 322122544 (estimated locally) hit 644245086 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 322122544 (estimated locally) hit 644245086 (estimated locally) (200.0%)
+Predictions for insn 93 bb 5
+  DS theory heuristics: 59.00%  exec 78726749 (estimated locally) hit 157453497 (estimated locally) (200.0%)
+  combined heuristics: 59.00%  exec 78726749 (estimated locally) hit 157453497 (estimated locally) (200.0%)
+  opcode values positive heuristics: 59.00%  exec 78726749 (estimated locally) hit 157453497 (estimated locally) (200.0%)
+Predictions for insn 94 bb 24
+  no prediction heuristics: 50.00%  exec 32277967 (estimated locally) hit 64555934 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 32277967 (estimated locally) hit 64555934 (estimated locally) (200.0%)
+Predictions for insn 95 bb 25
+  no prediction heuristics: 50.00%  exec 16138984 (estimated locally) hit 32277968 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 16138984 (estimated locally) hit 32277968 (estimated locally) (200.0%)
+Predictions for insn 105 bb 27
+  no prediction heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+Predictions for insn 127 bb 29
+  no prediction heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+Predictions for insn 137 bb 31
+  no prediction heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 78726750 (estimated locally) hit 157453499 (estimated locally) (200.0%)
+Predictions for insn 166 bb 6
+  no prediction heuristics: 50.00%  exec 32655856 (estimated locally) hit 65311712 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 32655856 (estimated locally) hit 65311712 (estimated locally) (200.0%)
+Predictions for insn 176 bb 39
+  no prediction heuristics: 50.00%  exec 32655856 (estimated locally) hit 65311712 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 32655856 (estimated locally) hit 65311712 (estimated locally) (200.0%)
+Predictions for insn 204 bb 7
+  no prediction heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+Predictions for insn 214 bb 45
+  no prediction heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+Predictions for insn 226 bb 47
+  no prediction heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 10776432 (estimated locally) hit 21552864 (estimated locally) (200.0%)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 60 from 48 to 49.
+Edge 7->11 redirected to 12
+Edge 9->11 redirected to 12
+Forwarding edge 9->10 to 44 failed.
+Forwarding edge 9->10 to 44 failed.
+deleting block 11
+Edge 22->26 redirected to 27
+Edge 24->26 redirected to 27
+Forwarding edge 24->25 to 41 failed.
+Forwarding edge 24->25 to 41 failed.
+deleting block 26
+Edge 31->33 redirected to 34
+Forwarding edge 32->33 to 34 failed.
+Deleted label in block 33.
+Merging block 48 into block 47...
+Merged blocks 47 and 48.
+Merged 47 and 48 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 9->10 to 44 failed.
+Forwarding edge 24->25 to 41 failed.
+Forwarding edge 32->33 to 34 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (reg/v/f:SI 68 [ t ])
+        (reg:SI 2 a2 [ t ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":28:1 -1
+     (nil))
+(note 3 2 11 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 11 3 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":29:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI timer (reg/v/f:SI 68 [ t ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":29:18 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":30:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":31:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":31:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 22 21 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 24 22 23 2 (parallel [
+            (set (reg:SI 69 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 23 24 25 2 (set (reg/v:SI 58 [ key ])
+        (reg:SI 69 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 25 23 26 2 (var_location:SI key (reg/v:SI 58 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI D#9 (reg/v:SI 58 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 29 28 30 2 (var_location:SI k$key (debug_expr:SI D#9)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 33 32 34 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 34 33 35 2 (var_location:SI key$key (debug_expr:SI D#9)) -1
+     (nil))
+(debug_insn 35 34 36 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":31:25 -1
+     (nil))
+(debug_insn 36 35 37 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":31:25 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:2 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:SI D#3 (reg/v/f:SI 68 [ t ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:26 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI node (debug_expr:SI D#3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:26 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":233:20 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":235:2 -1
+     (nil))
+(debug_insn 42 41 43 2 (var_location:SI node (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:6 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 70)
+        (mem/f/j:SI (reg/v/f:SI 68 [ t ]) [6 MEM[(const struct sys_dnode_t *)t_23(D)].D.1660.next+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:5 -1
+     (nil))
+(jump_insn 44 43 45 2 (set (pc)
+        (if_then_else (eq (reg:SI 70)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":46:5 -1
+     (int_list:REG_BR_PROB 322122548 (nil))
+ -> 62)
+(note 45 44 46 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":47:3 -1
+     (nil))
+(debug_insn 47 46 48 4 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":47:3 -1
+     (nil))
+(debug_insn 48 47 49 4 (var_location:SI key$key (debug_expr:SI D#9)) -1
+     (nil))
+(debug_insn 49 48 50 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 50 49 51 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 51 50 52 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 52 51 53 4 (var_location:SI key (reg/v:SI 58 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 53 52 54 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 54 53 55 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 55 54 56 4 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 58 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 56 55 57 4 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 57 56 58 4 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":47:3 -1
+     (nil))
+(debug_insn 58 57 59 4 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":47:3 -1
+     (nil))
+(debug_insn 59 58 60 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":48:3 -1
+     (nil))
+(jump_insn 60 59 61 4 (set (pc)
+        (label_ref:SI 320)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":48:3 84 {jump}
+     (nil)
+ -> 320)
+(barrier 61 60 62)
+(code_label 62 61 63 5 2 (nil) [1 uses])
+(note 63 62 64 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 64 63 65 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:2 -1
+     (nil))
+(insn 65 64 66 5 (set (reg:DI 42 [ _1 ])
+        (mem:DI (plus:SI (reg/v/f:SI 68 [ t ])
+                (const_int 40 [0x28])) [2 MEM[(struct k_timer *)t_23(D)].period.ticks+0 S8 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:7 -1
+     (nil))
+(insn 66 65 67 5 (set (subreg:SI (reg:DI 71) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 67 66 68 5 (set (subreg:SI (reg:DI 71) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 68 67 69 5 (clobber (reg:DI 72)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 69 68 70 5 (set (subreg:SI (reg:DI 72) 0)
+        (plus:SI (subreg:SI (reg:DI 42 [ _1 ]) 0)
+            (subreg:SI (reg:DI 71) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 70 69 71 5 (set (reg:SI 73)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(jump_insn 71 70 330 5 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 72) 0)
+                (subreg:SI (reg:DI 42 [ _1 ]) 0))
+            (label_ref 73)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 73)
+(note 330 71 72 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 72 330 73 6 (set (reg:SI 73)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(code_label 73 72 331 7 5 (nil) [1 uses])
+(note 331 73 74 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 74 331 75 7 (set (subreg:SI (reg:DI 72) 4)
+        (plus:SI (subreg:SI (reg:DI 42 [ _1 ]) 4)
+            (subreg:SI (reg:DI 71) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 75 74 76 7 (set (reg:SI 75)
+        (plus:SI (reg:SI 73)
+            (subreg:SI (reg:DI 72) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 76 75 77 7 (set (subreg:SI (reg:DI 72) 4)
+        (reg:SI 75)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil))
+(insn 77 76 78 7 (set (reg:DI 72)
+        (reg:DI 72)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 42 [ _1 ])
+            (reg:DI 71))
+        (nil)))
+(jump_insn 78 77 332 7 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 72) 4)
+                (const_int 0 [0]))
+            (label_ref:SI 362)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 62 {*btrue}
+     (int_list:REG_BR_PROB 262422500 (nil))
+ -> 362)
+(note 332 78 79 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 79 332 333 8 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 72) 4)
+                (const_int 0 [0]))
+            (label_ref 244)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (int_list:REG_BR_PROB 811319332 (nil))
+ -> 244)
+(note 333 79 82 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 82 333 334 9 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 72) 0)
+                (const_int 2 [0x2]))
+            (pc)
+            (label_ref:SI 362))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 65 {*ubfalse}
+     (int_list:REG_BR_PROB 262422500 (nil))
+ -> 362)
+(note 334 82 83 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 83 334 84 10 (set (pc)
+        (label_ref 244)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":55:46 -1
+     (nil)
+ -> 244)
+(barrier 84 83 362)
+(code_label 362 84 86 12 24 (nil) [2 uses])
+(note 86 362 87 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 87 86 88 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":57:3 -1
+     (nil))
+(debug_insn 88 87 89 12 (var_location:DI next$ticks (reg:DI 42 [ _1 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":57:15 -1
+     (nil))
+(debug_insn 89 88 90 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:3 -1
+     (nil))
+(insn 90 89 93 12 (set (reg:DI 76)
+        (reg:DI 42 [ _1 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(jump_insn 93 90 336 12 (set (pc)
+        (if_then_else (lt (subreg:SI (reg:DI 76) 4)
+                (const_int 1 [0x1]))
+            (pc)
+            (label_ref 99))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (int_list:REG_BR_PROB 633507684 (nil))
+ -> 99)
+(note 336 93 94 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 94 336 337 13 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 76) 4)
+                (const_int 0 [0]))
+            (label_ref 96)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 96)
+(note 337 94 95 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 95 337 96 14 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 76) 0)
+                (const_int 0 [0]))
+            (label_ref 99)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 99)
+(code_label 96 95 338 15 8 (nil) [1 uses])
+(note 338 96 97 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 97 338 98 15 (set (subreg:SI (reg:DI 76) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 98 97 99 15 (set (subreg:SI (reg:DI 76) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(code_label 99 98 339 16 7 (nil) [2 uses])
+(note 339 99 100 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 100 339 101 16 (set (subreg:SI (reg:DI 77) 0)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 101 100 102 16 (set (subreg:SI (reg:DI 77) 4)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 102 101 103 16 (clobber (reg:DI 78)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 103 102 104 16 (set (subreg:SI (reg:DI 78) 0)
+        (plus:SI (subreg:SI (reg:DI 76) 0)
+            (subreg:SI (reg:DI 77) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 104 103 105 16 (set (reg:SI 79)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(jump_insn 105 104 340 16 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 78) 0)
+                (subreg:SI (reg:DI 76) 0))
+            (label_ref 107)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 107)
+(note 340 105 106 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 106 340 107 17 (set (reg:SI 79)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(code_label 107 106 341 18 9 (nil) [1 uses])
+(note 341 107 108 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 108 341 109 18 (set (subreg:SI (reg:DI 78) 4)
+        (plus:SI (subreg:SI (reg:DI 76) 4)
+            (subreg:SI (reg:DI 77) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 109 108 110 18 (set (reg:SI 81)
+        (plus:SI (reg:SI 79)
+            (subreg:SI (reg:DI 78) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 110 109 111 18 (set (subreg:SI (reg:DI 78) 4)
+        (reg:SI 81)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (nil))
+(insn 111 110 112 18 (set (reg:DI 44 [ _3 ])
+        (reg:DI 78)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:16 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 76)
+            (reg:DI 77))
+        (nil)))
+(debug_insn 112 111 113 18 (var_location:DI next$ticks (reg:DI 44 [ _3 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":60:14 -1
+     (nil))
+(debug_insn 113 112 114 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:3 -1
+     (nil))
+(debug_insn 114 113 115 18 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":616:23 -1
+     (nil))
+(debug_insn 115 114 116 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 116 115 117 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(insn 117 116 118 18 (parallel [
+            (asm_operands/v ("") ("") 0 []
+                 []
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h:625)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 118 117 119 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 119 118 120 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:2 -1
+     (nil))
+(call_insn 120 119 121 18 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>) [0 z_impl_k_uptime_ticks S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>)
+        (nil))
+    (nil))
+(insn 121 120 122 18 (set (reg:DI 63 [ _46 ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (nil))
+(insn 122 121 123 18 (set (subreg:SI (reg:DI 82) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 123 122 124 18 (set (subreg:SI (reg:DI 82) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 124 123 125 18 (clobber (reg:DI 83)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 125 124 126 18 (set (subreg:SI (reg:DI 83) 0)
+        (plus:SI (subreg:SI (reg:DI 63 [ _46 ]) 0)
+            (subreg:SI (reg:DI 82) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 126 125 127 18 (set (reg:SI 84)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 127 126 342 18 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 83) 0)
+                (subreg:SI (reg:DI 63 [ _46 ]) 0))
+            (label_ref 129)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 129)
+(note 342 127 128 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 128 342 129 19 (set (reg:SI 84)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 129 128 343 20 11 (nil) [1 uses])
+(note 343 129 130 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 130 343 131 20 (set (subreg:SI (reg:DI 83) 4)
+        (plus:SI (subreg:SI (reg:DI 63 [ _46 ]) 4)
+            (subreg:SI (reg:DI 82) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 131 130 132 20 (set (reg:SI 86)
+        (plus:SI (reg:SI 84)
+            (subreg:SI (reg:DI 83) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 132 131 133 20 (set (subreg:SI (reg:DI 83) 4)
+        (reg:SI 86)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 133 132 134 20 (set (reg:DI 83)
+        (reg:DI 83)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 63 [ _46 ])
+            (reg:DI 82))
+        (nil)))
+(insn 134 133 135 20 (clobber (reg:DI 87)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 135 134 136 20 (set (subreg:SI (reg:DI 87) 0)
+        (plus:SI (subreg:SI (reg:DI 83) 0)
+            (subreg:SI (reg:DI 44 [ _3 ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 136 135 137 20 (set (reg:SI 88)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 137 136 344 20 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 87) 0)
+                (subreg:SI (reg:DI 83) 0))
+            (label_ref 139)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 139)
+(note 344 137 138 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 138 344 139 21 (set (reg:SI 88)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 139 138 345 22 12 (nil) [1 uses])
+(note 345 139 140 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 140 345 141 22 (set (subreg:SI (reg:DI 87) 4)
+        (plus:SI (subreg:SI (reg:DI 83) 4)
+            (subreg:SI (reg:DI 44 [ _3 ]) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 141 140 142 22 (set (reg:SI 90)
+        (plus:SI (reg:SI 88)
+            (subreg:SI (reg:DI 87) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 142 141 143 22 (set (subreg:SI (reg:DI 87) 4)
+        (reg:SI 90)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 143 142 146 22 (set (reg:DI 87)
+        (reg:DI 87)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 83)
+            (reg:DI 44 [ _3 ]))
+        (nil)))
+(jump_insn 146 143 346 22 (set (pc)
+        (if_then_else (lt (subreg:SI (reg:DI 87) 4)
+                (const_int 1 [0x1]))
+            (pc)
+            (label_ref:SI 363))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 63 {*bfalse}
+     (int_list:REG_BR_PROB 445388116 (nil))
+ -> 363)
+(note 346 146 147 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 147 346 347 23 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 87) 4)
+                (const_int 0 [0]))
+            (label_ref:SI 325)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 62 {*btrue}
+     (int_list:REG_BR_PROB 628353716 (nil))
+ -> 325)
+(note 347 147 148 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 148 347 348 24 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 87) 0)
+                (const_int 0 [0]))
+            (label_ref:SI 363)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 62 {*btrue}
+     (int_list:REG_BR_PROB 445388116 (nil))
+ -> 363)
+(note 348 148 149 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 149 348 150 25 (set (pc)
+        (label_ref:SI 325)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 84 {jump}
+     (nil)
+ -> 325)
+(barrier 150 149 363)
+(code_label 363 150 152 27 25 (nil) [2 uses])
+(note 152 363 153 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 153 152 154 27 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":616:23 -1
+     (nil))
+(debug_insn 154 153 155 27 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 155 154 156 27 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(insn 156 155 157 27 (parallel [
+            (asm_operands/v ("") ("") 0 []
+                 []
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h:625)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 157 156 158 27 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 158 157 159 27 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:2 -1
+     (nil))
+(call_insn 159 158 160 27 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>) [0 z_impl_k_uptime_ticks S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>)
+        (nil))
+    (nil))
+(insn 160 159 161 27 (set (reg:DI 64 [ _47 ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (nil))
+(insn 161 160 162 27 (set (subreg:SI (reg:DI 91) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 162 161 163 27 (set (subreg:SI (reg:DI 91) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 163 162 164 27 (clobber (reg:DI 92)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 164 163 165 27 (set (subreg:SI (reg:DI 92) 0)
+        (plus:SI (subreg:SI (reg:DI 64 [ _47 ]) 0)
+            (subreg:SI (reg:DI 91) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 165 164 166 27 (set (reg:SI 93)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 166 165 350 27 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 92) 0)
+                (subreg:SI (reg:DI 64 [ _47 ]) 0))
+            (label_ref 168)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 168)
+(note 350 166 167 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 167 350 168 28 (set (reg:SI 93)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 168 167 351 29 14 (nil) [1 uses])
+(note 351 168 169 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 169 351 170 29 (set (subreg:SI (reg:DI 92) 4)
+        (plus:SI (subreg:SI (reg:DI 64 [ _47 ]) 4)
+            (subreg:SI (reg:DI 91) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 170 169 171 29 (set (reg:SI 95)
+        (plus:SI (reg:SI 93)
+            (subreg:SI (reg:DI 92) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 171 170 172 29 (set (subreg:SI (reg:DI 92) 4)
+        (reg:SI 95)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 172 171 173 29 (set (reg:DI 92)
+        (reg:DI 92)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 64 [ _47 ])
+            (reg:DI 91))
+        (nil)))
+(insn 173 172 174 29 (clobber (reg:DI 96)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 174 173 175 29 (set (subreg:SI (reg:DI 96) 0)
+        (plus:SI (subreg:SI (reg:DI 92) 0)
+            (subreg:SI (reg:DI 44 [ _3 ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 175 174 176 29 (set (reg:SI 97)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 176 175 352 29 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 96) 0)
+                (subreg:SI (reg:DI 92) 0))
+            (label_ref 178)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 178)
+(note 352 176 177 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 177 352 178 30 (set (reg:SI 97)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 178 177 353 31 15 (nil) [1 uses])
+(note 353 178 179 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 179 353 180 31 (set (subreg:SI (reg:DI 96) 4)
+        (plus:SI (subreg:SI (reg:DI 92) 4)
+            (subreg:SI (reg:DI 44 [ _3 ]) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 180 179 181 31 (set (reg:SI 99)
+        (plus:SI (reg:SI 97)
+            (subreg:SI (reg:DI 96) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 181 180 182 31 (set (subreg:SI (reg:DI 96) 4)
+        (reg:SI 99)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 182 181 183 31 (set (reg:DI 96)
+        (reg:DI 96)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 92)
+            (reg:DI 44 [ _3 ]))
+        (nil)))
+(insn 183 182 184 31 (set (reg:SI 100)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (const_int 2147483647 [0x7fffffff])
+        (nil)))
+(jump_insn 184 183 354 31 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 96) 4)
+                (reg:SI 100))
+            (label_ref:SI 364)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 62 {*btrue}
+     (int_list:REG_BR_PROB 354334804 (nil))
+ -> 364)
+(note 354 184 187 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 187 354 188 32 (set (reg:SI 101)
+        (const_int -3 [0xfffffffffffffffd])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 188 187 355 32 (set (pc)
+        (if_then_else (ltu (reg:SI 101)
+                (subreg:SI (reg:DI 96) 0))
+            (label_ref:SI 329)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 64 {*ubtrue}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 329)
+(note 355 188 364 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(code_label 364 355 190 34 26 (nil) [1 uses])
+(note 190 364 191 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 191 190 192 34 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":616:23 -1
+     (nil))
+(debug_insn 192 191 193 34 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 193 192 194 34 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(insn 194 193 195 34 (parallel [
+            (asm_operands/v ("") ("") 0 []
+                 []
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h:625)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 195 194 196 34 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":625:2 -1
+     (nil))
+(debug_insn 196 195 197 34 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:2 -1
+     (nil))
+(call_insn 197 196 198 34 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>) [0 z_impl_k_uptime_ticks S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_impl_k_uptime_ticks") [flags 0x41]  <function_decl 0000000007c3a900 z_impl_k_uptime_ticks>)
+        (nil))
+    (nil))
+(insn 198 197 199 34 (set (reg:DI 65 [ _48 ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot/zephyr/include/generated/zephyr/syscalls/kernel.h":626:9 -1
+     (nil))
+(insn 199 198 200 34 (set (subreg:SI (reg:DI 102) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 200 199 201 34 (set (subreg:SI (reg:DI 102) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 201 200 202 34 (clobber (reg:DI 103)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 202 201 203 34 (set (subreg:SI (reg:DI 103) 0)
+        (plus:SI (subreg:SI (reg:DI 65 [ _48 ]) 0)
+            (subreg:SI (reg:DI 102) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 203 202 204 34 (set (reg:SI 104)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 204 203 356 34 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 103) 0)
+                (subreg:SI (reg:DI 65 [ _48 ]) 0))
+            (label_ref 206)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 206)
+(note 356 204 205 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 205 356 206 35 (set (reg:SI 104)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 206 205 357 36 17 (nil) [1 uses])
+(note 357 206 207 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 207 357 208 36 (set (subreg:SI (reg:DI 103) 4)
+        (plus:SI (subreg:SI (reg:DI 65 [ _48 ]) 4)
+            (subreg:SI (reg:DI 102) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 208 207 209 36 (set (reg:SI 106)
+        (plus:SI (reg:SI 104)
+            (subreg:SI (reg:DI 103) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 209 208 210 36 (set (subreg:SI (reg:DI 103) 4)
+        (reg:SI 106)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 210 209 211 36 (set (reg:DI 103)
+        (reg:DI 103)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 65 [ _48 ])
+            (reg:DI 102))
+        (nil)))
+(insn 211 210 212 36 (clobber (reg:DI 107)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 212 211 213 36 (set (subreg:SI (reg:DI 107) 0)
+        (plus:SI (subreg:SI (reg:DI 103) 0)
+            (subreg:SI (reg:DI 44 [ _3 ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 213 212 214 36 (set (reg:SI 108)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 214 213 358 36 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 107) 0)
+                (subreg:SI (reg:DI 103) 0))
+            (label_ref 216)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 216)
+(note 358 214 215 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 215 358 216 37 (set (reg:SI 108)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 216 215 359 38 18 (nil) [1 uses])
+(note 359 216 217 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 217 359 218 38 (set (subreg:SI (reg:DI 107) 4)
+        (plus:SI (subreg:SI (reg:DI 103) 4)
+            (subreg:SI (reg:DI 44 [ _3 ]) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 218 217 219 38 (set (reg:SI 110)
+        (plus:SI (reg:SI 108)
+            (subreg:SI (reg:DI 107) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 219 218 220 38 (set (subreg:SI (reg:DI 107) 4)
+        (reg:SI 110)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 220 219 221 38 (set (reg:DI 107)
+        (reg:DI 107)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 103)
+            (reg:DI 44 [ _3 ]))
+        (nil)))
+(insn 221 220 222 38 (set (subreg:SI (reg:DI 111) 0)
+        (const_int -2 [0xfffffffffffffffe])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 222 221 223 38 (set (subreg:SI (reg:DI 111) 4)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 223 222 224 38 (clobber (reg:DI 112)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 224 223 225 38 (set (subreg:SI (reg:DI 112) 0)
+        (minus:SI (subreg:SI (reg:DI 111) 0)
+            (subreg:SI (reg:DI 107) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 225 224 226 38 (set (reg:SI 113)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 226 225 360 38 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 111) 0)
+                (subreg:SI (reg:DI 112) 0))
+            (label_ref 228)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 228)
+(note 360 226 227 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 227 360 228 39 (set (reg:SI 113)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 228 227 361 40 19 (nil) [1 uses])
+(note 361 228 229 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 229 361 230 40 (set (subreg:SI (reg:DI 112) 4)
+        (minus:SI (subreg:SI (reg:DI 111) 4)
+            (subreg:SI (reg:DI 107) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 230 229 231 40 (set (reg:SI 115)
+        (minus:SI (subreg:SI (reg:DI 112) 4)
+            (reg:SI 113))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 231 230 232 40 (set (subreg:SI (reg:DI 112) 4)
+        (reg:SI 115)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 232 231 322 40 (set (reg:DI 57 [ iftmp$0_18 ])
+        (reg:DI 112)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (expr_list:REG_EQUAL (minus:DI (reg:DI 111)
+            (reg:DI 107))
+        (nil)))
+(jump_insn 322 232 323 40 (set (pc)
+        (label_ref 233)) -1
+     (nil)
+ -> 233)
+(barrier 323 322 325)
+(code_label 325 323 324 41 22 (nil) [2 uses])
+(note 324 325 7 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 7 324 8 41 (set (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 0)
+        (const_int -2 [0xfffffffffffffffe])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 8 7 326 41 (set (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 4)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(jump_insn 326 8 327 41 (set (pc)
+        (label_ref 233)) -1
+     (nil)
+ -> 233)
+(barrier 327 326 329)
+(code_label 329 327 328 42 23 (nil) [1 uses])
+(note 328 329 4 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 4 328 5 42 (set (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 0)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 5 4 6 42 (set (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 4)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(insn 6 5 233 42 (set (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 4)
+        (ashift:SI (subreg:SI (reg:DI 57 [ iftmp$0_18 ]) 4)
+            (const_int 31 [0x1f]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:10 -1
+     (nil))
+(code_label 233 6 234 43 10 (nil) [2 uses])
+(note 234 233 235 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 235 234 236 43 (var_location:DI next$ticks (reg:DI 57 [ iftmp$0_18 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":74:8 -1
+     (nil))
+(debug_insn 236 235 237 43 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (nil))
+(insn 237 236 238 43 (set (reg/v:DI 67 [ next ])
+        (reg:DI 57 [ iftmp$0_18 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (nil))
+(insn 238 237 239 43 (set (reg:SI 116)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("z_timer_expiration_handler") [flags 0x3]  <function_decl 0000000007bfb100 z_timer_expiration_handler>)
+        (nil)))
+(insn 239 238 240 43 (set (reg:DI 12 a12)
+        (reg/v:DI 67 [ next ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (nil))
+(insn 240 239 241 43 (set (reg:SI 11 a11)
+        (reg:SI 116)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (nil))
+(insn 241 240 242 43 (set (reg:SI 10 a10)
+        (reg/v/f:SI 68 [ t ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (nil))
+(call_insn 242 241 243 43 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_add_timeout") [flags 0x41]  <function_decl 00000000066fe000 z_add_timeout>) [0 z_add_timeout S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":76:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_add_timeout") [flags 0x41]  <function_decl 00000000066fe000 z_add_timeout>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:DI (use (reg:DI 12 a12))
+                (nil)))))
+(debug_insn 243 242 244 43 (var_location:DI next$ticks (clobber (const_int 0 [0]))) -1
+     (nil))
+(code_label 244 243 245 44 4 (nil) [2 uses])
+(note 245 244 246 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 246 245 247 44 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":81:2 -1
+     (nil))
+(insn 247 246 248 44 (set (reg:SI 118)
+        (mem:SI (plus:SI (reg/v/f:SI 68 [ t ])
+                (const_int 48 [0x30])) [12 MEM[(struct k_timer *)t_23(D)].status+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":81:16 -1
+     (nil))
+(insn 248 247 249 44 (set (reg:SI 117)
+        (plus:SI (reg:SI 118)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":81:16 -1
+     (nil))
+(insn 249 248 250 44 (set (mem:SI (plus:SI (reg/v/f:SI 68 [ t ])
+                (const_int 48 [0x30])) [12 MEM[(struct k_timer *)t_23(D)].status+0 S4 A64])
+        (reg:SI 117)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":81:16 -1
+     (nil))
+(debug_insn 250 249 251 44 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":84:2 -1
+     (nil))
+(insn 251 250 252 44 (set (reg:SI 119)
+        (mem/f:SI (plus:SI (reg/v/f:SI 68 [ t ])
+                (const_int 32 [0x20])) [11 MEM[(struct k_timer *)t_23(D)].expiry_fn+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":84:5 -1
+     (nil))
+(jump_insn 252 251 253 44 (set (pc)
+        (if_then_else (ne (reg:SI 119)
+                (const_int 0 [0]))
+            (label_ref 257)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":84:5 -1
+     (int_list:REG_BR_PROB 751619284 (nil))
+ -> 257)
+(note 253 252 254 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 254 253 255 45 (set (reg:SI 62 [ key$key ])
+        (reg/v:SI 58 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(jump_insn 255 254 256 45 (set (pc)
+        (label_ref 297)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil)
+ -> 297)
+(barrier 256 255 257)
+(code_label 257 256 258 46 20 (nil) [1 uses])
+(note 258 257 259 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 259 258 260 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":86:3 -1
+     (nil))
+(debug_insn 260 259 261 46 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":86:3 -1
+     (nil))
+(debug_insn 261 260 262 46 (var_location:SI key$key (debug_expr:SI D#9)) -1
+     (nil))
+(debug_insn 262 261 263 46 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 263 262 264 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 264 263 265 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 265 264 266 46 (var_location:SI key (reg/v:SI 58 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 266 265 267 46 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 267 266 268 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 268 267 269 46 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 58 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 269 268 270 46 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 270 269 271 46 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":86:3 -1
+     (nil))
+(debug_insn 271 270 272 46 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":86:3 -1
+     (nil))
+(debug_insn 272 271 273 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":87:3 -1
+     (nil))
+(insn 273 272 274 46 (set (reg/f:SI 120)
+        (mem/f:SI (plus:SI (reg/v/f:SI 68 [ t ])
+                (const_int 32 [0x20])) [11 MEM[(struct k_timer *)t_23(D)].expiry_fn+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":87:3 -1
+     (nil))
+(insn 274 273 275 46 (set (reg:SI 10 a10)
+        (reg/v/f:SI 68 [ t ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":87:3 -1
+     (nil))
+(call_insn 275 274 276 46 (call (mem:SI (reg/f:SI 120) [0 *_17 S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":87:3 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 276 275 277 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":88:3 -1
+     (nil))
+(debug_insn 277 276 278 46 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":88:3 -1
+     (nil))
+(debug_insn 278 277 279 46 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 279 278 280 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 280 279 281 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 281 280 282 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 282 281 283 46 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 283 282 284 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 284 283 286 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 286 284 285 46 (parallel [
+            (set (reg:SI 121 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 285 286 287 46 (set (reg/v:SI 59 [ key ])
+        (reg:SI 121 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 287 285 288 46 (var_location:SI key (reg/v:SI 59 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 288 287 289 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 289 288 290 46 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(insn 290 289 291 46 (set (reg:SI 62 [ key$key ])
+        (reg/v:SI 59 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 291 290 292 46 (var_location:SI k$key (reg:SI 62 [ key$key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 292 291 293 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 293 292 294 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 294 293 295 46 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 295 294 296 46 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 296 295 297 46 (var_location:SI key$key (reg:SI 62 [ key$key ])) -1
+     (nil))
+(code_label 297 296 298 47 21 (nil) [1 uses])
+(note 298 297 299 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 299 298 300 47 (var_location:SI key$key (reg:SI 62 [ key$key ])) -1
+     (nil))
+(debug_insn 300 299 301 47 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":88:9 -1
+     (nil))
+(debug_insn 301 300 302 47 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":88:9 -1
+     (nil))
+(debug_insn 302 301 303 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":91:2 -1
+     (nil))
+(debug_insn 303 302 304 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":92:3 -1
+     (nil))
+(debug_insn 304 303 305 47 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":92:3 -1
+     (nil))
+(debug_insn 305 304 306 47 (var_location:SI key$key (reg:SI 62 [ key$key ])) -1
+     (nil))
+(debug_insn 306 305 307 47 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 307 306 308 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 308 307 309 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 309 308 310 47 (var_location:SI key (reg:SI 62 [ key$key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 310 309 311 47 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 311 310 312 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 312 311 313 47 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg:SI 62 [ key$key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 313 312 314 47 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 314 313 315 47 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":92:3 -1
+     (nil))
+(debug_insn 315 314 316 47 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":92:3 -1
+     (nil))
+(debug_insn 316 315 319 47 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":93:3 -1
+     (nil))
+(debug_insn 319 316 320 47 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":48:3 -1
+     (nil))
+(code_label 320 319 321 49 1 (nil) [1 uses])
+(note 321 320 0 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+
+;; Function k_timer_init (k_timer_init, funcdef_no=448, decl_uid=4332, cgraph_uid=449, symbol_order=449)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 42 [ timer ])
+        (reg:SI 2 a2 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":116:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 43 [ expiry_fn ])
+        (reg:SI 3 a3 [ expiry_fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":116:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 44 [ stop_fn ])
+        (reg:SI 4 a4 [ stop_fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":116:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":117:2 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f:SI (plus:SI (reg/v/f:SI 42 [ timer ])
+                (const_int 32 [0x20])) [11 timer_2(D)->expiry_fn+0 S4 A64])
+        (reg/v/f:SI 43 [ expiry_fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":117:19 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":118:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f:SI (plus:SI (reg/v/f:SI 42 [ timer ])
+                (const_int 36 [0x24])) [11 timer_2(D)->stop_fn+0 S4 A32])
+        (reg/v/f:SI 44 [ stop_fn ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":118:17 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":119:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 45)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":119:16 -1
+     (nil))
+(insn 14 13 15 2 (set (mem:SI (plus:SI (reg/v/f:SI 42 [ timer ])
+                (const_int 48 [0x30])) [12 timer_2(D)->status+0 S4 A64])
+        (reg:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":119:16 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":121:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":125:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI D#4 (reg/v/f:SI 42 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":125:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI to (debug_expr:SI D#4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":125:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":28:20 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":30:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI D#1 (debug_expr:SI D#4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":30:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI node (debug_expr:SI D#1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":30:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":219:20 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":221:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 46)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":221:13 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/f/j:SI (reg/v/f:SI 42 [ timer ]) [6 MEM[(struct sys_dnode_t *)timer_2(D)].D.1660.next+0 S4 A32])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":221:13 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":222:2 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 47)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":222:13 -1
+     (nil))
+(insn 29 28 30 2 (set (mem/f/j:SI (plus:SI (reg/v/f:SI 42 [ timer ])
+                (const_int 4 [0x4])) [8 MEM[(struct sys_dnode_t *)timer_2(D)].D.1664.prev+0 S4 A32])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":222:13 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:SI node (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":30:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:SI to (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":125:2 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":127:2 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":127:2 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":127:2 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":129:2 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 48)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":129:19 -1
+     (nil))
+(insn 37 36 38 2 (set (mem/f:SI (plus:SI (reg/v/f:SI 42 [ timer ])
+                (const_int 52 [0x34])) [13 timer_2(D)->user_data+0 S4 A32])
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":129:19 -1
+     (nil))
+(debug_insn 38 37 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":131:2 -1
+     (nil))
+
+;; Function z_impl_k_timer_start (z_impl_k_timer_start, funcdef_no=449, decl_uid=5286, cgraph_uid=450, symbol_order=450)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Purged non-fallthru edges from bb 11
+Predictions for insn 75 bb 5
+  DS theory heuristics: 59.00%  exec 500661118 (estimated locally) hit 1001322232 (estimated locally) (200.0%)
+  combined heuristics: 59.00%  exec 500661118 (estimated locally) hit 1001322232 (estimated locally) (200.0%)
+  opcode values positive heuristics: 59.00%  exec 500661118 (estimated locally) hit 1001322232 (estimated locally) (200.0%)
+Predictions for insn 76 bb 12
+  no prediction heuristics: 50.00%  exec 205271057 (estimated locally) hit 410542112 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 205271057 (estimated locally) hit 410542112 (estimated locally) (200.0%)
+Predictions for insn 77 bb 13
+  no prediction heuristics: 50.00%  exec 102635529 (estimated locally) hit 205271057 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 102635529 (estimated locally) hit 205271057 (estimated locally) (200.0%)
+Predictions for insn 87 bb 15
+  no prediction heuristics: 50.00%  exec 500661120 (estimated locally) hit 1001322236 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 500661120 (estimated locally) hit 1001322236 (estimated locally) (200.0%)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 59 from 16 to 17.
+Forwarding edge 6->7 to 8 failed.
+Deleted label in block 7.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 4 9 5 2 (set (subreg:SI (reg:DI 49) 4)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(insn 5 4 6 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(insn 6 5 2 2 (set (subreg:SI (reg:DI 49) 0)
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(insn 2 6 3 2 (set (reg/v/f:SI 46 [ timer ])
+        (reg:SI 2 a2 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(insn 3 2 7 2 (set (reg/v:DI 47 [ duration ])
+        (reg:DI 4 a4 [ duration ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(insn 7 3 8 2 (set (reg/v:DI 48 [ period ])
+        (reg:DI 49)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":141:1 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:DI 44 [ duration$ticks ])
+        (reg/v:DI 47 [ duration ])) -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:DI duration$ticks (reg:DI 44 [ duration$ticks ])) -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:DI duration$ticks (reg:DI 44 [ duration$ticks ])) -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":142:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":142:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":142:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":149:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":149:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 25 24 27 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 27 25 26 2 (parallel [
+            (set (reg:SI 50 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 26 27 28 2 (set (reg/v:SI 45 [ key ])
+        (reg:SI 50 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 28 26 29 2 (var_location:SI key (reg/v:SI 45 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:SI D#5 (reg/v:SI 45 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 32 31 33 2 (var_location:SI k$key (debug_expr:SI D#5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 36 35 37 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 37 36 38 2 (var_location:SI key$key (debug_expr:SI D#5)) -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":149:25 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":149:25 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":151:2 -1
+     (nil))
+(jump_insn 41 40 133 2 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 44 [ duration$ticks ]) 0)
+                (const_int -1 [0xffffffffffffffff]))
+            (label_ref 61)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":151:5 -1
+     (int_list:REG_BR_PROB 848578164 (nil))
+ -> 61)
+(note 133 41 42 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 42 133 43 4 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 44 [ duration$ticks ]) 4)
+                (const_int -1 [0xffffffffffffffff]))
+            (label_ref 61)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":151:5 -1
+     (int_list:REG_BR_PROB 848578164 (nil))
+ -> 61)
+(note 43 42 44 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":152:3 -1
+     (nil))
+(debug_insn 45 44 46 5 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":152:3 -1
+     (nil))
+(debug_insn 46 45 47 5 (var_location:SI key$key (debug_expr:SI D#5)) -1
+     (nil))
+(debug_insn 47 46 48 5 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 48 47 49 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 49 48 50 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 50 49 51 5 (var_location:SI key (reg/v:SI 45 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 51 50 52 5 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 52 51 53 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 53 52 54 5 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 45 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 54 53 55 5 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 55 54 56 5 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":152:3 -1
+     (nil))
+(debug_insn 56 55 57 5 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":152:3 -1
+     (nil))
+(debug_insn 57 56 58 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":153:3 -1
+     (nil))
+(debug_insn 58 57 59 5 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(jump_insn 59 58 60 5 (set (pc)
+        (label_ref:SI 131)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 84 {jump}
+     (nil)
+ -> 131)
+(barrier 60 59 61)
+(code_label 61 60 62 6 29 (nil) [2 uses])
+(note 62 61 63 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 63 62 66 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":169:2 -1
+     (nil))
+(jump_insn 66 63 134 6 (set (pc)
+        (if_then_else (lt (subreg:SI (reg:DI 44 [ duration$ticks ]) 4)
+                (const_int 0 [0]))
+            (label_ref 95)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":169:5 -1
+     (int_list:REG_BR_PROB 440234148 (nil))
+ -> 95)
+(note 134 66 69 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 69 134 70 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:3 -1
+     (nil))
+(debug_insn 70 69 71 7 (var_location:DI duration$ticks (smax:DI (reg:DI 44 [ duration$ticks ])
+        (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:18 -1
+     (nil))
+(debug_insn 71 70 72 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:3 -1
+     (nil))
+(insn 72 71 75 7 (set (reg:DI 51)
+        (reg:DI 44 [ duration$ticks ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (nil))
+(jump_insn 75 72 135 7 (set (pc)
+        (if_then_else (lt (subreg:SI (reg:DI 51) 4)
+                (const_int 1 [0x1]))
+            (pc)
+            (label_ref 81))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (int_list:REG_BR_PROB 633507684 (nil))
+ -> 81)
+(note 135 75 76 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 76 135 136 9 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 51) 4)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 78)
+(note 136 76 77 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 77 136 78 10 (set (pc)
+        (if_then_else (ne (subreg:SI (reg:DI 51) 0)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 81)
+(code_label 78 77 137 11 34 (nil) [1 uses])
+(note 137 78 79 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 79 137 80 11 (set (subreg:SI (reg:DI 51) 0)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (nil))
+(insn 80 79 81 11 (set (subreg:SI (reg:DI 51) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":174:20 -1
+     (nil))
+(code_label 81 80 138 12 33 (nil) [2 uses])
+(note 138 81 82 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 82 138 83 12 (set (subreg:SI (reg:DI 52) 0)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 83 82 84 12 (set (subreg:SI (reg:DI 52) 4)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 84 83 85 12 (clobber (reg:DI 53)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 85 84 86 12 (set (subreg:SI (reg:DI 53) 0)
+        (plus:SI (subreg:SI (reg:DI 51) 0)
+            (subreg:SI (reg:DI 52) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 86 85 87 12 (set (reg:SI 54)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(jump_insn 87 86 139 12 (set (pc)
+        (if_then_else (ltu (subreg:SI (reg:DI 53) 0)
+                (subreg:SI (reg:DI 51) 0))
+            (label_ref 89)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 89)
+(note 139 87 88 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 88 139 89 13 (set (reg:SI 54)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(code_label 89 88 140 14 35 (nil) [1 uses])
+(note 140 89 90 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 90 140 91 14 (set (subreg:SI (reg:DI 53) 4)
+        (plus:SI (subreg:SI (reg:DI 51) 4)
+            (subreg:SI (reg:DI 52) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 91 90 92 14 (set (reg:SI 56)
+        (plus:SI (reg:SI 54)
+            (subreg:SI (reg:DI 53) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 92 91 93 14 (set (subreg:SI (reg:DI 53) 4)
+        (reg:SI 56)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (nil))
+(insn 93 92 94 14 (set (reg:DI 44 [ duration$ticks ])
+        (reg:DI 53)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:35 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 51)
+            (reg:DI 52))
+        (nil)))
+(debug_insn 94 93 95 14 (var_location:DI duration$ticks (reg:DI 44 [ duration$ticks ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":175:18 -1
+     (nil))
+(code_label 95 94 96 15 31 (nil) [1 uses])
+(note 96 95 97 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 97 96 98 15 (var_location:DI duration$ticks (reg:DI 44 [ duration$ticks ])) -1
+     (nil))
+(debug_insn 98 97 99 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":178:2 -1
+     (nil))
+(insn 99 98 100 15 (set (reg/f:SI 43 [ _3 ])
+        (reg/v/f:SI 46 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":178:8 -1
+     (nil))
+(insn 100 99 101 15 (set (reg:SI 10 a10)
+        (reg/f:SI 43 [ _3 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":178:8 -1
+     (nil))
+(call_insn 101 100 102 15 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_abort_timeout") [flags 0x41]  <function_decl 00000000066fe100 z_abort_timeout>) [0 z_abort_timeout S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":178:8 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_abort_timeout") [flags 0x41]  <function_decl 00000000066fe100 z_abort_timeout>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 102 101 103 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":179:2 -1
+     (nil))
+(insn 103 102 104 15 (set (mem:DI (plus:SI (reg/v/f:SI 46 [ timer ])
+                (const_int 40 [0x28])) [1 timer_6(D)->period+0 S8 A64])
+        (reg/v:DI 48 [ period ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":179:16 -1
+     (nil))
+(debug_insn 104 103 105 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":180:2 -1
+     (nil))
+(insn 105 104 106 15 (set (reg:SI 57)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":180:16 -1
+     (nil))
+(insn 106 105 107 15 (set (mem:SI (plus:SI (reg/v/f:SI 46 [ timer ])
+                (const_int 48 [0x30])) [12 timer_6(D)->status+0 S4 A64])
+        (reg:SI 57)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":180:16 -1
+     (nil))
+(debug_insn 107 106 108 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(debug_insn 108 107 109 15 (var_location:DI duration$ticks (reg:DI 44 [ duration$ticks ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(insn 109 108 110 15 (set (reg/v:DI 47 [ duration ])
+        (reg:DI 44 [ duration$ticks ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(insn 110 109 111 15 (set (reg:SI 58)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("z_timer_expiration_handler") [flags 0x3]  <function_decl 0000000007bfb100 z_timer_expiration_handler>)
+        (nil)))
+(insn 111 110 112 15 (set (reg:DI 12 a12)
+        (reg/v:DI 47 [ duration ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(insn 112 111 113 15 (set (reg:SI 11 a11)
+        (reg:SI 58)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(insn 113 112 114 15 (set (reg:SI 10 a10)
+        (reg/f:SI 43 [ _3 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (nil))
+(call_insn 114 113 115 15 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_add_timeout") [flags 0x41]  <function_decl 00000000066fe000 z_add_timeout>) [0 z_add_timeout S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":182:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_add_timeout") [flags 0x41]  <function_decl 00000000066fe000 z_add_timeout>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:DI (use (reg:DI 12 a12))
+                (nil)))))
+(debug_insn 115 114 116 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":185:2 -1
+     (nil))
+(debug_insn 116 115 117 15 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":185:2 -1
+     (nil))
+(debug_insn 117 116 118 15 (var_location:SI key$key (debug_expr:SI D#5)) -1
+     (nil))
+(debug_insn 118 117 119 15 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 119 118 120 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 120 119 121 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 121 120 122 15 (var_location:SI key (reg/v:SI 45 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 122 121 123 15 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 123 122 124 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 124 123 125 15 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 45 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 125 124 126 15 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 126 125 127 15 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":185:2 -1
+     (nil))
+(debug_insn 127 126 128 15 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":185:2 -1
+     (nil))
+(debug_insn 128 127 131 15 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(code_label 131 128 132 17 28 (nil) [1 uses])
+(note 132 131 0 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+
+;; Function z_impl_k_timer_stop (z_impl_k_timer_stop, funcdef_no=450, decl_uid=5295, cgraph_uid=451, symbol_order=451)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->6 redirected to 7
+Edge 4->6 redirected to 7
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 45 [ timer ])
+        (reg:SI 2 a2 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":200:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":201:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":201:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":201:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":203:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 45 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":203:19 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_abort_timeout") [flags 0x41]  <function_decl 00000000066fe100 z_abort_timeout>) [0 z_abort_timeout S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":203:19 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_abort_timeout") [flags 0x41]  <function_decl 00000000066fe100 z_abort_timeout>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 12 11 13 2 (set (reg:SI 43 [ _2 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":203:19 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:QI inactive (ne:QI (reg:SI 43 [ _2 ])
+        (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":203:7 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":205:2 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:SI 43 [ _2 ])
+                (const_int 0 [0]))
+            (label_ref:SI 26)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":205:5 62 {*btrue}
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 26)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":209:2 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:SI 44 [ _3 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 45 [ timer ])
+                (const_int 36 [0x24])) [11 timer_5(D)->stop_fn+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":209:11 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg/f:SI 44 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref:SI 26)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":209:5 62 {*btrue}
+     (int_list:REG_BR_PROB 322122548 (nil))
+ -> 26)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":210:3 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 10 a10)
+        (reg/v/f:SI 45 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":210:3 -1
+     (nil))
+(call_insn 23 22 26 5 (call (mem:SI (reg/f:SI 44 [ _3 ]) [0 *_3 S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":210:3 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(code_label 26 23 27 7 37 (nil) [2 uses])
+(note 27 26 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function z_impl_k_timer_status_get (z_impl_k_timer_status_get, funcdef_no=451, decl_uid=5302, cgraph_uid=452, symbol_order=452)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 50.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 44 [ timer ])
+        (reg:SI 2 a2 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":233:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":234:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":234:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 14 13 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 16 14 15 2 (parallel [
+            (set (reg:SI 45 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 15 16 17 2 (set (reg/v:SI 42 [ key ])
+        (reg:SI 45 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 17 15 18 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI D#6 (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI k$key (debug_expr:SI D#6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI key$key (debug_expr:SI D#6)) -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":234:25 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":234:25 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":235:2 -1
+     (nil))
+(insn 30 29 31 2 (set (reg/v:SI 43 [ <retval> ])
+        (mem:SI (plus:SI (reg/v/f:SI 44 [ timer ])
+                (const_int 48 [0x30])) [12 timer_2(D)->status+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":235:11 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:SI result (reg/v:SI 43 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":235:11 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":237:2 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:SI 46)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":237:16 -1
+     (nil))
+(insn 34 33 35 2 (set (mem:SI (plus:SI (reg/v/f:SI 44 [ timer ])
+                (const_int 48 [0x30])) [12 timer_2(D)->status+0 S4 A64])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":237:16 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":238:2 -1
+     (nil))
+(debug_insn 36 35 37 2 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":238:2 -1
+     (nil))
+(debug_insn 37 36 38 2 (var_location:SI key$key (debug_expr:SI D#6)) -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 39 38 40 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 41 40 42 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 43 42 44 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 44 43 45 2 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 42 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 46 45 47 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":238:2 -1
+     (nil))
+(debug_insn 47 46 48 2 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":238:2 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":240:2 -1
+     (nil))
+(debug_insn 49 48 53 2 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 53 49 54 2 (set (reg/i:SI 2 a2)
+        (reg/v:SI 43 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":241:1 -1
+     (nil))
+(insn 54 53 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":241:1 -1
+     (nil))
+
+;; Function z_impl_k_timer_status_sync (z_impl_k_timer_status_sync, funcdef_no=452, decl_uid=5309, cgraph_uid=453, symbol_order=453)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->8 redirected to 9
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 102.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 45 [ timer ])
+        (reg:SI 2 a2 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":253:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":254:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":254:33 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":255:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":255:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":255:2 -1
+     (nil))
+(debug_insn 11 10 74 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":257:2 -1
+     (nil))
+(code_label 74 11 12 4 46 (nil) [1 uses])
+(note 12 74 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 4 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 14 13 15 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":258:3 -1
+     (nil))
+(debug_insn 15 14 16 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":260:3 -1
+     (nil))
+(debug_insn 16 15 17 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":261:4 -1
+     (nil))
+(debug_insn 17 16 18 4 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":261:4 -1
+     (nil))
+(debug_insn 18 17 19 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 19 18 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 20 19 21 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 21 20 22 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 22 21 23 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 23 22 24 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 24 23 26 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 26 24 25 4 (parallel [
+            (set (reg:SI 46 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 25 26 27 4 (set (reg/v:SI 42 [ key ])
+        (reg:SI 46 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 27 25 28 4 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 28 27 29 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 29 28 30 4 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 30 29 31 4 (var_location:SI D#8 (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 31 30 32 4 (var_location:SI k$key (debug_expr:SI D#8)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 32 31 33 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 33 32 34 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 34 33 35 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 35 34 36 4 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 36 35 37 4 (var_location:SI key$key (debug_expr:SI D#8)) -1
+     (nil))
+(debug_insn 37 36 38 4 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":261:27 -1
+     (nil))
+(debug_insn 38 37 39 4 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":261:27 -1
+     (nil))
+(debug_insn 39 38 40 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:4 -1
+     (nil))
+(debug_insn 40 39 41 4 (var_location:SI D#7 (reg/v/f:SI 45 [ timer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:31 -1
+     (nil))
+(debug_insn 41 40 42 4 (var_location:SI to (debug_expr:SI D#7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:31 -1
+     (nil))
+(debug_insn 42 41 43 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":41:20 -1
+     (nil))
+(debug_insn 43 42 44 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":43:2 -1
+     (nil))
+(debug_insn 44 43 45 4 (var_location:SI D#2 (debug_expr:SI D#7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":43:10 -1
+     (nil))
+(debug_insn 45 44 46 4 (var_location:SI node (debug_expr:SI D#2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":43:10 -1
+     (nil))
+(debug_insn 46 45 47 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":233:20 -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":235:2 -1
+     (nil))
+(debug_insn 48 47 49 4 (var_location:SI node (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/timeout_q.h":43:10 -1
+     (nil))
+(debug_insn 49 48 50 4 (var_location:SI to (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:9 -1
+     (nil))
+(insn 50 49 51 4 (set (reg:SI 47)
+        (mem/f/j:SI (reg/v/f:SI 45 [ timer ]) [6 MEM[(const struct sys_dnode_t *)timer_6(D)].D.1660.next+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:7 -1
+     (nil))
+(jump_insn 51 50 52 4 (set (pc)
+        (if_then_else (eq (reg:SI 47)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":263:7 -1
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 78)
+(note 52 51 53 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":264:5 -1
+     (nil))
+(insn 54 53 55 5 (set (reg/v:SI 44 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/v/f:SI 45 [ timer ])
+                (const_int 48 [0x30])) [12 MEM[(volatile uint32_t *)timer_6(D) + 48B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":264:12 -1
+     (nil))
+(debug_insn 55 54 56 5 (var_location:SI result (reg/v:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":264:12 -1
+     (nil))
+(debug_insn 56 55 57 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":265:5 -1
+     (nil))
+(insn 57 56 58 5 (set (reg:SI 48)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":265:19 -1
+     (nil))
+(insn 58 57 59 5 (set (mem:SI (plus:SI (reg/v/f:SI 45 [ timer ])
+                (const_int 48 [0x30])) [12 timer_6(D)->status+0 S4 A64])
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":265:19 -1
+     (nil))
+(debug_insn 59 58 60 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":266:5 -1
+     (nil))
+(debug_insn 60 59 61 5 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":266:5 -1
+     (nil))
+(debug_insn 61 60 62 5 (var_location:SI key$key (debug_expr:SI D#8)) -1
+     (nil))
+(debug_insn 62 61 63 5 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 63 62 64 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 64 63 65 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 65 64 66 5 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 66 65 67 5 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 67 66 68 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 68 67 69 5 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 42 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 69 68 70 5 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 70 69 71 5 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":266:5 -1
+     (nil))
+(debug_insn 71 70 72 5 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":266:5 -1
+     (nil))
+(debug_insn 72 71 73 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":267:5 -1
+     (nil))
+(jump_insn 73 72 77 5 (set (pc)
+        (if_then_else (ne (reg/v:SI 44 [ <retval> ])
+                (const_int 0 [0]))
+            (label_ref:SI 104)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":267:8 62 {*btrue}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 104)
+(note 77 73 75 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 75 77 76 6 (set (pc)
+        (label_ref 74)) -1
+     (nil)
+ -> 74)
+(barrier 76 75 78)
+(code_label 78 76 79 7 44 (nil) [1 uses])
+(note 79 78 80 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 80 79 81 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":271:5 -1
+     (nil))
+(insn 81 80 82 7 (set (reg/v:SI 44 [ <retval> ])
+        (mem:SI (plus:SI (reg/v/f:SI 45 [ timer ])
+                (const_int 48 [0x30])) [12 timer_6(D)->status+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":271:12 -1
+     (nil))
+(debug_insn 82 81 83 7 (var_location:SI result (reg/v:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":271:12 -1
+     (nil))
+(debug_insn 83 82 84 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":272:5 -1
+     (nil))
+(debug_insn 84 83 85 7 (var_location:SI l (symbol_ref:SI ("lock") [flags 0x2]  <var_decl 0000000007d10750 lock>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":272:5 -1
+     (nil))
+(debug_insn 85 84 86 7 (var_location:SI key$key (debug_expr:SI D#8)) -1
+     (nil))
+(debug_insn 86 85 87 7 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 87 86 88 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 88 87 89 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 89 88 90 7 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 90 89 91 7 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 91 90 92 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 92 91 93 7 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 42 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 93 92 94 7 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 94 93 95 7 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":272:5 -1
+     (nil))
+(debug_insn 95 94 96 7 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":272:5 -1
+     (nil))
+(debug_insn 96 95 99 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":273:5 -1
+     (nil))
+(debug_insn 99 96 100 7 (var_location:SI result (reg/v:SI 44 [ <retval> ])) -1
+     (nil))
+(debug_insn 100 99 101 7 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 101 100 104 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":277:3 -1
+     (nil))
+(code_label 104 101 107 9 43 (nil) [1 uses])
+(note 107 104 105 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 105 107 106 9 (set (reg/i:SI 2 a2)
+        (reg/v:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":309:1 -1
+     (nil))
+(insn 106 105 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/timer.c":309:1 -1
+     (nil))

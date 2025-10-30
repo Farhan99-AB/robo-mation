@@ -1,0 +1,192 @@
+
+;; Function esp_cpu_intr_get_desc (esp_cpu_intr_get_desc, funcdef_no=375, decl_uid=6408, cgraph_uid=376, symbol_order=376)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+Purged non-fallthru edges from bb 10
+Predictions for insn 14 bb 2
+  no prediction heuristics: 50.00%  exec 1073741824 (estimated locally) hit 2147483640 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 1073741824 (estimated locally) hit 2147483640 (estimated locally) (200.0%)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->7 redirected to 8
+Forwarding edge 6->7 to 8 failed.
+Deleted label in block 7.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 6->7 to 8 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 49 [ core_id ])
+        (reg:SI 2 a2 [ core_id ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":202:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 50 [ intr_num ])
+        (reg:SI 3 a3 [ intr_num ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":202:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 51 [ intr_desc_ret ])
+        (reg:SI 4 a4 [ intr_desc_ret ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":202:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(insn 11 8 14 2 (set (reg:QI 52)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(jump_insn 14 11 55 2 (set (pc)
+        (if_then_else (ltu (reg/v:SI 49 [ core_id ])
+                (const_int 2 [0x2]))
+            (pc)
+            (label_ref 16))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 16)
+(note 55 14 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 55 16 4 (set (reg:QI 52)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(code_label 16 15 56 5 4 (nil) [1 uses])
+(note 56 16 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 56 18 5 (set (reg:SI 54)
+        (zero_extend:SI (reg:QI 52))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(jump_insn 18 17 57 5 (set (pc)
+        (if_then_else (ne (reg:SI 54)
+                (const_int 0 [0]))
+            (label_ref:SI 59)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 62 {*btrue}
+     (int_list:REG_BR_PROB 214756 (nil))
+ -> 59)
+(note 57 18 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 57 20 6 (set (reg:SI 57)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(insn 20 19 21 6 (set (reg:SI 58)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(insn 21 20 22 6 (set (reg:SI 56)
+        (if_then_else:SI (eq (reg/v/f:SI 51 [ intr_desc_ret ])
+                (const_int 0 [0]))
+            (reg:SI 57)
+            (reg:SI 58))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(insn 22 21 23 6 (set (reg:QI 55)
+        (subreg:QI (reg:SI 56) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:SI 59)
+        (zero_extend:SI (reg:QI 55))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (nil))
+(jump_insn 24 23 58 6 (set (pc)
+        (if_then_else (eq (reg:SI 59)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (int_list:REG_BR_PROB 1073527044 (nil))
+ -> 29)
+(note 58 24 59 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(code_label 59 58 26 8 5 (nil) [1 uses])
+(note 26 59 27 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(call_insn 27 26 28 8 (call (mem:SI (symbol_ref:SI ("__assert_no_args") [flags 0x41]  <function_decl 0000000005999b00 __assert_no_args>) [0 __assert_no_args S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":203:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__assert_no_args") [flags 0x41]  <function_decl 0000000005999b00 __assert_no_args>)
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (nil))
+(barrier 28 27 29)
+(code_label 29 28 30 9 2 (nil) [1 uses])
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:5 -1
+     (nil))
+(insn 32 31 33 9 (set (reg/f:SI 60)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:56 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("intr_desc_table") [flags 0x2]  <var_decl 0000000006fcd240 intr_desc_table>)
+        (nil)))
+(insn 33 32 34 9 (set (reg:SI 61)
+        (ashift:SI (reg/v:SI 50 [ intr_num ])
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:56 -1
+     (nil))
+(insn 34 33 35 9 (set (reg/f:SI 62)
+        (plus:SI (reg/f:SI 60)
+            (reg:SI 61))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:56 -1
+     (nil))
+(insn 35 34 36 9 (set (reg:SI 63)
+        (mem/u:SI (reg/f:SI 62) [2 intr_desc_table[intr_num_11(D)].priority+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:29 -1
+     (nil))
+(insn 36 35 37 9 (set (mem:SI (reg/v/f:SI 51 [ intr_desc_ret ]) [2 intr_desc_ret_9(D)->priority+0 S4 A32])
+        (reg:SI 63)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":204:29 -1
+     (nil))
+(debug_insn 37 36 38 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:5 -1
+     (nil))
+(insn 38 37 39 9 (set (reg/f:SI 64)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:52 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("intr_desc_table") [flags 0x2]  <var_decl 0000000006fcd240 intr_desc_table>)
+        (nil)))
+(insn 39 38 40 9 (set (reg:SI 65)
+        (ashift:SI (reg/v:SI 50 [ intr_num ])
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:52 -1
+     (nil))
+(insn 40 39 41 9 (set (reg:SI 66)
+        (plus:SI (reg/f:SI 64)
+            (reg:SI 65))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:52 -1
+     (nil))
+(insn 41 40 42 9 (set (reg/f:SI 67)
+        (plus:SI (reg:SI 66)
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:52 -1
+     (nil))
+(insn 42 41 43 9 (set (reg:SI 68)
+        (mem/u:SI (reg/f:SI 67) [2 intr_desc_table[intr_num_11(D)].type+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:25 -1
+     (nil))
+(insn 43 42 44 9 (set (mem:SI (plus:SI (reg/v/f:SI 51 [ intr_desc_ret ])
+                (const_int 4 [0x4])) [2 intr_desc_ret_9(D)->type+0 S4 A32])
+        (reg:SI 68)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":205:25 -1
+     (nil))
+(debug_insn 44 43 45 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:5 -1
+     (nil))
+(insn 45 44 46 9 (set (reg/f:SI 69)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("intr_desc_table") [flags 0x2]  <var_decl 0000000006fcd240 intr_desc_table>)
+        (nil)))
+(insn 46 45 47 9 (set (reg:SI 70)
+        (ashift:SI (reg/v:SI 50 [ intr_num ])
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (nil))
+(insn 47 46 48 9 (set (reg:SI 71)
+        (plus:SI (reg:SI 70)
+            (reg/v:SI 49 [ core_id ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (nil))
+(insn 48 47 49 9 (set (reg:SI 72)
+        (ashift:SI (reg:SI 71)
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (nil))
+(insn 49 48 50 9 (set (reg:SI 73)
+        (plus:SI (reg/f:SI 69)
+            (reg:SI 72))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (nil))
+(insn 50 49 51 9 (set (reg/f:SI 74)
+        (plus:SI (reg:SI 73)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:59 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 75)
+        (mem/u:SI (reg/f:SI 74) [2 intr_desc_table[intr_num_11(D)].flags[core_id_8(D)]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:26 -1
+     (nil))
+(insn 52 51 0 9 (set (mem:SI (plus:SI (reg/v/f:SI 51 [ intr_desc_ret ])
+                (const_int 8 [0x8])) [2 intr_desc_ret_9(D)->flags+0 S4 A32])
+        (reg:SI 75)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c":206:26 -1
+     (nil))

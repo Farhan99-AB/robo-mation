@@ -1,0 +1,933 @@
+
+;; Function z_device_state_init (z_device_state_init, funcdef_no=348, decl_uid=5904, cgraph_uid=349, symbol_order=348)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+(debug_insn 12 11 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":26:2 -1
+     (nil))
+
+;; Function do_device_init (do_device_init, funcdef_no=349, decl_uid=5917, cgraph_uid=350, symbol_order=349)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 53.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 50 [ dev ])
+        (reg:SI 2 a2 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":32:1 -1
+     (nil))
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 3 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":33:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI rc (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":33:6 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":35:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 42 [ _1 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 50 [ dev ])
+                (const_int 20 [0x14])) [7 dev_10(D)->ops.init+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":35:14 -1
+     (nil))
+(jump_insn 11 10 23 2 (set (pc)
+        (if_then_else (ne (reg/f:SI 42 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":35:5 -1
+     (int_list:REG_BR_PROB 751619284 (nil))
+ -> 15)
+(code_label 23 11 12 4 5 (nil) [1 uses])
+(note 12 23 4 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 4 12 13 4 (set (reg/v:SI 46 [ rc ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":33:6 -1
+     (nil))
+(jump_insn 13 4 14 4 (set (pc)
+        (label_ref 38)) -1
+     (nil)
+ -> 38)
+(barrier 14 13 15)
+(code_label 15 14 16 5 3 (nil) [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":36:3 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 10 a10)
+        (reg/v/f:SI 50 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":36:8 -1
+     (nil))
+(call_insn 19 18 20 5 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 42 [ _1 ]) [0 *_1 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":36:8 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 20 19 21 5 (set (reg/v:SI 47 [ rc ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":36:8 -1
+     (nil))
+(debug_insn 21 20 22 5 (var_location:SI rc (reg/v:SI 47 [ rc ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":36:8 -1
+     (nil))
+(debug_insn 22 21 24 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":40:3 -1
+     (nil))
+(jump_insn 24 22 25 5 (set (pc)
+        (if_then_else (eq (reg/v:SI 47 [ rc ])
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":40:6 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 23)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":46:4 -1
+     (nil))
+(debug_insn 27 26 28 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":47:20 -1
+     (nil))
+(debug_insn 28 27 29 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":49:4 -1
+     (nil))
+(debug_insn 29 28 30 6 (var_location:SI rc (abs:SI (reg/v:SI 47 [ rc ]))) -1
+     (nil))
+(debug_insn 30 29 31 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":55:4 -1
+     (nil))
+(insn 31 30 32 6 (set (reg/v:SI 46 [ rc ])
+        (abs:SI (reg/v:SI 47 [ rc ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":49:7 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:SI 51)
+        (const_int 255 [0xff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":55:7 -1
+     (nil))
+(insn 33 32 34 6 (set (reg/v:SI 46 [ rc ])
+        (smin:SI (reg/v:SI 46 [ rc ])
+            (reg:SI 51))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":55:7 -1
+     (nil))
+(debug_insn 34 33 35 6 (var_location:SI rc (reg/v:SI 46 [ rc ])) -1
+     (nil))
+(debug_insn 35 34 36 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":58:4 -1
+     (nil))
+(insn 36 35 37 6 (set (reg/f:SI 43 [ _3 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 50 [ dev ])
+                (const_int 12 [0xc])) [5 dev_10(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":58:7 -1
+     (nil))
+(insn 37 36 38 6 (set (mem:QI (reg/f:SI 43 [ _3 ]) [0 _3->init_res+0 S1 A8])
+        (subreg:QI (reg/v:SI 46 [ rc ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":58:25 -1
+     (nil))
+(code_label 38 37 39 7 4 (nil) [1 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 7 (var_location:SI rc (reg/v:SI 46 [ rc ])) -1
+     (nil))
+(debug_insn 41 40 42 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:2 -1
+     (nil))
+(insn 42 41 44 7 (set (reg/f:SI 45 [ _5 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 50 [ dev ])
+                (const_int 12 [0xc])) [5 dev_10(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:5 -1
+     (nil))
+(insn 44 42 45 7 (set (reg:QI 53)
+        (mem/j:QI (plus:SI (reg/f:SI 45 [ _5 ])
+                (const_int 1 [0x1])) [1 _5->initialized+0 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:26 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:QI 54)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:26 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:SI 55)
+        (ior:SI (subreg:SI (reg:QI 53) 0)
+            (subreg:SI (reg:QI 54) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:26 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:QI 56)
+        (subreg:QI (reg:SI 55) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:26 -1
+     (nil))
+(insn 48 47 49 7 (set (mem/j:QI (plus:SI (reg/f:SI 45 [ _5 ])
+                (const_int 1 [0x1])) [1 _5->initialized+0 S1 A8])
+        (reg:QI 56)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":63:26 -1
+     (nil))
+(debug_insn 49 48 50 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":65:2 -1
+     (nil))
+(debug_insn 50 49 51 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":73:2 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 57)
+        (neg:SI (reg/v:SI 46 [ rc ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":73:9 -1
+     (nil))
+(insn 52 51 56 7 (set (reg:SI 49 [ <retval> ])
+        (reg:SI 57)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":73:9 -1
+     (nil))
+(insn 56 52 57 7 (set (reg/i:SI 2 a2)
+        (reg:SI 49 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":74:1 -1
+     (nil))
+(insn 57 56 0 7 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":74:1 -1
+     (nil))
+
+;; Function z_impl_device_init (z_impl_device_init, funcdef_no=350, decl_uid=1762, cgraph_uid=351, symbol_order=350)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+Edge 2->4 redirected to 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 27 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 21.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 46 [ dev ])
+        (reg:SI 2 a2 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":77:1 -1
+     (nil))
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 3 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 47)
+        (mem/f:SI (plus:SI (reg/v/f:SI 46 [ dev ])
+                (const_int 12 [0xc])) [5 dev_7(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:6 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:QI 48)
+        (mem:QI (plus:SI (reg/f:SI 47)
+                (const_int 1 [0x1])) [1 *_1+1 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:6 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 49)
+        (and:SI (subreg:SI (reg:QI 48) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:6 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 50)
+        (subreg:QI (reg:SI 49) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 51)
+        (zero_extend:SI (reg:QI 50))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:5 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:SI 51)
+                (const_int 0 [0]))
+            (label_ref:SI 30)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":78:5 62 {*btrue}
+     (int_list:REG_BR_PROB 22441212 (nil))
+ -> 30)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 15 14 16 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":82:2 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 10 a10)
+        (reg/v/f:SI 46 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":82:9 -1
+     (nil))
+(call_insn 17 16 18 4 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("do_device_init") [flags 0x3]  <function_decl 0000000006e92100 do_device_init>) [0 do_device_init S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":82:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("do_device_init") [flags 0x3]  <function_decl 0000000006e92100 do_device_init>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 18 17 27 4 (set (reg:SI 45 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":82:9 -1
+     (nil))
+(jump_insn 27 18 28 4 (set (pc)
+        (label_ref:SI 23)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":82:9 84 {jump}
+     (nil)
+ -> 23)
+(barrier 28 27 30)
+(code_label 30 28 29 5 11 (nil) [1 uses])
+(note 29 30 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 4 29 23 5 (set (reg:SI 45 [ <retval> ])
+        (const_int -120 [0xffffffffffffff88])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":79:10 -1
+     (nil))
+(code_label 23 4 26 7 9 (nil) [1 uses])
+(note 26 23 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 26 25 7 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":83:1 -1
+     (nil))
+(insn 25 24 0 7 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":83:1 -1
+     (nil))
+
+;; Function z_device_get_all_static (z_device_get_all_static, funcdef_no=352, decl_uid=1650, cgraph_uid=353, symbol_order=352)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 26.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 46 [ devices ])
+        (reg:SI 2 a2 [ devices ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":190:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":191:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 47)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f:SI (reg/v/f:SI 46 [ devices ]) [8 *devices_6(D)+0 S4 A32])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":193:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI cnt (lshiftrt:SI (minus:SI (symbol_ref:SI ("_device_list_end") [flags 0x40]  <var_decl 0000000005945ea0 _device_list_end>)
+            (symbol_ref:SI ("_device_list_start") [flags 0x40]  <var_decl 0000000005945ab0 _device_list_start>))
+        (const_int 5 [0x5]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:36 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":196:2 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 50)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_device_list_end") [flags 0x40]  <var_decl 0000000005945ea0 _device_list_end>)
+        (nil)))
+(insn 22 21 23 2 (set (reg:SI 51)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_device_list_start") [flags 0x40]  <var_decl 0000000005945ab0 _device_list_start>)
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 49)
+        (minus:SI (reg:SI 50)
+            (reg:SI 51))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 48)
+        (lshiftrt:SI (reg:SI 49)
+            (const_int 5 [0x5]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":194:2 -1
+     (nil))
+(insn 25 24 29 2 (set (reg:SI 45 [ <retval> ])
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":196:9 -1
+     (nil))
+(insn 29 25 30 2 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":197:1 -1
+     (nil))
+(insn 30 29 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":197:1 -1
+     (nil))
+
+;; Function z_impl_device_is_ready (z_impl_device_is_ready, funcdef_no=353, decl_uid=1755, cgraph_uid=354, symbol_order=353)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 2->6 redirected to 9
+Edge 3->5 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 32.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 49 [ dev ])
+        (reg:SI 2 a2 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":200:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":205:2 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg/v/f:SI 49 [ dev ])
+                (const_int 0 [0]))
+            (label_ref:SI 41)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":205:5 62 {*btrue}
+     (int_list:REG_BR_PROB 194239900 (nil))
+ -> 41)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 11 10 12 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:2 -1
+     (nil))
+(insn 12 11 13 4 (set (reg/f:SI 42 [ _1 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 49 [ dev ])
+                (const_int 12 [0xc])) [5 dev_7(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:12 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:QI 50)
+        (mem:QI (plus:SI (reg/f:SI 42 [ _1 ])
+                (const_int 1 [0x1])) [1 *_1+1 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:9 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:SI 51)
+        (and:SI (subreg:SI (reg:QI 50) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:9 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:QI 52)
+        (subreg:QI (reg:SI 51) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 53)
+        (zero_extend:SI (reg:QI 52))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (if_then_else (eq (reg:SI 53)
+                (const_int 0 [0]))
+            (label_ref:SI 45)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 62 {*btrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 45)
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 5 (set (reg:SI 55)
+        (zero_extend:SI (mem:QI (reg/f:SI 42 [ _1 ]) [0 _1->init_res+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 57)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 58)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 56)
+        (if_then_else:SI (eq (reg:SI 55)
+                (const_int 0 [0]))
+            (reg:SI 57)
+            (reg:SI 58))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 23 22 42 5 (set (reg:SI 46 [ iftmp$3_6 ])
+        (reg:SI 56)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(jump_insn 42 23 43 5 (set (pc)
+        (label_ref 24)) -1
+     (nil)
+ -> 24)
+(barrier 43 42 45)
+(code_label 45 43 44 6 17 (nil) [1 uses])
+(note 44 45 4 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 4 44 24 6 (set (reg:SI 46 [ iftmp$3_6 ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(code_label 24 4 25 7 15 (nil) [1 uses])
+(note 25 24 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (set (reg:QI 59)
+        (subreg:QI (reg:SI 46 [ iftmp$3_6 ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:SI 60)
+        (and:SI (subreg:SI (reg:QI 59) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(insn 28 27 38 7 (set (reg:SI 48 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 60) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil))
+(jump_insn 38 28 39 7 (set (pc)
+        (label_ref 29)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":209:33 -1
+     (nil)
+ -> 29)
+(barrier 39 38 41)
+(code_label 41 39 40 8 16 (nil) [1 uses])
+(note 40 41 5 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 5 40 29 8 (set (reg:SI 48 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":206:10 -1
+     (nil))
+(code_label 29 5 30 9 14 (nil) [1 uses])
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 35 9 (set (reg:SI 48 [ <retval> ])
+        (reg:SI 48 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":210:1 -1
+     (nil))
+(insn 35 31 36 9 (set (reg/i:SI 2 a2)
+        (reg:SI 48 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":210:1 -1
+     (nil))
+(insn 36 35 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":210:1 -1
+     (nil))
+
+;; Function z_impl_device_get_binding (z_impl_device_get_binding, funcdef_no=351, decl_uid=1748, cgraph_uid=352, symbol_order=351)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+Edge 3->10 redirected to 15
+Edge 5->10 redirected to 16
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 59.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (reg/v/f:SI 48 [ name ])
+        (reg:SI 2 a2 [ name ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":97:1 -1
+     (nil))
+(note 3 2 11 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 11 3 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":101:2 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg/v/f:SI 48 [ name ])
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":101:5 -1
+     (int_list:REG_BR_PROB 88798452 (nil))
+ -> 56)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:SI 49)
+        (zero_extend:SI (mem:QI (reg/v/f:SI 48 [ name ]) [0 *name_9(D)+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":101:21 -1
+     (nil))
+(jump_insn 15 14 18 4 (set (pc)
+        (if_then_else (eq (reg:SI 49)
+                (const_int 0 [0]))
+            (label_ref:SI 69)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":101:21 62 {*btrue}
+     (int_list:REG_BR_PROB 186616332 (nil))
+ -> 69)
+(note 18 15 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 4 18 16 5 (set (reg/v/f:SI 46 [ dev ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_device_list_start") [flags 0x40]  <var_decl 0000000005945ab0 _device_list_start>)
+        (nil)))
+(jump_insn 16 4 17 5 (set (pc)
+        (label_ref 46)) -1
+     (nil)
+ -> 46)
+(barrier 17 16 53)
+(code_label 53 17 19 6 24 (nil) [1 uses])
+(note 19 53 20 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:3 -1
+     (nil))
+(insn 21 20 22 6 (set (reg/f:SI 43 [ _2 ])
+        (mem/f:SI (reg/v/f:SI 46 [ dev ]) [0 MEM[(const char * *)dev_6]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:11 -1
+     (nil))
+(jump_insn 22 21 40 6 (set (pc)
+        (if_then_else (ne (reg/f:SI 43 [ _2 ])
+                (reg/v/f:SI 48 [ name ]))
+            (label_ref 33)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:6 -1
+     (int_list:REG_BR_PROB 1034442876 (nil))
+ -> 33)
+(code_label 40 22 23 7 23 (nil) [1 uses])
+(note 23 40 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:4 -1
+     (nil))
+(insn 25 24 26 7 (set (reg:SI 10 a10)
+        (reg/v/f:SI 46 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:11 -1
+     (nil))
+(call_insn/i 26 25 27 7 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("z_impl_device_is_ready") [flags 0x3]  <function_decl 0000000006ab6800 z_impl_device_is_ready>) [0 z_impl_device_is_ready S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:11 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("z_impl_device_is_ready") [flags 0x3]  <function_decl 0000000006ab6800 z_impl_device_is_ready>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 27 26 28 7 (set (reg:SI 50)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:11 -1
+     (nil))
+(insn 28 27 29 7 (set (reg:SI 45 [ _5 ])
+        (reg:SI 50)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:11 -1
+     (nil))
+(jump_insn 29 28 30 7 (set (pc)
+        (if_then_else (eq (reg:SI 45 [ _5 ])
+                (const_int 0 [0]))
+            (label_ref:SI 73)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:45 62 {*btrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 73)
+(note 30 29 5 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 5 30 31 8 (set (reg/v/f:SI 48 [ name ])
+        (reg/v/f:SI 46 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":108:45 -1
+     (nil))
+(jump_insn 31 5 32 8 (set (pc)
+        (label_ref 56)) -1
+     (nil)
+ -> 56)
+(barrier 32 31 33)
+(code_label 33 32 34 9 22 (nil) [1 uses])
+(note 34 33 35 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 9 (set (reg:SI 11 a11)
+        (reg/f:SI 43 [ _2 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:31 -1
+     (nil))
+(insn 36 35 37 9 (set (reg:SI 10 a10)
+        (reg/v/f:SI 48 [ name ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:31 -1
+     (nil))
+(call_insn/i 37 36 38 9 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("strcmp") [flags 0x41]  <function_decl 0000000005877d00 strcmp>) [0 __builtin_strcmp S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:31 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("strcmp") [flags 0x41]  <function_decl 0000000005877d00 strcmp>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(insn 38 37 39 9 (set (reg:SI 51)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:31 -1
+     (nil))
+(insn 39 38 41 9 (set (reg:SI 44 [ _4 ])
+        (reg:SI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:31 -1
+     (nil))
+(jump_insn 41 39 42 9 (set (pc)
+        (if_then_else (eq (reg:SI 44 [ _4 ])
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":107:27 -1
+     (int_list:REG_BR_PROB 39298956 (nil))
+ -> 40)
+(note 42 41 43 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 10 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(insn 44 43 45 10 (set (reg/v/f:SI 46 [ dev ])
+        (plus:SI (reg/v/f:SI 46 [ dev ])
+            (const_int 32 [0x20]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(debug_insn 45 44 46 10 (var_location:SI dev (reg/v/f:SI 46 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(code_label 46 45 47 11 21 (nil) [1 uses])
+(note 47 46 48 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 11 (var_location:SI dev (reg/v/f:SI 46 [ dev ])) -1
+     (nil))
+(debug_insn 49 48 50 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(debug_insn 50 49 51 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(debug_insn 51 50 52 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(debug_insn 52 51 54 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (nil))
+(insn 54 52 55 11 (set (reg/f:SI 52)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_device_list_end") [flags 0x40]  <var_decl 0000000005945ea0 _device_list_end>)
+        (nil)))
+(jump_insn 55 54 65 11 (set (pc)
+        (if_then_else (ltu (reg/v/f:SI 46 [ dev ])
+                (reg/f:SI 52))
+            (label_ref 53)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":106:2 -1
+     (int_list:REG_BR_PROB 1034442876 (nil))
+ -> 53)
+(note 65 55 8 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 8 65 66 12 (set (reg/v/f:SI 48 [ name ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":102:10 -1
+     (nil))
+(jump_insn 66 8 67 12 (set (pc)
+        (label_ref 56)) -1
+     (nil)
+ -> 56)
+(barrier 67 66 69)
+(code_label 69 67 68 13 25 (nil) [1 uses])
+(note 68 69 6 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 6 68 70 13 (set (reg/v/f:SI 48 [ name ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":102:10 -1
+     (nil))
+(jump_insn 70 6 71 13 (set (pc)
+        (label_ref 56)) -1
+     (nil)
+ -> 56)
+(barrier 71 70 73)
+(code_label 73 71 72 14 26 (nil) [1 uses])
+(note 72 73 7 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 7 72 56 14 (set (reg/v/f:SI 48 [ name ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":102:10 -1
+     (nil))
+(code_label 56 7 57 15 20 (nil) [4 uses])
+(note 57 56 58 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 62 15 (set (reg/f:SI 47 [ <retval> ])
+        (reg/v/f:SI 48 [ name ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":113:1 -1
+     (nil))
+(insn 62 58 63 15 (set (reg/i:SI 2 a2)
+        (reg/f:SI 47 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":113:1 -1
+     (nil))
+(insn 63 62 0 15 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":113:1 -1
+     (nil))
+
+;; Function z_impl_device_deinit (z_impl_device_deinit, funcdef_no=354, decl_uid=1769, cgraph_uid=355, symbol_order=354)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 2->6 redirected to 9
+Edge 3->6 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->9 redirected to 10
+Redirecting jump 48 from 9 to 10.
+Redirecting jump 52 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 42.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 47 [ dev ])
+        (reg:SI 2 a2 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":213:1 -1
+     (nil))
+(note 3 2 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 3 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":215:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 48)
+        (mem/f:SI (plus:SI (reg/v/f:SI 47 [ dev ])
+                (const_int 12 [0xc])) [5 dev_8(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:17 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:QI 50)
+        (mem:QI (plus:SI (reg/f:SI 48)
+                (const_int 1 [0x1])) [1 *_1+1 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:17 -1
+     (nil))
+(insn 13 12 14 2 (set (subreg:SI (reg:QI 51) 0)
+        (zero_extract:SI (subreg:SI (reg:QI 50) 0)
+            (const_int 1 [0x1])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:17 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 52)
+        (zero_extend:SI (reg:QI 51))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:5 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (eq (reg:SI 52)
+                (const_int 0 [0]))
+            (label_ref:SI 51)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":217:5 62 {*btrue}
+     (int_list:REG_BR_PROB 11166916 (nil))
+ -> 51)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":221:2 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:SI 44 [ _3 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 47 [ dev ])
+                (const_int 24 [0x18])) [7 dev_8(D)->ops.deinit+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":221:14 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg/f:SI 44 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref:SI 55)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":221:5 62 {*btrue}
+     (int_list:REG_BR_PROB 4831844 (nil))
+ -> 55)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":225:2 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 10 a10)
+        (reg/v/f:SI 47 [ dev ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":225:8 -1
+     (nil))
+(call_insn 23 22 24 5 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 44 [ _3 ]) [0 *_3 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":225:8 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 24 23 25 5 (set (reg/v:SI 46 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":225:8 -1
+     (nil))
+(debug_insn 25 24 26 5 (var_location:SI ret (reg/v:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":225:8 -1
+     (nil))
+(debug_insn 26 25 29 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":226:2 -1
+     (nil))
+(jump_insn 29 26 30 5 (set (pc)
+        (if_then_else (lt (reg/v:SI 46 [ <retval> ])
+                (const_int 0 [0]))
+            (label_ref:SI 44)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":226:5 62 {*btrue}
+     (int_list:REG_BR_PROB 283038348 (nil))
+ -> 44)
+(note 30 29 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:2 -1
+     (nil))
+(insn 32 31 34 6 (set (reg/f:SI 45 [ _4 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 47 [ dev ])
+                (const_int 12 [0xc])) [5 dev_8(D)->state+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:5 -1
+     (nil))
+(insn 34 32 35 6 (set (reg:QI 54)
+        (mem/j:QI (plus:SI (reg/f:SI 45 [ _4 ])
+                (const_int 1 [0x1])) [1 _4->initialized+0 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:26 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:QI 55)
+        (const_int -2 [0xfffffffffffffffe])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:26 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 56)
+        (and:SI (subreg:SI (reg:QI 54) 0)
+            (subreg:SI (reg:QI 55) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:26 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:QI 57)
+        (subreg:QI (reg:SI 56) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:26 -1
+     (nil))
+(insn 38 37 39 6 (set (mem/j:QI (plus:SI (reg/f:SI 45 [ _4 ])
+                (const_int 1 [0x1])) [1 _4->initialized+0 S1 A8])
+        (reg:QI 57)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":230:26 -1
+     (nil))
+(debug_insn 39 38 6 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":232:2 -1
+     (nil))
+(insn 6 39 48 6 (set (reg/v:SI 46 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":232:9 -1
+     (nil))
+(jump_insn 48 6 49 6 (set (pc)
+        (label_ref:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":232:9 84 {jump}
+     (nil)
+ -> 44)
+(barrier 49 48 51)
+(code_label 51 49 50 7 35 (nil) [1 uses])
+(note 50 51 4 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 4 50 52 7 (set (reg/v:SI 46 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":218:10 -1
+     (nil))
+(jump_insn 52 4 53 7 (set (pc)
+        (label_ref:SI 44)) 84 {jump}
+     (nil)
+ -> 44)
+(barrier 53 52 55)
+(code_label 55 53 54 8 36 (nil) [1 uses])
+(note 54 55 5 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 5 54 44 8 (set (reg/v:SI 46 [ <retval> ])
+        (const_int -134 [0xffffffffffffff7a])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":222:10 -1
+     (nil))
+(code_label 44 5 47 10 33 (nil) [3 uses])
+(note 47 44 45 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 45 47 46 10 (set (reg/i:SI 2 a2)
+        (reg/v:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":237:1 -1
+     (nil))
+(insn 46 45 0 10 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/device.c":237:1 -1
+     (nil))

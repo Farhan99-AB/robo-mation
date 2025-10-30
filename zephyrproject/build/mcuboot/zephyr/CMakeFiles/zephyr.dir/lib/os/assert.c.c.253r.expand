@@ -1,0 +1,168 @@
+
+;; Function assert_post_action (assert_post_action, funcdef_no=340, decl_uid=5892, cgraph_uid=341, symbol_order=340)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 42 [ file ])
+        (reg:SI 2 a2 [ file ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":28:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 43 [ line ])
+        (reg:SI 3 a3 [ line ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":28:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":30:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":31:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":43:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":43:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 10 a10)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":43:2 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:SI (symbol_ref:SI ("xtensa_arch_except") [flags 0x41]  <function_decl 0000000006d08900 xtensa_arch_except>) [0 xtensa_arch_except S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":43:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_arch_except") [flags 0x41]  <function_decl 0000000006d08900 xtensa_arch_except>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":43:2 -1
+     (nil))
+(barrier 14 13 0)
+
+;; Function assert_print (assert_print, funcdef_no=341, decl_uid=1222, cgraph_uid=342, symbol_order=341)
+
+Partition 0: size 12 align 4
+	ap
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 13 4 14 2 (set (reg:SI 44)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 14 13 9 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 9 14 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [0  S4 A32])
+        (reg:SI 3 a3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 24 [0x18])) [0  S4 A32])
+        (reg:SI 4 a4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 28 [0x1c])) [0  S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 12 11 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 32 [0x20])) [0  S4 A32])
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 15 12 2 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 36 [0x24])) [0  S4 A32])
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 2 15 3 2 (set (reg/v/f:SI 42 [ fmt ])
+        (reg:SI 2 a2 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":58:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":59:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 8 7 16 2 (set (reg:SI 43)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 16 8 17 2 (set (reg:SI 45)
+        (plus:SI (reg/f:SI 37 virtual-stack-vars)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [2 MEM[(struct  *)&ap].__va_reg+0 S4 A32])
+        (reg:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 46)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int -32 [0xffffffffffffffe0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:SI (reg/f:SI 37 virtual-stack-vars) [2 MEM[(struct  *)&ap].__va_stk+0 S4 A128])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 47)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [3 MEM[(struct  *)&ap].__va_ndx+0 S4 A64])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":61:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 11 a11)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [1 ap+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [1 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [1 ap+8 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 42 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (nil))
+(call_insn 27 26 28 2 (call (mem:SI (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 00000000059f3100 vprintk>) [0 vprintk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":63:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 00000000059f3100 vprintk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list (use (reg:SI 13 a13))
+            (expr_list (use (reg:SI 12 a12))
+                (expr_list (use (reg:SI 11 a11))
+                    (nil))))))
+(debug_insn 28 27 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/os/assert.c":65:2 -1
+     (nil))

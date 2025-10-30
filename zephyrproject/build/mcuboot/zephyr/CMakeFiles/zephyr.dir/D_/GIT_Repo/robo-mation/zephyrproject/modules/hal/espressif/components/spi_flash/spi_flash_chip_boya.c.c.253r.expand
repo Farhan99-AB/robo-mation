@@ -1,0 +1,182 @@
+
+;; Function spi_flash_chip_boya_probe (spi_flash_chip_boya_probe, funcdef_no=2, decl_uid=2224, cgraph_uid=3, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Edge 2->5 redirected to 8
+Edge 3->5 redirected to 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 37 from 8 to 9.
+Redirecting jump 41 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 31.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 45 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":21:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 46 [ flash_id ])
+        (reg:SI 3 a3 [ flash_id ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":21:1 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":23:5 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:QI MFG_ID (const_int 104 [0x68])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":23:19 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":24:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 47)
+        (lshiftrt:SI (reg/v:SI 46 [ flash_id ])
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":24:18 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 48)
+        (const_int 104 [0x68])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":24:8 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:SI 47)
+                (reg:SI 48))
+            (label_ref:SI 40)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":24:8 62 {*btrue}
+     (int_list:REG_BR_PROB 375809644 (nil))
+ -> 40)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":28:5 -1
+     (nil))
+(debug_insn 18 17 19 4 (var_location:HI FLASH_ID_MASK (const_int -256 [0xffffffffffffff00])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":28:20 -1
+     (nil))
+(debug_insn 19 18 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":29:5 -1
+     (nil))
+(debug_insn 20 19 21 4 (var_location:HI FLASH_ID_VALUE (const_int 16384 [0x4000])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":29:20 -1
+     (nil))
+(debug_insn 21 20 22 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:5 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 50)
+        (const_int 255 [0xff])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:19 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 50)
+        (ashift:SI (reg:SI 50)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:19 -1
+     (expr_list:REG_EQUAL (const_int 65280 [0xff00])
+        (nil)))
+(insn 24 23 25 4 (set (reg:SI 49)
+        (and:SI (reg/v:SI 46 [ flash_id ])
+            (reg:SI 50))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:19 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 51)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:8 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 51)
+        (ashift:SI (reg:SI 51)
+            (const_int 14 [0xe]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:8 -1
+     (expr_list:REG_EQUAL (const_int 16384 [0x4000])
+        (nil)))
+(jump_insn 27 26 28 4 (set (pc)
+        (if_then_else (eq (reg:SI 49)
+                (reg:SI 51))
+            (label_ref:SI 44)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":30:8 62 {*btrue}
+     (int_list:REG_BR_PROB 697932188 (nil))
+ -> 44)
+(note 28 27 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 28 37 5 (set (reg:SI 44 [ <retval> ])
+        (const_int 261 [0x105])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":25:16 -1
+     (nil))
+(jump_insn 37 5 38 5 (set (pc)
+        (label_ref:SI 33)) 84 {jump}
+     (nil)
+ -> 33)
+(barrier 38 37 40)
+(code_label 40 38 39 6 3 (nil) [1 uses])
+(note 39 40 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 39 41 6 (set (reg:SI 44 [ <retval> ])
+        (const_int 261 [0x105])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":25:16 -1
+     (nil))
+(jump_insn 41 7 42 6 (set (pc)
+        (label_ref:SI 33)) 84 {jump}
+     (nil)
+ -> 33)
+(barrier 42 41 44)
+(code_label 44 42 43 7 4 (nil) [1 uses])
+(note 43 44 6 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 6 43 33 7 (set (reg:SI 44 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":34:12 -1
+     (nil))
+(code_label 33 6 36 9 1 (nil) [2 uses])
+(note 36 33 34 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 34 36 35 9 (set (reg/i:SI 2 a2)
+        (reg:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":35:1 -1
+     (nil))
+(insn 35 34 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":35:1 -1
+     (nil))
+
+;; Function spi_flash_chip_boya_get_caps (spi_flash_chip_boya_get_caps, funcdef_no=3, decl_uid=2230, cgraph_uid=4, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":38:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":39:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI caps_flags (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":39:22 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":43:5 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI caps_flags (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":43:16 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":44:5 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":44:12 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":45:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c":45:1 -1
+     (nil))

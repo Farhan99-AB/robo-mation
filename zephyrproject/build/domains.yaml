@@ -1,0 +1,10 @@
+default: chatterbox
+build_dir: D:/GIT_Repo/robo-mation/zephyrproject/build
+domains:
+  - name: chatterbox
+    build_dir: D:/GIT_Repo/robo-mation/zephyrproject/build/chatterbox
+  - name: mcuboot
+    build_dir: D:/GIT_Repo/robo-mation/zephyrproject/build/mcuboot
+flash_order:
+  - mcuboot
+  - chatterbox

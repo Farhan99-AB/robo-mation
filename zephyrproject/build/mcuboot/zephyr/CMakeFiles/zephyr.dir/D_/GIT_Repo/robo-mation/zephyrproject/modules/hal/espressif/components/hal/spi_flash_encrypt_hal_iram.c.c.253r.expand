@@ -1,0 +1,454 @@
+
+;; Function spi_flash_encryption_hal_enable (spi_flash_encryption_hal_enable, funcdef_no=9, decl_uid=1333, cgraph_uid=10, symbol_order=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":14:5 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":27:20 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (expr_list:REG_EQUAL (const_int 1072693448 [0x3ff000c8])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 42 [ _3 ])
+        (mem/v:SI (reg/f:SI 44) [1 MEM[(volatile uint32_t *)1072693448B]+0 S4 A64])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 45)
+        (const_int 257 [0x101])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 43 [ _4 ])
+        (ior:SI (reg:SI 42 [ _3 ])
+            (reg:SI 45))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (expr_list:REG_EQUAL (const_int 1072693448 [0x3ff000c8])
+        (nil)))
+(insn 13 12 0 2 (set (mem/v:SI (reg/f:SI 46) [1 MEM[(volatile uint32_t *)1072693448B]+0 S4 A64])
+        (reg:SI 43 [ _4 ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":29:5 -1
+     (nil))
+
+;; Function spi_flash_encryption_hal_disable (spi_flash_encryption_hal_disable, funcdef_no=10, decl_uid=1336, cgraph_uid=11, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":25:5 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":35:20 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (expr_list:REG_EQUAL (const_int 1072693448 [0x3ff000c8])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 42 [ _3 ])
+        (mem/v:SI (reg/f:SI 44) [1 MEM[(volatile uint32_t *)1072693448B]+0 S4 A64])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 45)
+        (const_int -258 [0xfffffffffffffefe])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 43 [ _4 ])
+        (and:SI (reg:SI 42 [ _3 ])
+            (reg:SI 45))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (expr_list:REG_EQUAL (const_int 1072693448 [0x3ff000c8])
+        (nil)))
+(insn 13 12 0 2 (set (mem/v:SI (reg/f:SI 46) [1 MEM[(volatile uint32_t *)1072693448B]+0 S4 A64])
+        (reg:SI 43 [ _4 ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":37:5 -1
+     (nil))
+
+;; Function spi_flash_encryption_hal_prepare (spi_flash_encryption_hal_prepare, funcdef_no=11, decl_uid=1341, cgraph_uid=12, symbol_order=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v:SI 47 [ address ])
+        (reg:SI 2 a2 [ address ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":29:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 48 [ buffer ])
+        (reg:SI 3 a3 [ buffer ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":29:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 49 [ size ])
+        (reg:SI 4 a4 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":29:1 -1
+     (nil))
+(note 5 4 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 5 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":33:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI flash_addr (reg/v:SI 47 [ address ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":33:5 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":47:20 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 50)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (expr_list:REG_EQUAL (const_int 1073066020 [0x3ff5b024])
+        (nil)))
+(insn 16 15 17 2 (set (mem/v:SI (reg/f:SI 50) [1 MEM[(volatile uint32_t *)1073066020B]+0 S4 A32])
+        (reg/v:SI 47 [ address ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI flash_addr (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":33:5 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI D#1 (reg/v:SI 47 [ address ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI D#2 (entry_value:SI (reg:SI 4 a4 [ size ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI buffer (reg/v/f:SI 48 [ buffer ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":76:20 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:SI D#4 (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SI address (debug_expr:SI D#4)) -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI D#3 (debug_expr:SI D#2)) -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI size (debug_expr:SI D#3)) -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 29 28 6 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:23 -1
+     (nil))
+(insn 6 29 46 2 (set (reg:SI 42 [ ivtmp$31 ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":49:5 -1
+     (expr_list:REG_EQUAL (const_int 1073065984 [0x3ff5b000])
+        (nil)))
+(code_label 46 6 30 4 4 (nil) [1 uses])
+(note 30 46 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 4 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 32 31 33 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(debug_insn 33 32 34 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(debug_insn 34 33 35 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(insn 35 34 36 4 (set (reg/f:SI 43 [ _14 ])
+        (reg:SI 42 [ ivtmp$31 ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:SI 52)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (expr_list:REG_EQUAL (const_int -1073065984 [0xffffffffc00a5000])
+        (nil)))
+(insn 37 36 38 4 (set (reg:SI 51)
+        (plus:SI (reg:SI 42 [ ivtmp$31 ])
+            (reg:SI 52))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:SI 53)
+        (plus:SI (reg/v/f:SI 48 [ buffer ])
+            (reg:SI 51))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:SI 44 [ _15 ])
+        (mem:SI (reg:SI 53) [0 MEM[(const uint32_t *)_24]+0 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(insn 40 39 41 4 (set (mem/v:SI (reg/f:SI 43 [ _14 ]) [1 *_14+0 S4 A32])
+        (reg:SI 44 [ _15 ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(debug_insn 41 40 42 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":79:9 -1
+     (nil))
+(debug_insn 42 41 43 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:29 -1
+     (nil))
+(debug_insn 43 42 44 4 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 44 43 45 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:23 -1
+     (nil))
+(insn 45 44 47 4 (set (reg:SI 42 [ ivtmp$31 ])
+        (plus:SI (reg:SI 42 [ ivtmp$31 ])
+            (const_int 4 [0x4]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:23 -1
+     (nil))
+(insn 47 45 48 4 (set (reg:SI 54)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC5") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:23 -1
+     (expr_list:REG_EQUAL (const_int 1073066016 [0x3ff5b020])
+        (nil)))
+(jump_insn 48 47 49 4 (set (pc)
+        (if_then_else (ne (reg:SI 42 [ ivtmp$31 ])
+                (reg:SI 54))
+            (label_ref 46)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":78:23 -1
+     (int_list:REG_BR_PROB 954449108 (nil))
+ -> 46)
+(note 49 48 50 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 50 49 51 5 (var_location:SI buffer (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 51 50 52 5 (var_location:SI i (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 52 51 53 5 (var_location:SI address (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 53 52 54 5 (var_location:SI size (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":34:5 -1
+     (nil))
+(debug_insn 54 53 55 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":35:5 -1
+     (nil))
+(debug_insn 55 54 56 5 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":64:20 -1
+     (nil))
+(debug_insn 56 55 57 5 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+(debug_insn 57 56 58 5 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+(debug_insn 58 57 59 5 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+(insn 59 58 60 5 (set (reg/f:SI 55)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC5") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (expr_list:REG_EQUAL (const_int 1073066016 [0x3ff5b020])
+        (nil)))
+(insn 60 59 61 5 (set (reg:SI 56)
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+(insn 61 60 62 5 (set (mem/v:SI (reg/f:SI 55) [1 MEM[(volatile uint32_t *)1073066016B]+0 S4 A128])
+        (reg:SI 56)) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+(debug_insn 62 61 0 5 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":66:5 -1
+     (nil))
+
+;; Function spi_flash_encryption_hal_done (spi_flash_encryption_hal_done, funcdef_no=12, decl_uid=1344, cgraph_uid=13, symbol_order=12)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 4->5 to 6 failed.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":40:5 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":55:20 -1
+     (nil))
+(debug_insn 7 6 13 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:5 -1
+     (nil))
+(code_label 13 7 8 4 7 (nil) [1 uses])
+(note 8 13 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 9 8 10 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":58:5 -1
+     (nil))
+(debug_insn 10 9 11 4 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:11 -1
+     (nil))
+(insn 11 10 12 4 (set (reg/f:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:13 -1
+     (expr_list:REG_EQUAL (const_int 1073066024 [0x3ff5b028])
+        (nil)))
+(insn 12 11 14 4 (set (reg:SI 42 [ _3 ])
+        (mem/v:SI (reg/f:SI 44) [1 MEM[(volatile uint32_t *)1073066024B]+0 S4 A64])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:13 -1
+     (nil))
+(insn 14 12 15 4 (set (reg:SI 45)
+        (and:SI (reg:SI 42 [ _3 ])
+            (const_int 1 [0x1]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:49 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (eq (reg:SI 45)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":57:11 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 13)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 0 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":41:5 -1
+     (nil))
+
+;; Function spi_flash_encryption_hal_destroy (spi_flash_encryption_hal_destroy, funcdef_no=13, decl_uid=1347, cgraph_uid=14, symbol_order=13)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":46:5 -1
+     (nil))
+
+;; Function spi_flash_encryption_hal_check (spi_flash_encryption_hal_check, funcdef_no=14, decl_uid=1351, cgraph_uid=15, symbol_order=14)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 21.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 44 [ address ])
+        (reg:SI 2 a2 [ address ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":50:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 45 [ length ])
+        (reg:SI 3 a3 [ length ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":50:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI address (reg/v:SI 44 [ address ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:5 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI length (entry_value:SI (reg:SI 3 a3 [ length ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":105:20 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:5 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI address (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:12 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI length (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:12 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 47)
+        (and:SI (reg/v:SI 44 [ address ])
+            (const_int 15 [0xf]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:22 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 49)
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:41 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 50)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:41 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 48)
+        (if_then_else:SI (eq (reg:SI 47)
+                (const_int 0 [0]))
+            (reg:SI 49)
+            (reg:SI 50))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:41 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:QI 46)
+        (subreg:QI (reg:SI 48) 0)) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\spi_flash_encrypted_ll.h":107:41 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 51)
+        (zero_extend:SI (reg:QI 46))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:12 -1
+     (nil))
+(insn 20 19 24 2 (set (reg:SI 43 [ <retval> ])
+        (reg:SI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":51:12 -1
+     (nil))
+(insn 24 20 25 2 (set (reg/i:SI 2 a2)
+        (reg:SI 43 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":52:1 -1
+     (nil))
+(insn 25 24 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c":52:1 -1
+     (nil))

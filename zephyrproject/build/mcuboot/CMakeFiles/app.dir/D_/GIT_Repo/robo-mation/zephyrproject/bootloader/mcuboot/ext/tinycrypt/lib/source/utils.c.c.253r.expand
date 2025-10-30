@@ -1,0 +1,416 @@
+
+;; Function _copy (_copy, funcdef_no=0, decl_uid=1276, cgraph_uid=1, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+Edge 2->4 redirected to 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 26.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 43 [ to ])
+        (reg:SI 2 a2 [ to ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":42:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 44 [ to_len ])
+        (reg:SI 3 a3 [ to_len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":42:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 45 [ from ])
+        (reg:SI 4 a4 [ from ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":42:1 -1
+     (nil))
+(insn 5 4 6 2 (set (reg/v:SI 46 [ from_len ])
+        (reg:SI 5 a5 [ from_len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":42:1 -1
+     (nil))
+(note 6 5 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 6 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":43:2 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ltu (reg/v:SI 44 [ to_len ])
+                (reg/v:SI 46 [ from_len ]))
+            (label_ref:SI 35)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":43:5 64 {*ubtrue}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 35)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:3 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:SI 47)
+        (reg/v/f:SI 43 [ to ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 48)
+        (reg/v/f:SI 45 [ from ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 49)
+        (reg/v:SI 46 [ from_len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 12 a12)
+        (reg:SI 49)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 11 a11)
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 10 a10)
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(call_insn 20 19 21 4 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memcpy") [flags 0x41]  <function_decl 00000000065fcd00 __builtin_memcpy>) [0 __builtin_memcpy S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memcpy") [flags 0x41]  <function_decl 00000000065fcd00 __builtin_memcpy>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+(insn 21 20 22 4 (set (reg:SI 50)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":44:9 -1
+     (nil))
+(debug_insn 22 21 32 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":45:3 -1
+     (nil))
+(jump_insn 32 22 33 4 (set (pc)
+        (label_ref 23)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":45:10 -1
+     (nil)
+ -> 23)
+(barrier 33 32 35)
+(code_label 35 33 34 5 3 (nil) [1 uses])
+(note 34 35 7 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 7 34 23 5 (set (reg/v:SI 46 [ from_len ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":47:10 -1
+     (nil))
+(code_label 23 7 24 6 2 (nil) [1 uses])
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 29 6 (set (reg:SI 42 [ <retval> ])
+        (reg/v:SI 46 [ from_len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":49:1 -1
+     (nil))
+(insn 29 25 30 6 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":49:1 -1
+     (nil))
+(insn 30 29 0 6 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":49:1 -1
+     (nil))
+
+;; Function _set (_set, funcdef_no=1, decl_uid=1280, cgraph_uid=2, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 43 [ to ])
+        (reg:SI 2 a2 [ to ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":52:1 -1
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 45)
+        (reg:SI 3 a3 [ val ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":52:1 -1
+     (nil))
+(insn 5 3 4 2 (set (reg/v:SI 46 [ len ])
+        (reg:SI 4 a4 [ len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":52:1 -1
+     (nil))
+(insn 4 5 6 2 (set (reg/v:SI 44 [ val ])
+        (zero_extend:SI (subreg:QI (reg:SI 45) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":52:1 -1
+     (nil))
+(note 6 4 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 6 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":53:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 12 a12)
+        (reg/v:SI 46 [ len ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":53:8 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 11 a11)
+        (reg/v:SI 44 [ val ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":53:8 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 43 [ to ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":53:8 -1
+     (nil))
+(call_insn 13 12 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 00000000065fe300 memset>) [0 __builtin_memset S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":53:8 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 00000000065fe300 memset>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+
+;; Function _double_byte (_double_byte, funcdef_no=2, decl_uid=1282, cgraph_uid=3, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 25.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 49)
+        (reg:SI 2 a2 [ a ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":60:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 48 [ a ])
+        (zero_extend:SI (subreg:QI (reg:SI 49) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":60:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 51)
+        (lshiftrt:SI (reg/v:SI 48 [ a ])
+            (const_int 7 [0x7]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:QI 52)
+        (subreg:QI (reg:SI 51) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:QI 53)
+        (reg:QI 52)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 54)
+        (ashift:SI (subreg:SI (reg:QI 53) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:QI 55)
+        (subreg:QI (reg:SI 54) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 56)
+        (plus:SI (subreg:SI (reg:QI 55) 0)
+            (subreg:SI (reg:QI 52) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:QI 57)
+        (subreg:QI (reg:SI 56) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 58)
+        (ashift:SI (subreg:SI (reg:QI 57) 0)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:QI 59)
+        (subreg:QI (reg:SI 56) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:QI 60)
+        (subreg:QI (reg:SI 58) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 61)
+        (plus:SI (subreg:SI (reg:QI 59) 0)
+            (subreg:SI (reg:QI 60) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 62)
+        (ashift:SI (reg/v:SI 48 [ a ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:12 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:QI 63)
+        (subreg:QI (reg:SI 61) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:QI 64)
+        (subreg:QI (reg:SI 62) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 65)
+        (xor:SI (subreg:SI (reg:QI 63) 0)
+            (subreg:SI (reg:QI 64) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 66)
+        (zero_extend:SI (subreg:QI (reg:SI 65) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 24 23 28 2 (set (reg:SI 47 [ <retval> ])
+        (reg:SI 66)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":61:17 -1
+     (nil))
+(insn 28 24 29 2 (set (reg/i:SI 2 a2)
+        (reg:SI 47 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":62:1 -1
+     (nil))
+(insn 29 28 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":62:1 -1
+     (nil))
+
+;; Function _compare (_compare, funcdef_no=3, decl_uid=1286, cgraph_uid=4, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 46.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 50 [ a ])
+        (reg:SI 2 a2 [ a ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":65:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 51 [ b ])
+        (reg:SI 3 a3 [ b ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":65:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 52 [ size ])
+        (reg:SI 4 a4 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":65:1 -1
+     (nil))
+(note 5 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 5 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":66:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI tempa (reg/v/f:SI 50 [ a ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":66:17 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":67:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI tempb (reg/v/f:SI 51 [ b ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":67:17 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":68:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:QI result (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":68:10 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:7 -1
+     (nil))
+(debug_insn 18 17 6 2 (var_location:SI i (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:20 -1
+     (nil))
+(insn 6 18 7 2 (set (reg/v:SI 46 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:20 -1
+     (nil))
+(insn 7 6 19 2 (set (reg/v:SI 45 [ result ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":68:10 -1
+     (nil))
+(jump_insn 19 7 20 2 (set (pc)
+        (label_ref 35)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:2 -1
+     (nil)
+ -> 35)
+(barrier 20 19 40)
+(code_label 40 20 21 4 8 (nil) [1 uses])
+(note 21 40 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 22 21 23 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:3 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 53)
+        (plus:SI (reg/v/f:SI 50 [ a ])
+            (reg/v:SI 46 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:18 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 54)
+        (plus:SI (reg/v/f:SI 51 [ b ])
+            (reg/v:SI 46 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:29 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:QI 55)
+        (mem:QI (reg:SI 53) [0 MEM[(const uint8_t *)_16]+0 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:QI 56)
+        (mem:QI (reg:SI 54) [0 MEM[(const uint8_t *)_17]+0 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 57)
+        (xor:SI (subreg:SI (reg:QI 55) 0)
+            (subreg:SI (reg:QI 56) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:QI 58)
+        (subreg:QI (reg:SI 57) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 59)
+        (ior:SI (reg/v:SI 45 [ result ])
+            (subreg:SI (reg:QI 58) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(insn 30 29 31 4 (set (reg/v:SI 45 [ result ])
+        (zero_extend:SI (subreg:QI (reg:SI 59) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(debug_insn 31 30 32 4 (var_location:QI result (subreg:QI (reg/v:SI 45 [ result ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":71:10 -1
+     (nil))
+(debug_insn 32 31 33 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:38 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/v:SI 46 [ i ])
+        (plus:SI (reg/v:SI 46 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:38 -1
+     (nil))
+(debug_insn 34 33 35 4 (var_location:SI i (reg/v:SI 46 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:38 -1
+     (nil))
+(code_label 35 34 36 5 7 (nil) [1 uses])
+(note 36 35 37 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 5 (var_location:SI i (reg/v:SI 46 [ i ])) -1
+     (nil))
+(debug_insn 38 37 39 5 (var_location:QI result (subreg:QI (reg/v:SI 45 [ result ]) 0)) -1
+     (nil))
+(debug_insn 39 38 41 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:29 -1
+     (nil))
+(jump_insn 41 39 42 5 (set (pc)
+        (if_then_else (ne (reg/v:SI 46 [ i ])
+                (reg/v:SI 52 [ size ]))
+            (label_ref 40)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":70:29 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 40)
+(note 42 41 43 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":73:2 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:SI 60)
+        (reg/v:SI 45 [ result ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":73:9 -1
+     (nil))
+(insn 45 44 49 6 (set (reg:SI 49 [ <retval> ])
+        (reg:SI 60)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":73:9 -1
+     (nil))
+(insn 49 45 50 6 (set (reg/i:SI 2 a2)
+        (reg:SI 49 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":74:1 -1
+     (nil))
+(insn 50 49 0 6 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/ext/tinycrypt/lib/source/utils.c":74:1 -1
+     (nil))

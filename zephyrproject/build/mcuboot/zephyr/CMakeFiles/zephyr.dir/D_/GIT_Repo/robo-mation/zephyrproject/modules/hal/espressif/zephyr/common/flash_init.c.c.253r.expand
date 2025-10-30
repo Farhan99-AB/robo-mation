@@ -1,0 +1,236 @@
+
+;; Function flash_is_octal_mode_enabled (flash_is_octal_mode_enabled, funcdef_no=409, decl_uid=1272, cgraph_uid=410, symbol_order=410)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":29:2 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":29:9 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":31:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":31:1 -1
+     (nil))
+
+;; Function spi_flash_init_chip_state (spi_flash_init_chip_state, funcdef_no=410, decl_uid=1270, cgraph_uid=411, symbol_order=411)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":44:2 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":44:9 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":46:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":46:1 -1
+     (nil))
+
+;; Function esp_flash_config (esp_flash_config, funcdef_no=411, decl_uid=1274, cgraph_uid=412, symbol_order=412)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":50:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":52:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":54:2 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_flash_app_init") [flags 0x41]  <function_decl 00000000068f8d00 esp_flash_app_init>) [0 esp_flash_app_init S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":54:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_flash_app_init") [flags 0x41]  <function_decl 00000000068f8d00 esp_flash_app_init>)
+        (nil))
+    (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":56:2 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_flash_init_default_chip") [flags 0x41]  <function_decl 00000000068f8c00 esp_flash_init_default_chip>) [0 esp_flash_init_default_chip S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":56:8 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_flash_init_default_chip") [flags 0x41]  <function_decl 00000000068f8c00 esp_flash_init_default_chip>)
+        (nil))
+    (nil))
+(insn 11 10 12 2 (set (reg/v:SI 44 [ ret ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":56:8 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI ret (reg/v:SI 44 [ ret ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":56:8 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":57:2 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg/v:SI 44 [ ret ])
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":57:5 -1
+     (int_list:REG_BR_PROB 1073312332 (nil))
+ -> 38)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:SI 45)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("esp_log_default_level") [flags 0x40]  <var_decl 000000000718bb40 esp_log_default_level>)
+        (nil)))
+(insn 19 18 20 4 (set (reg:SI 46)
+        (mem/c:SI (reg/f:SI 45) [1 esp_log_default_level+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (if_then_else (eq (reg:SI 46)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (int_list:REG_BR_PROB 7 (nil))
+ -> 32)
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 22 21 23 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(call_insn 23 22 24 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 00000000072fcc00 esp_log_timestamp>) [0 esp_log_timestamp S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 00000000072fcc00 esp_log_timestamp>)
+        (nil))
+    (nil))
+(insn 24 23 25 5 (set (reg:SI 43 [ _2 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 47)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 0000000007326870 *.LC1>)
+        (nil)))
+(insn 26 25 27 5 (set (reg:SI 48)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC3") [flags 0x2]  <var_decl 0000000007326900 *.LC3>)
+        (nil)))
+(insn 27 26 28 5 (set (reg:SI 13 a13)
+        (reg/v:SI 44 [ ret ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 12 a12)
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 11 a11)
+        (reg:SI 43 [ _2 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 10 a10)
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 00000000072fc100 esp_rom_printf>) [0 esp_rom_printf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 00000000072fc100 esp_rom_printf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(code_label 32 31 33 6 5 (nil) [1 uses])
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 34 33 35 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":58:3 -1
+     (nil))
+(debug_insn 35 34 36 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":59:3 -1
+     (nil))
+(call_insn 36 35 37 6 (call (mem:SI (symbol_ref:SI ("abort") [flags 0x41]  <function_decl 0000000005906900 abort>) [0 __builtin_abort S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":59:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("abort") [flags 0x41]  <function_decl 0000000005906900 abort>)
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 37 36 38)
+(code_label 38 37 39 7 4 (nil) [1 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":62:2 -1
+     (nil))
+(call_insn 41 40 42 7 (call (mem:SI (symbol_ref:SI ("esp_mspi_pin_init") [flags 0x41]  <function_decl 00000000068af500 esp_mspi_pin_init>) [0 esp_mspi_pin_init S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":62:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_mspi_pin_init") [flags 0x41]  <function_decl 00000000068af500 esp_mspi_pin_init>)
+        (nil))
+    (nil))
+(debug_insn 42 41 43 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":68:2 -1
+     (nil))
+(call_insn 43 42 0 7 (call (mem:SI (symbol_ref:SI ("esp_mmu_map_init") [flags 0x41]  <function_decl 00000000068fca00 esp_mmu_map_init>) [0 esp_mmu_map_init S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c":68:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_mmu_map_init") [flags 0x41]  <function_decl 00000000068fca00 esp_mmu_map_init>)
+        (nil))
+    (nil))

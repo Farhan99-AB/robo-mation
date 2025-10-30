@@ -1,0 +1,25 @@
+cmake:
+  board:
+    name: 'esp32_devkitc'
+    path:
+     - 'D:/GIT_Repo/robo-mation/zephyrproject/zephyr/boards/espressif/esp32_devkitc'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  images:
+   - name: 'chatterbox'
+     source-dir: 'D:/GIT_Repo/robo-mation/zephyrproject/apps/chatterbox'
+     type: 'MAIN'
+   - name: 'mcuboot'
+     source-dir: 'D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/boot/zephyr'
+     type: 'BOOTLOADER'
+  kconfig:
+    files:
+     - 'D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/empty.conf'
+     - 'D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/empty.conf'
+    user-files:
+     - 'D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/empty.conf'
+version: '0.1.0'
+west:
+  command: 'D:\GIT_Repo\robo-mation\zephyrproject\.venv\Scripts\west build -p always -b esp32_devkitc/esp32/procpu --sysbuild apps/chatterbox'
+  topdir: 'D:\GIT_Repo\robo-mation\zephyrproject'
+  version: '1.5.0'

@@ -1,0 +1,1462 @@
+
+;; Function k_heap_array_get (k_heap_array_get, funcdef_no=447, decl_uid=4940, cgraph_uid=448, symbol_order=447)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 30.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 47 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":16:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":17:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 48)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f:SI (reg/v/f:SI 47 [ heap ]) [9 *heap_7(D)+0 S4 A32])
+        (reg:SI 48)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":20:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI num (udiv:SI (minus:SI (symbol_ref:SI ("_k_heap_list_end") [flags 0x40]  <var_decl 0000000006f4f900 _k_heap_list_end>)
+            (symbol_ref:SI ("_k_heap_list_start") [flags 0x40]  <var_decl 0000000006f4f6c0 _k_heap_list_start>))
+        (const_int 20 [0x14]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:36 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":23:2 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 51)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_k_heap_list_end") [flags 0x40]  <var_decl 0000000006f4f900 _k_heap_list_end>)
+        (nil)))
+(insn 22 21 23 2 (set (reg:SI 52)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_k_heap_list_start") [flags 0x40]  <var_decl 0000000006f4f6c0 _k_heap_list_start>)
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 50)
+        (minus:SI (reg:SI 51)
+            (reg:SI 52))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 54)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (expr_list:REG_EQUAL (const_int -858993459 [0xffffffffcccccccd])
+        (nil)))
+(insn 25 24 26 2 (set (reg:SI 55)
+        (mult:SI (reg:SI 50)
+            (reg:SI 54))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(insn 26 25 27 2 (set (subreg:SI (reg:DI 53) 4)
+        (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 50))
+                    (zero_extend:DI (reg:SI 54)))
+                (const_int 32 [0x20])))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(insn 27 26 28 2 (set (subreg:SI (reg:DI 53) 0)
+        (reg:SI 55)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 49)
+        (lshiftrt:SI (subreg:SI (reg:DI 53) 4)
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":22:2 -1
+     (expr_list:REG_EQUAL (udiv:SI (reg:SI 50)
+            (const_int 20 [0x14]))
+        (nil)))
+(insn 29 28 33 2 (set (reg:SI 46 [ <retval> ])
+        (reg:SI 49)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":23:9 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 2 a2)
+        (reg:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":24:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":24:1 -1
+     (nil))
+
+;; Function k_heap_init (k_heap_init, funcdef_no=448, decl_uid=4916, cgraph_uid=449, symbol_order=448)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 44 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":27:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 45 [ mem ])
+        (reg:SI 3 a3 [ mem ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":27:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 46 [ bytes ])
+        (reg:SI 4 a4 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":27:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":28:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI D#3 (plus:SI (reg/v/f:SI 44 [ heap ])
+        (const_int 12 [0xc]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":28:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI w (debug_expr:SI D#3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":28:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/wait_q.h":47:20 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/wait_q.h":49:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 43 [ _8 ])
+        (plus:SI (reg/v/f:SI 44 [ heap ])
+            (const_int 12 [0xc]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/wait_q.h":49:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI list (reg/f:SI 43 [ _8 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/wait_q.h":49:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":202:20 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":204:2 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/f/j:SI (plus:SI (reg/v/f:SI 44 [ heap ])
+                (const_int 12 [0xc])) [1 MEM[(struct sys_dlist_t *)heap_2(D) + 12B].D.1660.head+0 S4 A32])
+        (reg/f:SI 43 [ _8 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":204:13 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":205:2 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/j:SI (plus:SI (reg/v/f:SI 44 [ heap ])
+                (const_int 16 [0x10])) [4 MEM[(struct sys_dlist_t *)heap_2(D) + 12B].D.1664.tail+0 S4 A32])
+        (reg/f:SI 43 [ _8 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/dlist.h":205:13 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI list (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/include/wait_q.h":49:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI w (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":28:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":29:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":30:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 12 a12)
+        (reg/v:SI 46 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":30:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 11 a11)
+        (reg/v/f:SI 45 [ mem ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":30:2 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 44 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":30:2 -1
+     (nil))
+(call_insn 27 26 28 2 (call (mem:SI (symbol_ref:SI ("sys_heap_init") [flags 0x41]  <function_decl 0000000006656000 sys_heap_init>) [0 sys_heap_init S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":30:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_heap_init") [flags 0x41]  <function_decl 0000000006656000 sys_heap_init>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(debug_insn 28 27 29 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":32:2 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":32:2 -1
+     (nil))
+(debug_insn 30 29 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":32:2 -1
+     (nil))
+
+;; Function statics_init (statics_init, funcdef_no=449, decl_uid=6624, cgraph_uid=450, symbol_order=449)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 35.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 10 9 3 2 (var_location:SI heap (symbol_ref:SI ("_k_heap_list_start") [flags 0x40]  <var_decl 0000000006f4f6c0 _k_heap_list_start>)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(insn 3 10 11 2 (set (reg/v/f:SI 44 [ heap ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_k_heap_list_start") [flags 0x40]  <var_decl 0000000006f4f6c0 _k_heap_list_start>)
+        (nil)))
+(jump_insn 11 3 12 2 (set (pc)
+        (label_ref 22)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil)
+ -> 22)
+(barrier 12 11 29)
+(code_label 29 12 13 4 5 (nil) [1 uses])
+(note 13 29 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 15 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":62:4 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 12 a12)
+        (mem:SI (plus:SI (reg/v/f:SI 44 [ heap ])
+                (const_int 8 [0x8])) [0 MEM[(unsigned int *)heap_3 + 8B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":62:4 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 11 a11)
+        (mem/f:SI (plus:SI (reg/v/f:SI 44 [ heap ])
+                (const_int 4 [0x4])) [0 MEM[(void * *)heap_3 + 4B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":62:4 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 10 a10)
+        (reg/v/f:SI 44 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":62:4 -1
+     (nil))
+(call_insn 18 17 19 4 (call (mem:SI (symbol_ref:SI ("k_heap_init") [flags 0x3]  <function_decl 0000000006e0ac00 k_heap_init>) [0 k_heap_init S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":62:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("k_heap_init") [flags 0x3]  <function_decl 0000000006e0ac00 k_heap_init>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(debug_insn 19 18 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/v/f:SI 44 [ heap ])
+        (plus:SI (reg/v/f:SI 44 [ heap ])
+            (const_int 20 [0x14]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:SI heap (reg/v/f:SI 44 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(code_label 22 21 23 5 4 (nil) [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 5 (var_location:SI heap (reg/v/f:SI 44 [ heap ])) -1
+     (nil))
+(debug_insn 25 24 26 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 26 25 27 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 27 26 28 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(debug_insn 28 27 30 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (nil))
+(insn 30 28 31 5 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_k_heap_list_end") [flags 0x40]  <var_decl 0000000006f4f900 _k_heap_list_end>)
+        (nil)))
+(jump_insn 31 30 32 5 (set (pc)
+        (if_then_else (ltu (reg/v/f:SI 44 [ heap ])
+                (reg/f:SI 46))
+            (label_ref 29)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":37:2 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 29)
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 33 32 34 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":65:2 -1
+     (nil))
+(insn 34 33 38 6 (set (reg:SI 45 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":65:9 -1
+     (nil))
+(insn 38 34 39 6 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":66:1 -1
+     (nil))
+(insn 39 38 0 6 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":66:1 -1
+     (nil))
+
+;; Function k_heap_alloc (k_heap_alloc, funcdef_no=451, decl_uid=4925, cgraph_uid=452, symbol_order=452)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 91.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 47 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":120:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 48 [ bytes ])
+        (reg:SI 3 a3 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":120:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:DI 49 [ timeout ])
+        (reg:DI 4 a4 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":120:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":121:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":121:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":121:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI heap (reg/v/f:SI 47 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI align (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI bytes (reg/v:SI 48 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:2 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/v:DI 44 [ timeout ])
+        (reg/v:DI 49 [ timeout ])) -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:SI sys_heap_allocator (symbol_ref:SI ("sys_heap_noalign_alloc") [flags 0x41]  <function_decl 0000000006656300 sys_heap_noalign_alloc>)) -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":79:14 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:2 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 10 a10)
+        (reg/v:DI 44 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>) [0 sys_timepoint_calc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>)
+        (nil))
+    (expr_list:DI (use (reg:DI 10 a10))
+        (nil)))
+(insn 21 20 22 2 (set (reg/v:DI 45 [ end ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":84:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":84:8 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:2 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SI D#2 (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI l (debug_expr:SI D#2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 33 32 35 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 35 33 34 2 (parallel [
+            (set (reg:SI 50 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 34 35 36 2 (set (reg/v:SI 42 [ key ])
+        (reg:SI 50 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 36 34 37 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI D#1 (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:SI k$key (debug_expr:SI D#1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:SI key$key (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 46 45 47 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 47 46 48 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":88:2 -1
+     (nil))
+(debug_insn 49 48 50 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":88:69 -1
+     (nil))
+(debug_insn 50 49 51 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":90:2 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:QI blocked_alloc (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":90:7 -1
+     (nil))
+(debug_insn 52 51 53 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":92:2 -1
+     (nil))
+(debug_insn 53 52 54 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":92:13 -1
+     (nil))
+(debug_insn 54 53 55 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:3 -1
+     (nil))
+(insn 55 54 56 2 (set (reg:SI 12 a12)
+        (reg/v:SI 48 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(insn 56 55 57 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 47 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(call_insn 58 57 59 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_heap_noalign_alloc") [flags 0x41]  <function_decl 0000000006656300 sys_heap_noalign_alloc>) [0 sys_heap_noalign_alloc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_heap_noalign_alloc") [flags 0x41]  <function_decl 0000000006656300 sys_heap_noalign_alloc>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(insn 59 58 60 2 (set (reg/v/f:SI 46 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(debug_insn 60 59 61 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(debug_insn 61 60 62 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":95:3 -1
+     (nil))
+(debug_insn 62 61 63 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) -1
+     (nil))
+(debug_insn 63 62 64 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 64 63 65 2 (var_location:SI l (debug_expr:SI D#2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 65 64 66 2 (var_location:SI key$key (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 66 65 67 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 67 66 68 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 68 67 69 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 69 68 70 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 70 69 71 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 71 70 72 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 72 71 73 2 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 42 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 73 72 74 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 74 73 75 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 75 74 76 2 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 76 75 77 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":116:2 -1
+     (nil))
+(insn 77 76 78 2 (clobber (reg/v:DI 45 [ end ])) -1
+     (nil))
+(debug_insn 78 77 79 2 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 79 78 80 2 (var_location:SI heap (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 80 79 81 2 (var_location:SI align (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 81 80 82 2 (var_location:SI bytes (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 82 81 83 2 (var_location:SI sys_heap_allocator (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 83 82 84 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 84 83 85 2 (var_location:SI ret (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(insn 85 84 86 2 (clobber (reg/v:DI 44 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 86 85 87 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":123:14 -1
+     (nil))
+(debug_insn 87 86 88 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":126:2 -1
+     (nil))
+(debug_insn 88 87 89 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":126:2 -1
+     (nil))
+(debug_insn 89 88 90 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":126:2 -1
+     (nil))
+(debug_insn 90 89 94 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":128:2 -1
+     (nil))
+(insn 94 90 95 2 (set (reg/i:SI 2 a2)
+        (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":129:1 -1
+     (nil))
+(insn 95 94 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":129:1 -1
+     (nil))
+
+;; Function k_heap_aligned_alloc (k_heap_aligned_alloc, funcdef_no=452, decl_uid=4921, cgraph_uid=453, symbol_order=453)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 100.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 5 10 6 2 (set (subreg:SI (reg:DI 51) 4)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 7 6 2 2 (set (subreg:SI (reg:DI 51) 0)
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 2 7 3 2 (set (reg/v/f:SI 47 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 48 [ align ])
+        (reg:SI 3 a3 [ align ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 4 3 8 2 (set (reg/v:SI 49 [ bytes ])
+        (reg:SI 4 a4 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(insn 8 4 9 2 (set (reg/v:DI 50 [ timeout ])
+        (reg:DI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":133:1 -1
+     (nil))
+(note 9 8 12 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 12 9 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":134:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":134:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":134:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":137:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":138:33 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI heap (reg/v/f:SI 47 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI align (reg/v:SI 48 [ align ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:2 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI bytes (reg/v:SI 49 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:2 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/v:DI 44 [ timeout ])
+        (reg/v:DI 50 [ timeout ])) -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI sys_heap_allocator (symbol_ref:SI ("sys_heap_aligned_alloc") [flags 0x41]  <function_decl 0000000006656200 sys_heap_aligned_alloc>)) -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":79:14 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 10 a10)
+        (reg/v:DI 44 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>) [0 sys_timepoint_calc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>)
+        (nil))
+    (expr_list:DI (use (reg:DI 10 a10))
+        (nil)))
+(insn 27 26 28 2 (set (reg/v:DI 45 [ end ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":83:22 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":84:2 -1
+     (nil))
+(debug_insn 29 28 30 2 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":84:8 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:SI D#2 (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 32 31 33 2 (var_location:SI l (debug_expr:SI D#2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 39 38 41 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 41 39 40 2 (parallel [
+            (set (reg:SI 52 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 40 41 42 2 (set (reg/v:SI 42 [ key ])
+        (reg:SI 52 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 42 40 43 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:SI D#1 (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 46 45 47 2 (var_location:SI k$key (debug_expr:SI D#1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 49 48 50 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 50 49 51 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:SI key$key (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 52 51 53 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 53 52 54 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":86:25 -1
+     (nil))
+(debug_insn 54 53 55 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":88:2 -1
+     (nil))
+(debug_insn 55 54 56 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":88:69 -1
+     (nil))
+(debug_insn 56 55 57 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":90:2 -1
+     (nil))
+(debug_insn 57 56 58 2 (var_location:QI blocked_alloc (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":90:7 -1
+     (nil))
+(debug_insn 58 57 59 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":92:2 -1
+     (nil))
+(debug_insn 59 58 60 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":92:13 -1
+     (nil))
+(debug_insn 60 59 61 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:3 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:SI 12 a12)
+        (reg/v:SI 49 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(insn 62 61 63 2 (set (reg:SI 11 a11)
+        (reg/v:SI 48 [ align ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(insn 63 62 64 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 47 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(call_insn 64 63 65 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_heap_aligned_alloc") [flags 0x41]  <function_decl 0000000006656200 sys_heap_aligned_alloc>) [0 sys_heap_aligned_alloc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_heap_aligned_alloc") [flags 0x41]  <function_decl 0000000006656200 sys_heap_aligned_alloc>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(insn 65 64 66 2 (set (reg/v/f:SI 46 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(debug_insn 66 65 67 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":93:9 -1
+     (nil))
+(debug_insn 67 66 68 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":95:3 -1
+     (nil))
+(debug_insn 68 67 69 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) -1
+     (nil))
+(debug_insn 69 68 70 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 70 69 71 2 (var_location:SI l (debug_expr:SI D#2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 71 70 72 2 (var_location:SI key$key (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 72 71 73 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 73 72 74 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 74 73 75 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 75 74 76 2 (var_location:SI key (reg/v:SI 42 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 76 75 77 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 77 76 78 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 78 77 79 2 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 42 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 79 78 80 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 80 79 81 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 81 80 82 2 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":115:2 -1
+     (nil))
+(debug_insn 82 81 83 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":116:2 -1
+     (nil))
+(insn 83 82 84 2 (clobber (reg/v:DI 45 [ end ])) -1
+     (nil))
+(debug_insn 84 83 85 2 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 85 84 86 2 (var_location:SI heap (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 86 85 87 2 (var_location:SI align (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 87 86 88 2 (var_location:SI bytes (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 88 87 89 2 (var_location:SI sys_heap_allocator (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 89 88 90 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 90 89 91 2 (var_location:SI ret (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(insn 91 90 92 2 (clobber (reg/v:DI 44 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 92 91 93 2 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":140:14 -1
+     (nil))
+(debug_insn 93 92 94 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":150:2 -1
+     (nil))
+(debug_insn 94 93 95 2 (var_location:QI blocked_alloc (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":150:7 -1
+     (nil))
+(debug_insn 95 94 96 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":150:30 -1
+     (nil))
+(debug_insn 96 95 97 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":152:2 -1
+     (nil))
+(debug_insn 97 96 98 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":152:2 -1
+     (nil))
+(debug_insn 98 97 99 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":152:2 -1
+     (nil))
+(debug_insn 99 98 103 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":154:2 -1
+     (nil))
+(insn 103 99 104 2 (set (reg/i:SI 2 a2)
+        (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":155:1 -1
+     (nil))
+(insn 104 103 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":155:1 -1
+     (nil))
+
+;; Function k_heap_calloc (k_heap_calloc, funcdef_no=453, decl_uid=4930, cgraph_uid=454, symbol_order=454)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Deleted label in block 4.
+Redirecting jump 44 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 76.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 5 11 6 2 (set (subreg:SI (reg:DI 51) 4)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 7 6 2 2 (set (subreg:SI (reg:DI 51) 0)
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 2 7 3 2 (set (reg/v/f:SI 47 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 48 [ num ])
+        (reg:SI 3 a3 [ num ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 4 3 8 2 (set (reg/v:SI 49 [ size ])
+        (reg:SI 4 a4 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(insn 8 4 9 2 (set (reg/v:DI 50 [ timeout ])
+        (reg:DI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":158:1 -1
+     (nil))
+(note 9 8 13 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 13 9 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":159:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":159:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":159:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":161:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":161:8 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":162:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI bounds (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":162:9 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI a (reg/v:SI 48 [ num ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI b (reg/v:SI 49 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI result (debug_implicit_ptr:SI bounds)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":105:20 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:2 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 43 [ _9+4 ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 53)
+        (mult:SI (reg/v:SI 48 [ num ])
+            (reg/v:SI 49 [ size ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(insn 28 27 29 2 (set (subreg:SI (reg:DI 52) 4)
+        (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg/v:SI 48 [ num ]))
+                    (zero_extend:DI (reg/v:SI 49 [ size ])))
+                (const_int 32 [0x20])))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(insn 29 28 30 2 (set (subreg:SI (reg:DI 52) 0)
+        (reg:SI 53)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(insn 30 29 31 2 (set (subreg:SI (reg:DI 54) 0)
+        (lshiftrt:SI (subreg:SI (reg:DI 52) 4)
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(insn 31 30 32 2 (set (subreg:SI (reg:DI 54) 4)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(jump_insn 32 31 82 2 (set (pc)
+        (if_then_else (eq (subreg:SI (reg:DI 54) 0)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (int_list:REG_BR_PROB 1073204964 (nil))
+ -> 35)
+(note 82 32 34 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 34 82 35 4 (set (reg:SI 43 [ _9+4 ])
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(code_label 35 34 83 5 9 (nil) [1 uses])
+(note 83 35 36 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 36 83 37 5 (set (reg:SI 42 [ _9 ])
+        (subreg:SI (reg:DI 52) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(debug_insn 37 36 38 5 (var_location:SI D#8 (reg:SI 42 [ _9 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(debug_insn 38 37 39 5 (var_location:SI bounds (debug_expr:SI D#8)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(debug_insn 39 38 40 5 (var_location:SI a (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:7 -1
+     (nil))
+(debug_insn 40 39 41 5 (var_location:SI b (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:7 -1
+     (nil))
+(debug_insn 41 40 42 5 (var_location:SI result (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:7 -1
+     (nil))
+(jump_insn 42 41 57 5 (set (pc)
+        (if_then_else (eq (reg:SI 43 [ _9+4 ])
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":164:5 -1
+     (int_list:REG_BR_PROB 587014660 (nil))
+ -> 46)
+(code_label 57 42 43 6 13 (nil) [1 uses])
+(note 43 57 10 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 10 43 44 6 (set (reg/v/f:SI 46 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (nil))
+(jump_insn 44 10 45 6 (set (pc)
+        (label_ref:SI 78)) 84 {jump}
+     (nil)
+ -> 78)
+(barrier 45 44 46)
+(code_label 46 45 47 7 11 (nil) [1 uses])
+(note 47 46 48 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 7 (set (reg:SI 44 [ _10 ])
+        (reg:SI 42 [ _9 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/math_extras_impl.h":107:9 -1
+     (nil))
+(debug_insn 49 48 50 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:3 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:DI 12 a12)
+        (reg/v:DI 50 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 11 a11)
+        (reg:SI 44 [ _10 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 10 a10)
+        (reg/v/f:SI 47 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (nil))
+(call_insn 53 52 54 7 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("k_heap_alloc") [flags 0x3]  <function_decl 0000000006e0ae00 k_heap_alloc>) [0 k_heap_alloc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("k_heap_alloc") [flags 0x3]  <function_decl 0000000006e0ae00 k_heap_alloc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:DI (use (reg:DI 12 a12))
+                (nil)))))
+(insn 54 53 55 7 (set (reg/v/f:SI 46 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":165:9 -1
+     (nil))
+(debug_insn 55 54 56 7 (var_location:SI ret (reg/v/f:SI 46 [ <retval> ])) -1
+     (nil))
+(debug_insn 56 55 58 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":167:2 -1
+     (nil))
+(jump_insn 58 56 59 7 (set (pc)
+        (if_then_else (eq (reg/v/f:SI 46 [ <retval> ])
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":167:5 -1
+     (int_list:REG_BR_PROB 281535108 (nil))
+ -> 57)
+(note 59 58 60 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 60 59 61 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:3 -1
+     (nil))
+(insn 61 60 62 8 (set (reg:SI 55)
+        (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(insn 62 61 63 8 (set (reg:SI 56)
+        (reg:SI 44 [ _10 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 12 a12)
+        (reg:SI 56)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(insn 64 63 65 8 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(insn 65 64 66 8 (set (reg:SI 10 a10)
+        (reg:SI 55)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(call_insn 66 65 67 8 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 000000000587e200 __builtin_memset>) [0 __builtin_memset S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 000000000587e200 __builtin_memset>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (set (reg:SI 10 a10)
+            (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 10 a10))
+            (expr_list:SI (use (reg:SI 11 a11))
+                (expr_list:SI (use (reg:SI 12 a12))
+                    (nil))))))
+(insn 67 66 70 8 (set (reg:SI 57)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":168:9 -1
+     (nil))
+(debug_insn 70 67 71 8 (var_location:SI ret (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 71 70 72 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":171:2 -1
+     (nil))
+(debug_insn 72 71 73 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":171:2 -1
+     (nil))
+(debug_insn 73 72 74 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":171:2 -1
+     (nil))
+(debug_insn 74 73 75 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":173:2 -1
+     (nil))
+(debug_insn 75 74 78 8 (var_location:SI bounds (clobber (const_int 0 [0]))) -1
+     (nil))
+(code_label 78 75 81 10 8 (nil) [1 uses])
+(note 81 78 79 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 79 81 80 10 (set (reg/i:SI 2 a2)
+        (reg/v/f:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":174:1 -1
+     (nil))
+(insn 80 79 0 10 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":174:1 -1
+     (nil))
+
+;; Function k_heap_realloc (k_heap_realloc, funcdef_no=454, decl_uid=4935, cgraph_uid=455, symbol_order=455)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 77.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 5 10 6 2 (set (subreg:SI (reg:DI 50) 4)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 7 6 2 2 (set (subreg:SI (reg:DI 50) 0)
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 2 7 3 2 (set (reg/v/f:SI 46 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 47 [ ptr ])
+        (reg:SI 3 a3 [ ptr ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 4 3 8 2 (set (reg/v:SI 48 [ bytes ])
+        (reg:SI 4 a4 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(insn 8 4 9 2 (set (reg/v:DI 49 [ timeout ])
+        (reg:DI 50)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":177:1 -1
+     (nil))
+(note 9 8 12 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 12 9 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":178:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 10 a10)
+        (reg/v:DI 49 [ timeout ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":178:22 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>) [0 sys_timepoint_calc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":178:22 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_timepoint_calc") [flags 0x41]  <function_decl 0000000006cdbb00 sys_timepoint_calc>)
+        (nil))
+    (expr_list:DI (use (reg:DI 10 a10))
+        (nil)))
+(insn 15 14 16 2 (set (reg/v:DI 44 [ end ])
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":178:22 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":179:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":179:8 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":181:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI D#5 (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":181:25 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI l (debug_expr:SI D#5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":181:25 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 27 26 29 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 29 27 28 2 (parallel [
+            (set (reg:SI 51 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 28 29 30 2 (set (reg/v:SI 43 [ key ])
+        (reg:SI 51 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 30 28 31 2 (var_location:SI key (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 32 31 33 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 33 32 34 2 (var_location:SI D#4 (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 34 33 35 2 (var_location:SI k$key (debug_expr:SI D#4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI key$key (debug_expr:SI D#4)) -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":181:25 -1
+     (nil))
+(debug_insn 41 40 42 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":181:25 -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":183:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":183:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":183:2 -1
+     (nil))
+(debug_insn 45 44 46 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":185:2 -1
+     (nil))
+(debug_insn 46 45 47 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":185:69 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":187:2 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":187:13 -1
+     (nil))
+(debug_insn 49 48 50 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:3 -1
+     (nil))
+(insn 50 49 51 2 (set (reg:SI 12 a12)
+        (reg/v:SI 48 [ bytes ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:SI 11 a11)
+        (reg/v/f:SI 47 [ ptr ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 46 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (nil))
+(call_insn 53 52 54 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("sys_heap_realloc") [flags 0x41]  <function_decl 0000000006656500 sys_heap_realloc>) [0 sys_heap_realloc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_heap_realloc") [flags 0x41]  <function_decl 0000000006656500 sys_heap_realloc>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(insn 54 53 55 2 (set (reg/v/f:SI 45 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (nil))
+(debug_insn 55 54 56 2 (var_location:SI ret (reg/v/f:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":188:9 -1
+     (nil))
+(debug_insn 56 55 57 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":190:3 -1
+     (nil))
+(debug_insn 57 56 58 2 (var_location:SI ret (reg/v/f:SI 45 [ <retval> ])) -1
+     (nil))
+(debug_insn 58 57 59 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":200:2 -1
+     (nil))
+(debug_insn 59 58 60 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":200:2 -1
+     (nil))
+(debug_insn 60 59 61 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":200:2 -1
+     (nil))
+(debug_insn 61 60 62 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":202:2 -1
+     (nil))
+(debug_insn 62 61 63 2 (var_location:SI l (debug_expr:SI D#5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":202:2 -1
+     (nil))
+(debug_insn 63 62 64 2 (var_location:SI key$key (debug_expr:SI D#4)) -1
+     (nil))
+(debug_insn 64 63 65 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 65 64 66 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 66 65 67 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 67 66 68 2 (var_location:SI key (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 68 67 69 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 69 68 70 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 70 69 71 2 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 43 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 71 70 72 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 72 71 73 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":202:2 -1
+     (nil))
+(debug_insn 73 72 74 2 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":202:2 -1
+     (nil))
+(debug_insn 74 73 75 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":203:2 -1
+     (nil))
+(insn 75 74 76 2 (clobber (reg/v:DI 44 [ end ])) -1
+     (nil))
+(debug_insn 76 75 80 2 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 80 76 81 2 (set (reg/i:SI 2 a2)
+        (reg/v/f:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":204:1 -1
+     (nil))
+(insn 81 80 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":204:1 -1
+     (nil))
+
+;; Function k_heap_free (k_heap_free, funcdef_no=455, decl_uid=4938, cgraph_uid=456, symbol_order=456)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 44 [ heap ])
+        (reg:SI 2 a2 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":207:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 45 [ mem ])
+        (reg:SI 3 a3 [ mem ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":207:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":208:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI D#7 (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":208:25 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI l (debug_expr:SI D#7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":208:25 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":185:39 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":187:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":188:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":259:35 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":261:2 -1
+     (nil))
+(debug_insn 16 15 18 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 18 16 17 2 (parallel [
+            (set (reg:SI 46 [ key ])
+                (asm_operands/v:SI ("rsil %0, %1") ("=r") 0 [
+                        (const_int 3 [0x3])
+                    ]
+                     [
+                        (asm_input:SI ("i") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263)
+                    ]
+                     [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:263))
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(insn 17 18 19 2 (set (reg/v:SI 43 [ key ])
+        (reg:SI 46 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 19 17 20 2 (var_location:SI key (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":263:2 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":265:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI D#6 (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:10 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI k$key (debug_expr:SI D#6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":194:8 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":196:2 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":214:2 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":216:2 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI k$key (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI key$key (debug_expr:SI D#6)) -1
+     (nil))
+(debug_insn 29 28 30 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":208:25 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":208:25 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":210:2 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 11 a11)
+        (reg/v/f:SI 45 [ mem ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":210:2 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 44 [ heap ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":210:2 -1
+     (nil))
+(call_insn 34 33 35 2 (call (mem:SI (symbol_ref:SI ("sys_heap_free") [flags 0x41]  <function_decl 0000000006656400 sys_heap_free>) [0 sys_heap_free S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":210:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("sys_heap_free") [flags 0x41]  <function_decl 0000000006656400 sys_heap_free>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":212:2 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":212:2 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":212:2 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":213:2 -1
+     (nil))
+(debug_insn 39 38 40 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":216:3 -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:SI l (debug_expr:SI D#7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":216:3 -1
+     (nil))
+(debug_insn 41 40 42 2 (var_location:SI key$key (debug_expr:SI D#6)) -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":303:27 -1
+     (nil))
+(debug_insn 43 42 44 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":306:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:SI key (reg/v:SI 43 [ key ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 46 45 47 2 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":269:27 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(insn 48 47 49 2 (parallel [
+            (asm_operands/v ("wsr.ps %0; rsync") ("") 0 [
+                    (reg/v:SI 43 [ key ])
+                ]
+                 [
+                    (asm_input:SI ("r") D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+                ]
+                 [] D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h:271)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/arch/xtensa/irq.h":271:2 -1
+     (nil))
+(debug_insn 49 48 50 2 (var_location:SI key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/spinlock.h":334:2 -1
+     (nil))
+(debug_insn 50 49 51 2 (var_location:SI l (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":216:3 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:SI key$key (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/kheap.c":216:3 -1
+     (nil))
+(debug_insn 52 51 0 2 (var_location:SI key$key (clobber (const_int 0 [0]))) -1
+     (nil))

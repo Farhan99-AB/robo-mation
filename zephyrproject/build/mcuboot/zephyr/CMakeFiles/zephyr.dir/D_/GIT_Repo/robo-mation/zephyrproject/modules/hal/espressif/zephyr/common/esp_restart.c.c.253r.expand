@@ -1,0 +1,490 @@
+
+;; Function esp_register_shutdown_handler (esp_register_shutdown_handler, funcdef_no=404, decl_uid=6085, cgraph_uid=405, symbol_order=405)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Edge 3->7 redirected to 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 30 from 10 to 11.
+Redirecting jump 50 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 43.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 47 [ handler ])
+        (reg:SI 2 a2 [ handler ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":35:1 -1
+     (nil))
+(note 3 2 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 3 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:7 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:20 -1
+     (nil))
+(insn 14 13 4 2 (set (reg:SI 44 [ ivtmp$12 ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("shutdown_handlers") [flags 0x2]  <var_decl 000000000727a2d0 shutdown_handlers>)
+        (nil)))
+(insn 4 14 39 2 (set (reg/v:SI 43 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:11 -1
+     (nil))
+(code_label 39 4 15 4 4 (nil) [1 uses])
+(note 15 39 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 16 15 17 4 (var_location:SI i (reg/v:SI 43 [ i ])) -1
+     (nil))
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":37:3 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:SI 42 [ _1 ])
+        (mem/f:SI (reg:SI 44 [ ivtmp$12 ]) [0 MEM[(void (*<T2ae>) (void) *)_15]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":37:24 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg/f:SI 42 [ _1 ])
+                (reg/v/f:SI 47 [ handler ]))
+            (label_ref:SI 53)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":37:6 62 {*btrue}
+     (int_list:REG_BR_PROB 39298956 (nil))
+ -> 53)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":39:10 -1
+     (nil))
+(jump_insn 22 21 23 5 (set (pc)
+        (if_then_else (ne (reg/f:SI 42 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":39:13 -1
+     (int_list:REG_BR_PROB 1034442876 (nil))
+ -> 32)
+(note 23 22 24 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":40:4 -1
+     (nil))
+(insn 25 24 26 6 (set (reg/f:SI 48)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":40:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("shutdown_handlers") [flags 0x2]  <var_decl 000000000727a2d0 shutdown_handlers>)
+        (nil)))
+(insn 26 25 27 6 (set (reg:SI 49)
+        (ashift:SI (reg/v:SI 43 [ i ])
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":40:25 -1
+     (nil))
+(insn 27 26 28 6 (set (reg/f:SI 50)
+        (plus:SI (reg/f:SI 48)
+            (reg:SI 49))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":40:25 -1
+     (nil))
+(insn 28 27 29 6 (set (mem/f:SI (reg/f:SI 50) [1 shutdown_handlers[i_12]+0 S4 A32])
+        (reg/v/f:SI 47 [ handler ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":40:25 -1
+     (nil))
+(debug_insn 29 28 6 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":41:4 -1
+     (nil))
+(insn 6 29 30 6 (set (reg:SI 46 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":41:11 -1
+     (nil))
+(jump_insn 30 6 31 6 (set (pc)
+        (label_ref:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":41:11 84 {jump}
+     (nil)
+ -> 45)
+(barrier 31 30 32)
+(code_label 32 31 33 7 3 (nil) [1 uses])
+(note 33 32 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 34 33 35 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:45 -1
+     (nil))
+(insn 35 34 36 7 (set (reg/v:SI 43 [ i ])
+        (plus:SI (reg/v:SI 43 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:45 -1
+     (nil))
+(debug_insn 36 35 37 7 (var_location:SI i (reg/v:SI 43 [ i ])) -1
+     (nil))
+(debug_insn 37 36 38 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:20 -1
+     (nil))
+(insn 38 37 40 7 (set (reg:SI 44 [ ivtmp$12 ])
+        (plus:SI (reg:SI 44 [ ivtmp$12 ])
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:20 -1
+     (nil))
+(jump_insn 40 38 49 7 (set (pc)
+        (if_then_else (ne (reg/v:SI 43 [ i ])
+                (const_int 5 [0x5]))
+            (label_ref 39)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":36:20 -1
+     (int_list:REG_BR_PROB 894749068 (nil))
+ -> 39)
+(note 49 40 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 49 50 8 (set (reg:SI 46 [ <retval> ])
+        (const_int 257 [0x101])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":44:9 -1
+     (nil))
+(jump_insn 50 7 51 8 (set (pc)
+        (label_ref:SI 45)) 84 {jump}
+     (nil)
+ -> 45)
+(barrier 51 50 53)
+(code_label 53 51 52 9 5 (nil) [1 uses])
+(note 52 53 5 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 5 52 45 9 (set (reg:SI 46 [ <retval> ])
+        (const_int 259 [0x103])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":38:11 -1
+     (nil))
+(code_label 45 5 48 11 1 (nil) [2 uses])
+(note 48 45 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 48 47 11 (set (reg/i:SI 2 a2)
+        (reg:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":45:1 -1
+     (nil))
+(insn 47 46 0 11 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":45:1 -1
+     (nil))
+
+;; Function esp_unregister_shutdown_handler (esp_unregister_shutdown_handler, funcdef_no=405, decl_uid=6087, cgraph_uid=406, symbol_order=406)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 27 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 40.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 47 [ handler ])
+        (reg:SI 2 a2 [ handler ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":48:1 -1
+     (nil))
+(note 3 2 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 3 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:7 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:20 -1
+     (nil))
+(insn 13 12 4 2 (set (reg:SI 44 [ ivtmp$23 ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("shutdown_handlers") [flags 0x2]  <var_decl 000000000727a2d0 shutdown_handlers>)
+        (nil)))
+(insn 4 13 36 2 (set (reg/v:SI 43 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:11 -1
+     (nil))
+(code_label 36 4 14 4 10 (nil) [1 uses])
+(note 14 36 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 15 14 16 4 (var_location:SI i (reg/v:SI 43 [ i ])) -1
+     (nil))
+(debug_insn 16 15 17 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":50:3 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 48)
+        (mem/f:SI (reg:SI 44 [ ivtmp$23 ]) [0 MEM[(void (*<T2ae>) (void) *)_15]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":50:6 -1
+     (nil))
+(jump_insn 18 17 19 4 (set (pc)
+        (if_then_else (ne (reg:SI 48)
+                (reg/v/f:SI 47 [ handler ]))
+            (label_ref 29)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":50:6 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 29)
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:4 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 49)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("shutdown_handlers") [flags 0x2]  <var_decl 000000000727a2d0 shutdown_handlers>)
+        (nil)))
+(insn 22 21 23 5 (set (reg:SI 50)
+        (ashift:SI (reg/v:SI 43 [ i ])
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:25 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:SI 51)
+        (plus:SI (reg/f:SI 49)
+            (reg:SI 50))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:25 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 52)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:25 -1
+     (nil))
+(insn 25 24 26 5 (set (mem/f:SI (reg/f:SI 51) [1 shutdown_handlers[i_10]+0 S4 A32])
+        (reg:SI 52)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":51:25 -1
+     (nil))
+(debug_insn 26 25 5 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":52:4 -1
+     (nil))
+(insn 5 26 27 5 (set (reg:SI 46 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":52:11 -1
+     (nil))
+(jump_insn 27 5 28 5 (set (pc)
+        (label_ref:SI 42)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":52:11 84 {jump}
+     (nil)
+ -> 42)
+(barrier 28 27 29)
+(code_label 29 28 30 6 8 (nil) [1 uses])
+(note 30 29 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:45 -1
+     (nil))
+(insn 32 31 33 6 (set (reg/v:SI 43 [ i ])
+        (plus:SI (reg/v:SI 43 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:45 -1
+     (nil))
+(debug_insn 33 32 34 6 (var_location:SI i (reg/v:SI 43 [ i ])) -1
+     (nil))
+(debug_insn 34 33 35 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:20 -1
+     (nil))
+(insn 35 34 37 6 (set (reg:SI 44 [ ivtmp$23 ])
+        (plus:SI (reg:SI 44 [ ivtmp$23 ])
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:20 -1
+     (nil))
+(jump_insn 37 35 46 6 (set (pc)
+        (if_then_else (ne (reg/v:SI 43 [ i ])
+                (const_int 5 [0x5]))
+            (label_ref 36)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":49:20 -1
+     (int_list:REG_BR_PROB 894749068 (nil))
+ -> 36)
+(note 46 37 6 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 6 46 42 7 (set (reg:SI 46 [ <retval> ])
+        (const_int 259 [0x103])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":55:9 -1
+     (nil))
+(code_label 42 6 45 9 7 (nil) [1 uses])
+(note 45 42 43 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 43 45 44 9 (set (reg/i:SI 2 a2)
+        (reg:SI 46 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":56:1 -1
+     (nil))
+(insn 44 43 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":56:1 -1
+     (nil))
+
+;; Function esp_restart_noos_dig (esp_restart_noos_dig, funcdef_no=406, decl_uid=6103, cgraph_uid=408, symbol_order=408) (executed once)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+deleting block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":67:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 10 a10)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":67:2 -1
+     (nil))
+(call_insn 7 6 8 2 (call (mem:SI (symbol_ref:SI ("xt_ints_off") [flags 0x41]  <function_decl 0000000006f82600 xt_ints_off>) [0 xt_ints_off S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":67:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xt_ints_off") [flags 0x41]  <function_decl 0000000006f82600 xt_ints_off>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":71:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":72:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":72:3 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:SI (symbol_ref:SI ("esp_rom_uart_tx_wait_idle") [flags 0x41]  <function_decl 000000000729f600 esp_rom_uart_tx_wait_idle>) [0 esp_rom_uart_tx_wait_idle S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":72:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_uart_tx_wait_idle") [flags 0x41]  <function_decl 000000000729f600 esp_rom_uart_tx_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":80:2 -1
+     (nil))
+(call_insn 13 12 14 2 (call (mem:SI (symbol_ref:SI ("rtc_clk_cpu_set_to_default_config") [flags 0x41]  <function_decl 0000000007084d00 rtc_clk_cpu_set_to_default_config>) [0 rtc_clk_cpu_set_to_default_config S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":80:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("rtc_clk_cpu_set_to_default_config") [flags 0x41]  <function_decl 0000000007084d00 rtc_clk_cpu_set_to_default_config>)
+        (nil))
+    (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":94:2 -1
+     (nil))
+(call_insn 15 14 20 2 (call (mem:SI (symbol_ref:SI ("esp_rom_software_reset_system") [flags 0x41]  <function_decl 00000000072ab000 esp_rom_software_reset_system>) [0 esp_rom_software_reset_system S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":94:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_software_reset_system") [flags 0x41]  <function_decl 00000000072ab000 esp_rom_software_reset_system>)
+        (nil))
+    (nil))
+(code_label 20 15 16 4 13 (nil) [1 uses])
+(note 16 20 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":95:2 -1
+     (nil))
+(debug_insn 18 17 19 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":96:3 -1
+     (nil))
+(debug_insn 19 18 21 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":95:8 -1
+     (nil))
+(jump_insn 21 19 22 4 (set (pc)
+        (label_ref 20)) -1
+     (nil)
+ -> 20)
+(barrier 22 21 0)
+
+;; Function esp_restart (esp_restart, funcdef_no=407, decl_uid=6089, cgraph_uid=409, symbol_order=409) (executed once)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+deleting block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:7 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI i (const_int 4 [0x4])) -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:43 -1
+     (nil))
+(insn 10 9 3 2 (set (reg:SI 43 [ ivtmp$37 ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("shutdown_handlers") [flags 0x2]  <var_decl 000000000727a2d0 shutdown_handlers>)
+        (nil)))
+(insn 3 10 26 2 (set (reg/v:SI 44 [ i ])
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:11 -1
+     (nil))
+(code_label 26 3 11 4 16 (nil) [1 uses])
+(note 11 26 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 12 11 13 4 (var_location:SI i (reg/v:SI 44 [ i ])) -1
+     (nil))
+(debug_insn 13 12 14 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":103:3 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 42 [ _1 ])
+        (mem/f:SI (plus:SI (reg:SI 43 [ ivtmp$37 ])
+                (const_int 16 [0x10])) [0 MEM[(void (*<T2ae>) (void) *)_15 + 16B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":103:24 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (eq (reg/f:SI 42 [ _1 ])
+                (const_int 0 [0]))
+            (label_ref 19)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":103:6 -1
+     (int_list:REG_BR_PROB 322122548 (nil))
+ -> 19)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":104:4 -1
+     (nil))
+(call_insn 18 17 19 5 (call (mem:SI (reg/f:SI 42 [ _1 ]) [0 *_1 S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":104:4 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (nil))
+(code_label 19 18 20 6 15 (nil) [1 uses])
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:50 -1
+     (nil))
+(insn 22 21 23 6 (set (reg/v:SI 44 [ i ])
+        (plus:SI (reg/v:SI 44 [ i ])
+            (const_int -1 [0xffffffffffffffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:50 -1
+     (nil))
+(debug_insn 23 22 24 6 (var_location:SI i (reg/v:SI 44 [ i ])) -1
+     (nil))
+(debug_insn 24 23 25 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:43 -1
+     (nil))
+(insn 25 24 27 6 (set (reg:SI 43 [ ivtmp$37 ])
+        (plus:SI (reg:SI 43 [ ivtmp$37 ])
+            (const_int -4 [0xfffffffffffffffc]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:43 -1
+     (nil))
+(jump_insn 27 25 28 6 (set (pc)
+        (if_then_else (ne (reg/v:SI 44 [ i ])
+                (const_int -1 [0xffffffffffffffff]))
+            (label_ref 26)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":102:43 -1
+     (int_list:REG_BR_PROB 894749068 (nil))
+ -> 26)
+(note 28 27 29 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 29 28 30 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":108:2 -1
+     (nil))
+(call_insn 30 29 31 7 (call (mem:SI (symbol_ref:SI ("k_sched_lock") [flags 0x41]  <function_decl 0000000006af8300 k_sched_lock>) [0 k_sched_lock S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":108:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("k_sched_lock") [flags 0x41]  <function_decl 0000000006af8300 k_sched_lock>)
+        (nil))
+    (nil))
+(debug_insn 31 30 32 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":110:2 -1
+     (nil))
+(debug_insn 32 31 33 7 (var_location:QI digital_reset_needed (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":110:7 -1
+     (nil))
+(debug_insn 33 32 34 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":125:2 -1
+     (nil))
+(debug_insn 34 33 35 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":128:2 -1
+     (nil))
+(call_insn 35 34 36 7 (call (mem:SI (symbol_ref:SI ("esp_restart_noos") [flags 0x41]  <function_decl 0000000006f77d00 esp_restart_noos>) [0 esp_restart_noos S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c":128:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_restart_noos") [flags 0x41]  <function_decl 0000000006f77d00 esp_restart_noos>)
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (nil))
+(barrier 36 35 0)

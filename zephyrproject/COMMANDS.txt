@@ -1,0 +1,94 @@
+COMMANDS
+
+To open virtual env(always be in the project directory)
+zephyrproject\.venv\Scripts\activate.bat 
+
+TO check contents of a file 
+type zephyr\samples\hello_world\src\main.c 
+
+to build files
+west build -b esp32_devkitc/esp32/procpu -p always --sysbuild zephyr/samples/hello_world
+
+west build -p always -b esp32_devkitc/esp32/procpu --sysbuild apps/chatterbox
+
+USE THIS COMMAND WHICH SPECIFIES WHICH OVERLAY FILE TO USE 
+west build -b esp32_devkitc/esp32/procpu -p always --sysbuild apps/chatterbox -- -DDTC_OVERLAY_FILE=esp_wrover_kit_procpu.overlay
+
+DOUBT
+we have changed the file name under boards to esp32_devkit_procpu.overlay
+or should we just specify which file the overlay is present 
+
+
+to flash 
+west flash --esp-device COM11
+
+to open serial monitor
+west espressif monitor -p COM11 
+
+
+
+
+
+
+
+
+
+--- WARNING: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM11 instead...
+--- idf_monitor on \\.\COM11 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ets Jul 29 2019 12:21:46
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3ffe8000,len:7472
+load:0x40078000,len:2932
+ho 0 tail 12 room 4
+load:0x400a0000,len:29672
+entry 0x400a26e4
+I (32) soc_init: MCUboot 2nd stage bootloader
+I (32) soc_init: compile time Oct 28 2025 20:15:56
+W (32) soc_init: Unicore bootloader
+I (33) soc_init: chip revision: v3.1
+I (37) flash_init: SPI Speed      : 40MHz
+I (40) flash_init: SPI Mode       : DIO
+I (44) flash_init: SPI Flash Size : 4MB
+I (80) boot: Image index: 0, Swap type: none
+I (80) boot: Loading image 0 - slot 0 from flash, area id: 2
+I (80) boot: Application start=400832b0h
+I (81) boot: DRAM       : lma=000260e8h vma=3ffb0000h size=011f4h (  4596) load
+I (89) boot: IRAM       : lma=00020080h vma=40080000h size=06068h ( 24680) load
+I (106) boot: IROM      : lma=00040000h vma=400d0000h size=037FCh ( 14332) map
+I (106) boot: DROM      : lma=00030000h vma=3f400000h size=00F7Ch (  3964) map
+I (121) boot: libc heap size 182 kB.
+I (121) spi_flash: detected chip: generic
+I (121) spi_flash: flash io: dio
+*** Booting Zephyr OS build v4.2.0-6833-g8aba2e3f3aa8 ***
+ Task T = 0s:
+2
+ Task 2
+ Task 2
+ Task 2
+T = 1s:
+ Task 1
+ Task 1
+ Task 1
+ Task 1
+T = 2s:
+ Task 2
+ Task 2
+ Task 2 Task 2T = 3s:
+ Task 3
+ Task 3
+ Task 3
+ Task 3
+T = 4s:
+T = 5s:
+T = 6s:
+T = 7s:
+T = 8s:
+T = 9s:T = 10s:
+T = 11s:
+T = 12s:
+T = 13s:

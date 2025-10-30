@@ -1,0 +1,179 @@
+
+;; Function esp_gpio_reserve_pins (esp_gpio_reserve_pins, funcdef_no=340, decl_uid=5880, cgraph_uid=341, symbol_order=341)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:DI 45 [ mask ])
+        (reg:DI 2 a2 [ mask ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":16:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":18:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:DI mask (and:DI (reg/v:DI 45 [ mask ])
+        (const_int 1099511627775 [0xffffffffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":18:10 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("s_reserve_status") [flags 0x2]  <var_decl 0000000007abc750 s_reserve_status>)
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:SI 47)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("s_reserve_status") [flags 0x2]  <var_decl 0000000007abc750 s_reserve_status>)
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 49)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":18:10 -1
+     (nil))
+(insn 12 11 13 2 (set (subreg:SI (reg:DI 48 [ mask ]) 0)
+        (and:SI (reg:SI 49)
+            (subreg:SI (reg/v:DI 45 [ mask ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":18:10 -1
+     (nil))
+(insn 13 12 14 2 (set (subreg:SI (reg:DI 48 [ mask ]) 4)
+        (and:SI (subreg:SI (reg/v:DI 45 [ mask ]) 4)
+            (const_int 255 [0xff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":18:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 51)
+        (mem/c:SI (reg/f:SI 47) [1 s_reserve_status+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (nil))
+(insn 15 14 16 2 (set (subreg:SI (reg:DI 50) 0)
+        (ior:SI (reg:SI 51)
+            (subreg:SI (reg:DI 48 [ mask ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 52)
+        (mem/c:SI (plus:SI (reg/f:SI 47)
+                (const_int 4 [0x4])) [1 s_reserve_status+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (nil))
+(insn 17 16 18 2 (set (subreg:SI (reg:DI 50) 4)
+        (ior:SI (reg:SI 52)
+            (subreg:SI (reg:DI 48 [ mask ]) 4))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (nil))
+(insn 18 17 0 2 (set (mem/c:DI (reg/f:SI 46) [1 s_reserve_status+0 S8 A64])
+        (reg:DI 50)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":20:22 -1
+     (nil))
+
+;; Function esp_gpio_is_pin_reserved (esp_gpio_is_pin_reserved, funcdef_no=341, decl_uid=5883, cgraph_uid=342, symbol_order=342)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+Edge 2->4 redirected to 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 25.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 45 [ gpio_num ])
+        (reg:SI 2 a2 [ gpio_num ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":24:1 -1
+     (nil))
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 3 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":25:5 -1
+     (nil))
+(insn 10 7 11 2 (set (reg:SI 46)
+        (const_int 39 [0x27])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":25:8 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ltu (reg:SI 46)
+                (reg/v:SI 45 [ gpio_num ]))
+            (label_ref:SI 34)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":25:8 64 {*ubtrue}
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 34)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:5 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 47)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("s_reserve_status") [flags 0x2]  <var_decl 0000000007abc750 s_reserve_status>)
+        (nil)))
+(insn 15 14 16 4 (set (reg:SI 12 a12)
+        (reg/v:SI 45 [ gpio_num ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 10 a10)
+        (mem/c:DI (reg/f:SI 47) [1 s_reserve_status+0 S8 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil))
+(call_insn/u 17 16 18 4 (set (reg:DI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("__lshrdi3") [flags 0x41]  <function_decl 0000000006549a00 __lshrdi3>) [0  S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__lshrdi3") [flags 0x41]  <function_decl 0000000006549a00 __lshrdi3>)
+        (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+            (nil)))
+    (expr_list (use (reg:SI 12 a12))
+        (expr_list (use (reg:DI 10 a10))
+            (nil))))
+(insn 18 17 19 4 (set (reg:DI 48)
+        (reg:DI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (expr_list:REG_EQUAL (lshiftrt:DI (mem/c:DI (reg/f:SI 47) [1 s_reserve_status+0 S8 A64])
+            (reg/v:SI 45 [ gpio_num ]))
+        (nil)))
+(insn 19 18 20 4 (set (reg:QI 49)
+        (subreg:QI (reg:DI 48) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 50)
+        (and:SI (subreg:SI (reg:QI 49) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil))
+(insn 21 20 31 4 (set (reg:SI 44 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 50) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil))
+(jump_insn 31 21 32 4 (set (pc)
+        (label_ref 22)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":28:12 -1
+     (nil)
+ -> 22)
+(barrier 32 31 34)
+(code_label 34 32 33 5 4 (nil) [1 uses])
+(note 33 34 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 4 33 22 5 (set (reg:SI 44 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":26:16 -1
+     (nil))
+(code_label 22 4 23 6 3 (nil) [1 uses])
+(note 23 22 24 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 28 6 (set (reg:SI 44 [ <retval> ])
+        (reg:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":29:1 -1
+     (nil))
+(insn 28 24 29 6 (set (reg/i:SI 2 a2)
+        (reg:SI 44 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":29:1 -1
+     (nil))
+(insn 29 28 0 6 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c":29:1 -1
+     (nil))

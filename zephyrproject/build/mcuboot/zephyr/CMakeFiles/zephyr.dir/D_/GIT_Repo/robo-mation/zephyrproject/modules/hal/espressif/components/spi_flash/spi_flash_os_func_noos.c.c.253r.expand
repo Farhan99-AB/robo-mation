@@ -1,0 +1,284 @@
+
+;; Function delay_us (delay_us, funcdef_no=16, decl_uid=2221, cgraph_uid=18, symbol_order=17)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 43 [ arg ])
+        (reg:SI 2 a2 [ arg ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":46:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 44 [ us ])
+        (reg:SI 3 a3 [ us ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":46:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":47:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 10 a10)
+        (reg/v:SI 44 [ us ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":47:5 -1
+     (nil))
+(call_insn 9 8 10 2 (call (mem:SI (symbol_ref:SI ("esp_rom_delay_us") [flags 0x41]  <function_decl 0000000005bcae00 esp_rom_delay_us>) [0 esp_rom_delay_us S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":47:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_delay_us") [flags 0x41]  <function_decl 0000000005bcae00 esp_rom_delay_us>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":48:5 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":48:12 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":49:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":49:1 -1
+     (nil))
+
+;; Function end (end, funcdef_no=15, decl_uid=2217, cgraph_uid=17, symbol_order=16)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 18.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ arg ])
+        (reg:SI 2 a2 [ arg ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":32:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":34:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI cpu_no (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":34:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":169:61 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":171:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":172:34 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":173:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 10 a10)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":173:5 -1
+     (nil))
+(call_insn 13 12 14 2 (call (mem:SI (symbol_ref:SI ("Cache_Read_Enable_rom") [flags 0x41]  <function_decl 0000000005bf0700 Cache_Read_Enable_rom>) [0 Cache_Read_Enable_rom S4 A32])
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":173:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Cache_Read_Enable_rom") [flags 0x41]  <function_decl 0000000005bf0700 Cache_Read_Enable_rom>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 14 13 15 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":174:32 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI cpu_no (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":34:5 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":42:5 -1
+     (nil))
+(insn 17 16 21 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":42:12 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":43:1 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":43:1 -1
+     (nil))
+
+;; Function start (start, funcdef_no=14, decl_uid=2214, cgraph_uid=16, symbol_order=15)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 18.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ arg ])
+        (reg:SI 2 a2 [ arg ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":18:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":20:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI cpu_no (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":20:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":153:61 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":155:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":156:34 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":157:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 10 a10)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":157:5 -1
+     (nil))
+(call_insn 13 12 14 2 (call (mem:SI (symbol_ref:SI ("Cache_Read_Disable_rom") [flags 0x41]  <function_decl 0000000005bf0400 Cache_Read_Disable_rom>) [0 Cache_Read_Disable_rom S4 A32])
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":157:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("Cache_Read_Disable_rom") [flags 0x41]  <function_decl 0000000005bf0400 Cache_Read_Disable_rom>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 14 13 15 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_rom\include\esp32\rom\cache.h":158:32 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI cpu_no (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":20:5 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":28:5 -1
+     (nil))
+(insn 17 16 21 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":28:12 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":29:1 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":29:1 -1
+     (nil))
+
+;; Function get_temp_buffer_not_supported (get_temp_buffer_not_supported, funcdef_no=17, decl_uid=2226, cgraph_uid=19, symbol_order=18)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 10.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 43 [ arg ])
+        (reg:SI 2 a2 [ arg ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":54:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 44 [ reqest_size ])
+        (reg:SI 3 a3 [ reqest_size ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":54:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 45 [ out_size ])
+        (reg:SI 4 a4 [ out_size ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":54:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":55:5 -1
+     (nil))
+(insn 9 8 13 2 (set (reg/f:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":55:12 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 2 a2)
+        (reg/f:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":56:1 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":56:1 -1
+     (nil))
+
+;; Function esp_flash_app_disable_os_functions (esp_flash_app_disable_os_functions, funcdef_no=18, decl_uid=2230, cgraph_uid=20, symbol_order=20)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ chip ])
+        (reg:SI 2 a2 [ chip ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":70:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":71:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":71:19 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/f:SI (plus:SI (reg/v/f:SI 43 [ chip ])
+                (const_int 8 [0x8])) [1 chip_2(D)->os_func+0 S4 A32])
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":71:19 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":73:5 -1
+     (nil))
+(insn 10 9 14 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":73:12 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":74:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c":74:1 -1
+     (nil))

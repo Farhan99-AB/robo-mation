@@ -1,0 +1,13 @@
+# Target labels
+ mcuboot
+# Source files and their labels
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot-complete.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-build.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-configure.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-download.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-install.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-mkdir.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-patch.rule
+D:/GIT_Repo/robo-mation/zephyrproject/build/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-update.rule

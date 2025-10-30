@@ -1,0 +1,420 @@
+
+;; Function efuse_hal_get_mac (efuse_hal_get_mac, funcdef_no=55, decl_uid=2326, cgraph_uid=56, symbol_order=55)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 44 [ mac ])
+        (reg:SI 2 a2 [ mac ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":17:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":18:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":29:55 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":31:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 45)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":31:29 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("EFUSE") [flags 0x40]  <var_decl 0000000006644990 EFUSE>)
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 43 [ _6 ])
+        (mem/v/j/c:SI (plus:SI (reg/f:SI 45)
+                (const_int 4 [0x4])) [6 EFUSE.blk0_rdata1.D.1513.rd_mac+0 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":31:29 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (reg/v/f:SI 44 [ mac ]) [1 MEM[(uint32_t *)mac_2(D)]+0 S4 A32])
+        (reg:SI 43 [ _6 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":18:27 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":19:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":34:55 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":36:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":36:29 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("EFUSE") [flags 0x40]  <var_decl 0000000006644990 EFUSE>)
+        (nil)))
+(insn 16 15 17 2 (set (reg:SI 47)
+        (mem/v/c:SI (plus:SI (reg/f:SI 46)
+                (const_int 8 [0x8])) [0 +8 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":36:29 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 42 [ _5 ])
+        (zero_extend:SI (subreg:HI (reg:SI 47) 0))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":36:29 -1
+     (nil))
+(insn 18 17 0 2 (set (mem:HI (plus:SI (reg/v/f:SI 44 [ mac ])
+                (const_int 4 [0x4])) [2 MEM[(uint16_t *)mac_2(D) + 4B]+0 S2 A16])
+        (subreg/s/v:HI (reg:SI 42 [ _5 ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":19:27 -1
+     (nil))
+
+;; Function efuse_hal_chip_revision (efuse_hal_chip_revision, funcdef_no=56, decl_uid=2328, cgraph_uid=58, symbol_order=57)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 19.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:5 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("efuse_hal_get_major_chip_version") [flags 0x41]  <function_decl 000000000727db00 efuse_hal_get_major_chip_version>) [0 efuse_hal_get_major_chip_version S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("efuse_hal_get_major_chip_version") [flags 0x41]  <function_decl 000000000727db00 efuse_hal_get_major_chip_version>)
+        (nil))
+    (nil))
+(insn 7 6 8 2 (set (reg:SI 42 [ _1 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:12 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("efuse_hal_get_minor_chip_version") [flags 0x41]  <function_decl 000000000727dc00 efuse_hal_get_minor_chip_version>) [0 efuse_hal_get_minor_chip_version S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:55 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("efuse_hal_get_minor_chip_version") [flags 0x41]  <function_decl 000000000727dc00 efuse_hal_get_minor_chip_version>)
+        (nil))
+    (nil))
+(insn 9 8 10 2 (set (reg:SI 44 [ _3 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:55 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 47)
+        (reg:SI 42 [ _1 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 48)
+        (ashift:SI (reg:SI 47)
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 49)
+        (plus:SI (reg:SI 48)
+            (reg:SI 42 [ _1 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (expr_list:REG_EQUAL (mult:SI (reg:SI 42 [ _1 ])
+            (const_int 5 [0x5]))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 50)
+        (ashift:SI (reg:SI 49)
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 51)
+        (plus:SI (reg:SI 49)
+            (reg:SI 50))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (expr_list:REG_EQUAL (mult:SI (reg:SI 42 [ _1 ])
+            (const_int 25 [0x19]))
+        (nil)))
+(insn 15 14 16 2 (set (reg:SI 52)
+        (ashift:SI (reg:SI 51)
+            (const_int 2 [0x2]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 51)
+        (reg:SI 52)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:47 -1
+     (expr_list:REG_EQUAL (mult:SI (reg:SI 42 [ _1 ])
+            (const_int 100 [0x64]))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 46)
+        (plus:SI (reg:SI 51)
+            (reg:SI 44 [ _3 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:53 -1
+     (nil))
+(insn 18 17 22 2 (set (reg:SI 45 [ <retval> ])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":24:53 -1
+     (nil))
+(insn 22 18 23 2 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":25:1 -1
+     (nil))
+(insn 23 22 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":25:1 -1
+     (nil))
+
+;; Function efuse_hal_blk_version (efuse_hal_blk_version, funcdef_no=57, decl_uid=2330, cgraph_uid=60, symbol_order=59)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":29:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":29:51 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":30:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":30:1 -1
+     (nil))
+
+;; Function efuse_hal_get_disable_wafer_version_major (efuse_hal_get_disable_wafer_version_major, funcdef_no=58, decl_uid=2334, cgraph_uid=62, symbol_order=61)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":34:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":34:12 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":35:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":35:1 -1
+     (nil))
+
+;; Function efuse_hal_get_disable_blk_version_major (efuse_hal_get_disable_blk_version_major, funcdef_no=59, decl_uid=2336, cgraph_uid=64, symbol_order=63)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":39:5 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":39:12 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":40:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":40:1 -1
+     (nil))
+
+;; Function efuse_hal_flash_encryption_enabled (efuse_hal_flash_encryption_enabled, funcdef_no=60, decl_uid=2332, cgraph_uid=66, symbol_order=65)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 46.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":44:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":24:55 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 46)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:29 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("EFUSE") [flags 0x40]  <var_decl 0000000006644990 EFUSE>)
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 47)
+        (mem/v/c:SI (reg/f:SI 46) [3 EFUSE+0 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:29 -1
+     (nil))
+(insn 11 10 12 2 (set (subreg:SI (reg:QI 48) 0)
+        (zero_extract:SI (reg:SI 47)
+            (const_int 7 [0x7])
+            (const_int 20 [0x14]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:29 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 44 [ _8 ])
+        (zero_extend:SI (reg:QI 48))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:29 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/v:SI 43 [ flash_crypt_cnt ])
+        (reg:SI 44 [ _8 ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":26:29 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI flash_crypt_cnt (reg/v:SI 43 [ flash_crypt_cnt ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":44:32 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":45:5 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:QI enabled (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":45:10 -1
+     (nil))
+(debug_insn 17 16 3 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":46:5 -1
+     (nil))
+(insn 3 17 18 2 (set (reg/v:SI 45 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":45:10 -1
+     (nil))
+(jump_insn 18 3 19 2 (set (pc)
+        (label_ref 36)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":46:11 -1
+     (nil)
+ -> 36)
+(barrier 19 18 41)
+(code_label 41 19 20 4 9 (nil) [1 uses])
+(note 20 41 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":47:9 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 49)
+        (and:SI (reg/v:SI 43 [ flash_crypt_cnt ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":47:29 -1
+     (nil))
+(jump_insn 23 22 24 4 (set (pc)
+        (if_then_else (eq (reg:SI 49)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":47:12 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 30)
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 25 24 26 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":48:13 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:QI 50)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":48:13 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:SI 51)
+        (xor:SI (reg/v:SI 45 [ <retval> ])
+            (subreg:SI (reg:QI 50) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":48:13 -1
+     (nil))
+(insn 28 27 29 5 (set (reg/v:SI 45 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 51) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":48:13 -1
+     (nil))
+(debug_insn 29 28 30 5 (var_location:QI enabled (subreg:QI (reg/v:SI 45 [ <retval> ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":48:21 -1
+     (nil))
+(code_label 30 29 31 6 8 (nil) [1 uses])
+(note 31 30 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 32 31 33 6 (var_location:QI enabled (subreg:QI (reg/v:SI 45 [ <retval> ]) 0)) -1
+     (nil))
+(debug_insn 33 32 34 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":50:9 -1
+     (nil))
+(insn 34 33 35 6 (set (reg/v:SI 43 [ flash_crypt_cnt ])
+        (lshiftrt:SI (reg/v:SI 43 [ flash_crypt_cnt ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":50:25 -1
+     (nil))
+(debug_insn 35 34 36 6 (var_location:SI flash_crypt_cnt (reg/v:SI 43 [ flash_crypt_cnt ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":50:25 -1
+     (nil))
+(code_label 36 35 37 7 7 (nil) [1 uses])
+(note 37 36 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 39 7 (var_location:QI enabled (subreg:QI (reg/v:SI 45 [ <retval> ]) 0)) -1
+     (nil))
+(debug_insn 39 38 40 7 (var_location:SI flash_crypt_cnt (reg/v:SI 43 [ flash_crypt_cnt ])) -1
+     (nil))
+(debug_insn 40 39 42 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":46:12 -1
+     (nil))
+(jump_insn 42 40 43 7 (set (pc)
+        (if_then_else (ne (reg/v:SI 43 [ flash_crypt_cnt ])
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":46:12 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 41)
+(note 43 42 44 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":52:5 -1
+     (nil))
+(insn 45 44 49 8 (set (reg/v:SI 45 [ <retval> ])
+        (reg/v:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":52:12 -1
+     (nil))
+(insn 49 45 50 8 (set (reg/i:SI 2 a2)
+        (reg/v:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":53:1 -1
+     (nil))
+(insn 50 49 0 8 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c":53:1 -1
+     (nil))

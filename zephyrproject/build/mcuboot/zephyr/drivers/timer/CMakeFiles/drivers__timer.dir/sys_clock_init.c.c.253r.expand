@@ -1,0 +1,67 @@
+
+;; Function sys_clock_set_timeout (sys_clock_set_timeout, funcdef_no=340, decl_uid=3640, cgraph_uid=341, symbol_order=340)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 42 [ ticks ])
+        (reg:SI 2 a2 [ ticks ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/drivers/timer/sys_clock_init.c":22:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 44)
+        (reg:SI 3 a3 [ idle ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/drivers/timer/sys_clock_init.c":22:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 43 [ idle ])
+        (zero_extend:SI (subreg:QI (reg:SI 44) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/drivers/timer/sys_clock_init.c":22:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/drivers/timer/sys_clock_init.c":23:1 -1
+     (nil))
+
+;; Function sys_clock_idle_exit (sys_clock_idle_exit, funcdef_no=341, decl_uid=3642, cgraph_uid=342, symbol_order=341)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/drivers/timer/sys_clock_init.c":27:1 -1
+     (nil))

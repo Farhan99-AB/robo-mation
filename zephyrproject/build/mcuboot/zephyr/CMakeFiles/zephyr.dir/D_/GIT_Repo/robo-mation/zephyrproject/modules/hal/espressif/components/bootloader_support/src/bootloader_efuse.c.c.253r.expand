@@ -1,0 +1,129 @@
+
+;; Function bootloader_common_get_chip_ver_pkg (bootloader_common_get_chip_ver_pkg, funcdef_no=73, decl_uid=2574, cgraph_uid=75, symbol_order=74)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 19.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":16:5 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":94:55 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 49)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:30 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("EFUSE") [flags 0x40]  <var_decl 00000000072e93f0 EFUSE>)
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 50)
+        (mem/v/c:SI (plus:SI (reg/f:SI 49)
+                (const_int 12 [0xc])) [0 +12 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:30 -1
+     (nil))
+(insn 10 9 11 2 (set (subreg:SI (reg:QI 51) 0)
+        (zero_extract:SI (reg:SI 50)
+            (const_int 1 [0x1])
+            (const_int 2 [0x2]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:30 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 42 [ _2 ])
+        (zero_extend:SI (reg:QI 51))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:30 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 52)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:77 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("EFUSE") [flags 0x40]  <var_decl 00000000072e93f0 EFUSE>)
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 53)
+        (mem/v/c:SI (plus:SI (reg/f:SI 52)
+                (const_int 12 [0xc])) [0 +12 S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:77 -1
+     (nil))
+(insn 14 13 15 2 (set (subreg:SI (reg:QI 54) 0)
+        (zero_extract:SI (reg:SI 53)
+            (const_int 3 [0x3])
+            (const_int 9 [0x9]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:77 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 45 [ _5 ])
+        (zero_extend:SI (reg:QI 54))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:77 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 56)
+        (ashift:SI (reg:SI 42 [ _2 ])
+            (const_int 3 [0x3]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:52 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 55)
+        (ior:SI (reg:SI 56)
+            (reg:SI 45 [ _5 ]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\hal\esp32\include\hal\efuse_ll.h":96:58 -1
+     (nil))
+(insn 18 17 22 2 (set (reg:SI 48 [ <retval> ])
+        (reg:SI 55)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":16:12 -1
+     (nil))
+(insn 22 18 23 2 (set (reg/i:SI 2 a2)
+        (reg:SI 48 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":17:1 -1
+     (nil))
+(insn 23 22 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":17:1 -1
+     (nil))
+
+;; Function bootloader_clock_get_rated_freq_mhz (bootloader_clock_get_rated_freq_mhz, funcdef_no=74, decl_uid=3439, cgraph_uid=76, symbol_order=75)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":22:5 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("efuse_hal_get_rated_freq_mhz") [flags 0x41]  <function_decl 000000000790c400 efuse_hal_get_rated_freq_mhz>) [0 efuse_hal_get_rated_freq_mhz S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":22:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("efuse_hal_get_rated_freq_mhz") [flags 0x41]  <function_decl 000000000790c400 efuse_hal_get_rated_freq_mhz>)
+        (nil))
+    (nil))
+(insn 7 6 8 2 (set (reg:SI 42 [ _1 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":22:12 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 43 [ <retval> ])
+        (reg:SI 42 [ _1 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":22:12 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 2 a2)
+        (reg:SI 43 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":44:1 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c":44:1 -1
+     (nil))

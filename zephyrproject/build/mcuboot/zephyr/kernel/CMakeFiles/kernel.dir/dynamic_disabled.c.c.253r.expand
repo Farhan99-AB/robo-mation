@@ -1,0 +1,91 @@
+
+;; Function z_impl_k_thread_stack_alloc (z_impl_k_thread_stack_alloc, funcdef_no=340, decl_uid=5065, cgraph_uid=341, symbol_order=340)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 11.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 43 [ size ])
+        (reg:SI 2 a2 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":13:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 44 [ flags ])
+        (reg:SI 3 a3 [ flags ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":13:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":14:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":15:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":17:2 -1
+     (nil))
+(insn 10 9 14 2 (set (reg/f:SI 42 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":17:9 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 2 a2)
+        (reg/f:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":18:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":18:1 -1
+     (nil))
+
+;; Function z_impl_k_thread_stack_free (z_impl_k_thread_stack_free, funcdef_no=341, decl_uid=5073, cgraph_uid=342, symbol_order=341)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 43 [ stack ])
+        (reg:SI 2 a2 [ stack ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":21:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":22:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":24:2 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 42 [ <retval> ])
+        (const_int -88 [0xffffffffffffffa8])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":24:9 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":25:1 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/kernel/dynamic_disabled.c":25:1 -1
+     (nil))

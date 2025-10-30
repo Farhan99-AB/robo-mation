@@ -1,0 +1,1769 @@
+
+;; Function bootloader_read_status_8b_rdsr (bootloader_read_status_8b_rdsr, funcdef_no=65, decl_uid=4226, cgraph_uid=67, symbol_order=68)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a10)
+        (const_int 5 [0x5])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 11 10 15 2 (set (reg:SI 42 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":169:12 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":170:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":170:1 -1
+     (nil))
+
+;; Function bootloader_read_status_8b_rdsr2 (bootloader_read_status_8b_rdsr2, funcdef_no=66, decl_uid=4228, cgraph_uid=69, symbol_order=70)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a10)
+        (const_int 53 [0x35])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 11 10 15 2 (set (reg:SI 42 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":174:12 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":175:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":175:1 -1
+     (nil))
+
+;; Function bootloader_read_status_16b_rdsr_rdsr2 (bootloader_read_status_16b_rdsr_rdsr2, funcdef_no=68, decl_uid=4232, cgraph_uid=73, symbol_order=74)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 21.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a10)
+        (const_int 5 [0x5])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 11 10 12 2 (set (reg:SI 42 [ _1 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:12 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 10 a10)
+        (const_int 53 [0x35])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 17 16 18 2 (set (reg:SI 43 [ _2 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:67 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 47)
+        (ashift:SI (reg:SI 43 [ _2 ])
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:120 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 46)
+        (ior:SI (reg:SI 47)
+            (reg:SI 42 [ _1 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:64 -1
+     (nil))
+(insn 20 19 24 2 (set (reg:SI 45 [ <retval> ])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":184:64 -1
+     (nil))
+(insn 24 20 25 2 (set (reg/i:SI 2 a2)
+        (reg:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":185:1 -1
+     (nil))
+(insn 25 24 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":185:1 -1
+     (nil))
+
+;; Function bootloader_write_status_8b_wrsr (bootloader_write_status_8b_wrsr, funcdef_no=69, decl_uid=4234, cgraph_uid=75, symbol_order=76)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 42 [ new_status ])
+        (reg:SI 2 a2 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":188:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a12)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a11)
+        (reg/v:SI 42 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (nil))
+(call_insn 11 10 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":189:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+
+;; Function bootloader_write_status_8b_wrsr2 (bootloader_write_status_8b_wrsr2, funcdef_no=70, decl_uid=4236, cgraph_uid=77, symbol_order=78)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 42 [ new_status ])
+        (reg:SI 2 a2 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":193:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a12)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a11)
+        (reg/v:SI 42 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 49 [0x31])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (nil))
+(call_insn 11 10 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":194:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+
+;; Function bootloader_write_status_16b_wrsr (bootloader_write_status_16b_wrsr, funcdef_no=72, decl_uid=4240, cgraph_uid=81, symbol_order=82)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 42 [ new_status ])
+        (reg:SI 2 a2 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":203:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a12)
+        (const_int 16 [0x10])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a11)
+        (reg/v:SI 42 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (nil))
+(call_insn 11 10 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":204:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+
+;; Function bootloader_read_status_8b_xmc25qu64a (bootloader_read_status_8b_xmc25qu64a, funcdef_no=73, decl_uid=4242, cgraph_uid=83, symbol_order=84)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 30.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a10)
+        (const_int 58 [0x3a])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":209:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":210:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 43)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":210:5 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 10 a10)
+        (reg:SI 43)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":210:5 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":210:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 15 14 16 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 10 a10)
+        (const_int 5 [0x5])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 21 20 22 2 (set (reg/v:SI 42 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI read_status (reg/v:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":211:28 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 10 a10)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":212:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 29 28 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":213:5 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 2 a2)
+        (reg/v:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":214:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":214:1 -1
+     (nil))
+
+;; Function bootloader_write_status_8b_xmc25qu64a (bootloader_write_status_8b_xmc25qu64a, funcdef_no=74, decl_uid=4244, cgraph_uid=85, symbol_order=86)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 42 [ new_status ])
+        (reg:SI 2 a2 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":217:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 58 [0x3a])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":218:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":219:5 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 43)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":219:5 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 10 a10)
+        (reg:SI 43)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":219:5 -1
+     (nil))
+(call_insn 15 14 16 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":219:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 16 15 17 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 12 a12)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 11 a11)
+        (reg/v:SI 42 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 10 a10)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":220:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":221:5 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 44)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":221:5 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 24 23 25 2 (set (reg:SI 10 a10)
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":221:5 -1
+     (nil))
+(call_insn 25 24 26 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":221:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 26 25 27 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 10 a10)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (nil))
+(call_insn 31 30 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":222:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+
+;; Function bootloader_enable_qio_mode (bootloader_enable_qio_mode, funcdef_no=62, decl_uid=2547, cgraph_uid=63, symbol_order=64)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 6->12 redirected to 13
+Redirecting jump 115 from 12 to 13.
+Forwarding edge 9->10 to 13 failed.
+Redirecting jump 150 from 10 to 13.
+deleting block 12
+Removing jump 150.
+Edge 15->18 redirected to 19
+Redirecting jump 266 from 18 to 19.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 9->10 to 13 failed.
+Deleted label in block 10.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":70:5 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":71:5 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":72:5 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":73:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":75:5 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":75:5 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":75:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":75:5 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":76:5 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 75)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":76:5 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 16 15 17 2 (set (reg:SI 10 a10)
+        (reg:SI 75)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":76:5 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":76:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 18 17 19 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":78:5 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 76)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":78:18 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 20 19 21 2 (set (reg/v:SI 45 [ raw_flash_id ])
+        (mem/c:SI (reg/f:SI 76) [1 g_rom_flashchip.device_id+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":78:18 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI raw_flash_id (reg/v:SI 45 [ raw_flash_id ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":78:18 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":79:5 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":79:5 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":79:5 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":81:5 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 77)
+        (lshiftrt:SI (reg/v:SI 45 [ raw_flash_id ])
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":81:28 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/v:SI 43 [ mfg_id ])
+        (zero_extend:SI (subreg:QI (reg:SI 77) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":81:12 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:QI mfg_id (subreg:QI (reg/v:SI 43 [ mfg_id ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":81:12 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":82:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg/v:SI 44 [ flash_id ])
+        (zero_extend:SI (subreg:HI (reg/v:SI 45 [ raw_flash_id ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":82:14 -1
+     (nil))
+(debug_insn 31 30 32 2 (var_location:HI flash_id (subreg:HI (reg/v:SI 44 [ flash_id ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":82:14 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":83:5 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":83:5 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":83:5 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:5 -1
+     (nil))
+(debug_insn 36 35 37 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:19 -1
+     (nil))
+(insn 38 37 3 2 (set (reg:SI 71 [ ivtmp$68 ])
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 3 38 124 2 (set (reg/v:SI 42 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:12 -1
+     (nil))
+(code_label 124 3 39 4 12 (nil) [1 uses])
+(note 39 124 40 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 4 (var_location:SI i (reg/v:SI 42 [ i ])) -1
+     (nil))
+(debug_insn 41 40 42 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":86:9 -1
+     (nil))
+(debug_insn 42 41 43 4 (var_location:SI D#1 (plus:SI (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":86:38 -1
+     (nil))
+(debug_insn 43 42 44 4 (var_location:SI chip (debug_expr:SI D#1)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":86:38 -1
+     (nil))
+(debug_insn 44 43 45 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:9 -1
+     (nil))
+(insn 45 44 46 4 (set (reg:SI 78)
+        (zero_extend:SI (mem:QI (plus:SI (reg:SI 71 [ ivtmp$68 ])
+                    (const_int 4 [0x4])) [0 MEM <const uint8_t> [(const struct bootloader_qio_info_t *)_35 + 4B]+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:12 -1
+     (nil))
+(jump_insn 46 45 47 4 (set (pc)
+        (if_then_else (ne (reg:SI 78)
+                (reg/v:SI 43 [ mfg_id ]))
+            (label_ref 117)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:12 -1
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 117)
+(note 47 46 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 5 (set (reg/f:SI 79)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 49 48 50 5 (set (reg:SI 80)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:SI 81)
+        (ashift:SI (reg:SI 80)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 51 50 52 5 (set (reg:SI 82)
+        (plus:SI (reg:SI 81)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 52 51 53 5 (set (reg:SI 83)
+        (ashift:SI (reg:SI 82)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 53 52 54 5 (set (reg:SI 82)
+        (reg:SI 83)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 54 53 55 5 (set (reg/f:SI 84)
+        (plus:SI (reg/f:SI 79)
+            (reg:SI 82))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 55 54 56 5 (set (reg:SI 86)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 84)
+                    (const_int 5 [0x5])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:SI 87)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 84)
+                    (const_int 6 [0x6])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 57 56 58 5 (set (reg:SI 88)
+        (ashift:SI (reg:SI 87)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 58 57 59 5 (set (reg:SI 89)
+        (ior:SI (reg:SI 88)
+            (reg:SI 86))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:74 -1
+     (nil))
+(insn 59 58 60 5 (set (reg:HI 90)
+        (subreg:HI (reg:SI 89) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:66 -1
+     (nil))
+(insn 60 59 61 5 (set (reg:SI 91)
+        (xor:SI (reg/v:SI 44 [ flash_id ])
+            (subreg:SI (reg:HI 90) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:66 -1
+     (nil))
+(insn 61 60 62 5 (set (reg/f:SI 92)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 62 61 63 5 (set (reg:SI 93)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 63 62 64 5 (set (reg:SI 94)
+        (ashift:SI (reg:SI 93)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 64 63 65 5 (set (reg:SI 95)
+        (plus:SI (reg:SI 94)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 65 64 66 5 (set (reg:SI 96)
+        (ashift:SI (reg:SI 95)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 66 65 67 5 (set (reg:SI 95)
+        (reg:SI 96)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 67 66 68 5 (set (reg/f:SI 97)
+        (plus:SI (reg/f:SI 92)
+            (reg:SI 95))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 68 67 69 5 (set (reg:SI 99)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 97)
+                    (const_int 7 [0x7])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 69 68 70 5 (set (reg:SI 100)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 97)
+                    (const_int 8 [0x8])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 70 69 71 5 (set (reg:SI 101)
+        (ashift:SI (reg:SI 100)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 71 70 72 5 (set (reg:SI 102)
+        (ior:SI (reg:SI 101)
+            (reg:SI 99))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:55 -1
+     (nil))
+(insn 72 71 73 5 (set (reg:HI 103)
+        (subreg:HI (reg:SI 91) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:66 -1
+     (nil))
+(insn 73 72 74 5 (set (reg:HI 104)
+        (subreg:HI (reg:SI 102) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:66 -1
+     (nil))
+(insn 74 73 75 5 (set (reg:SI 105)
+        (and:SI (subreg:SI (reg:HI 103) 0)
+            (subreg:SI (reg:HI 104) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:66 -1
+     (nil))
+(insn 75 74 76 5 (set (reg:HI 106)
+        (subreg:HI (reg:SI 105) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:36 -1
+     (nil))
+(insn 76 75 77 5 (set (reg:SI 107)
+        (zero_extend:SI (reg:HI 106))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:36 -1
+     (nil))
+(jump_insn 77 76 78 5 (set (pc)
+        (if_then_else (ne (reg:SI 107)
+                (const_int 0 [0]))
+            (label_ref 117)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":87:36 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 117)
+(note 78 77 79 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 79 78 80 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(debug_insn 80 79 81 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 81 80 84 6 (set (reg/f:SI 108)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("esp_log_default_level") [flags 0x40]  <var_decl 0000000006dde360 esp_log_default_level>)
+        (nil)))
+(insn 84 81 85 6 (set (reg:SI 109)
+        (mem/c:SI (reg/f:SI 108) [1 esp_log_default_level+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(jump_insn 85 84 86 6 (set (pc)
+        (if_then_else (geu (reg:SI 109)
+                (const_int 3 [0x3]))
+            (pc)
+            (label_ref:SI 154))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 65 {*ubfalse}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 154)
+(note 86 85 87 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 87 86 88 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(call_insn 88 87 89 7 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>) [0 esp_log_timestamp S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>)
+        (nil))
+    (nil))
+(insn 89 88 90 7 (set (reg:SI 53 [ _25 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 90 89 91 7 (set (reg/f:SI 110)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 91 90 92 7 (set (reg:SI 111)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 92 91 93 7 (set (reg:SI 112)
+        (ashift:SI (reg:SI 111)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 93 92 94 7 (set (reg:SI 113)
+        (plus:SI (reg:SI 112)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 94 93 95 7 (set (reg:SI 114)
+        (ashift:SI (reg:SI 113)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 95 94 96 7 (set (reg:SI 113)
+        (reg:SI 114)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 96 95 97 7 (set (reg/f:SI 115)
+        (plus:SI (reg/f:SI 110)
+            (reg:SI 113))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 97 96 98 7 (set (reg:SI 117)
+        (zero_extend:SI (mem/u/c:QI (reg/f:SI 115) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 98 97 99 7 (set (reg:SI 118)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 115)
+                    (const_int 1 [0x1])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 99 98 100 7 (set (reg:SI 119)
+        (ashift:SI (reg:SI 118)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 100 99 101 7 (set (reg:SI 120)
+        (ior:SI (reg:SI 119)
+            (reg:SI 117))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 101 100 102 7 (set (reg:SI 121)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 115)
+                    (const_int 2 [0x2])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 102 101 103 7 (set (reg:SI 122)
+        (ashift:SI (reg:SI 121)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 103 102 104 7 (set (reg:SI 123)
+        (ior:SI (reg:SI 122)
+            (reg:SI 120))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 104 103 105 7 (set (reg:SI 124)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 115)
+                    (const_int 3 [0x3])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 105 104 106 7 (set (reg:SI 125)
+        (ashift:SI (reg:SI 124)
+            (const_int 24 [0x18]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 106 105 107 7 (set (reg:SI 126)
+        (ior:SI (reg:SI 125)
+            (reg:SI 123))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 107 106 108 7 (set (reg:SI 127)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC5") [flags 0x2]  <var_decl 0000000006fa47e0 *.LC5>)
+        (nil)))
+(insn 108 107 109 7 (set (reg:SI 128)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC8") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC7") [flags 0x2]  <var_decl 00000000070e2000 *.LC7>)
+        (nil)))
+(insn 109 108 110 7 (set (reg:SI 13 a13)
+        (reg:SI 126)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 110 109 111 7 (set (reg:SI 12 a12)
+        (reg:SI 127)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 111 110 112 7 (set (reg:SI 11 a11)
+        (reg:SI 53 [ _25 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(insn 112 111 113 7 (set (reg:SI 10 a10)
+        (reg:SI 128)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (nil))
+(call_insn 113 112 114 7 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>) [0 esp_rom_printf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 114 113 115 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":93:5 -1
+     (nil))
+(jump_insn 115 114 116 7 (set (pc)
+        (label_ref:SI 154)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":88:13 84 {jump}
+     (nil)
+ -> 154)
+(barrier 116 115 117)
+(code_label 117 116 118 8 10 (nil) [2 uses])
+(note 118 117 119 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 119 118 120 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:37 -1
+     (nil))
+(insn 120 119 121 8 (set (reg/v:SI 42 [ i ])
+        (plus:SI (reg/v:SI 42 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:37 -1
+     (nil))
+(debug_insn 121 120 122 8 (var_location:SI i (reg/v:SI 42 [ i ])) -1
+     (nil))
+(debug_insn 122 121 123 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:19 -1
+     (nil))
+(insn 123 122 125 8 (set (reg:SI 71 [ ivtmp$68 ])
+        (plus:SI (reg:SI 71 [ ivtmp$68 ])
+            (const_int 18 [0x12]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:19 -1
+     (nil))
+(jump_insn 125 123 126 8 (set (pc)
+        (if_then_else (ne (reg/v:SI 42 [ i ])
+                (const_int 6 [0x6]))
+            (label_ref 124)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":85:19 -1
+     (int_list:REG_BR_PROB 920304124 (nil))
+ -> 124)
+(note 126 125 127 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 127 126 128 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":93:5 -1
+     (nil))
+(debug_insn 128 127 129 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(debug_insn 129 128 130 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(insn 130 129 133 9 (set (reg/f:SI 129)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("esp_log_default_level") [flags 0x40]  <var_decl 0000000006dde360 esp_log_default_level>)
+        (nil)))
+(insn 133 130 134 9 (set (reg:SI 130)
+        (mem/c:SI (reg/f:SI 129) [1 esp_log_default_level+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(jump_insn 134 133 135 9 (set (pc)
+        (if_then_else (ltu (reg:SI 130)
+                (const_int 3 [0x3]))
+            (pc)
+            (label_ref 138))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (int_list:REG_BR_PROB 354334804 (nil))
+ -> 138)
+(note 135 134 136 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 136 135 137 10 (set (pc)
+        (label_ref 154)) -1
+     (nil)
+ -> 154)
+(barrier 137 136 138)
+(code_label 138 137 139 11 13 (nil) [1 uses])
+(note 139 138 140 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 140 139 141 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(call_insn 141 140 142 11 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>) [0 esp_log_timestamp S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>)
+        (nil))
+    (nil))
+(insn 142 141 143 11 (set (reg:SI 56 [ _29 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(insn 143 142 144 11 (set (reg:SI 131)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC5") [flags 0x2]  <var_decl 0000000006fa47e0 *.LC5>)
+        (nil)))
+(insn 144 143 145 11 (set (reg:SI 132)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC10") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC9") [flags 0x2]  <var_decl 00000000070e2090 *.LC9>)
+        (nil)))
+(insn 145 144 146 11 (set (reg:SI 12 a12)
+        (reg:SI 131)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(insn 146 145 147 11 (set (reg:SI 11 a11)
+        (reg:SI 56 [ _29 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(insn 147 146 148 11 (set (reg:SI 10 a10)
+        (reg:SI 132)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(call_insn 148 147 154 11 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>) [0 esp_rom_printf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(code_label 154 148 155 13 14 (nil) [3 uses])
+(note 155 154 156 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 156 155 157 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":94:9 -1
+     (nil))
+(debug_insn 157 156 158 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(insn 158 157 159 13 (set (reg/f:SI 133)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 159 158 160 13 (set (reg:SI 134)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 160 159 161 13 (set (reg:SI 135)
+        (ashift:SI (reg:SI 134)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 161 160 162 13 (set (reg:SI 136)
+        (plus:SI (reg:SI 135)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 162 161 163 13 (set (reg:SI 137)
+        (ashift:SI (reg:SI 136)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 163 162 164 13 (set (reg:SI 136)
+        (reg:SI 137)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 164 163 165 13 (set (reg/f:SI 138)
+        (plus:SI (reg/f:SI 133)
+            (reg:SI 136))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 165 164 166 13 (set (reg:SI 139)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 138)
+                    (const_int 9 [0x9])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 166 165 167 13 (set (reg:SI 140)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 138)
+                    (const_int 10 [0xa])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 167 166 168 13 (set (reg:SI 141)
+        (ashift:SI (reg:SI 140)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 168 167 169 13 (set (reg:SI 142)
+        (ior:SI (reg:SI 141)
+            (reg:SI 139))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 169 168 170 13 (set (reg:SI 143)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 138)
+                    (const_int 11 [0xb])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 170 169 171 13 (set (reg:SI 144)
+        (ashift:SI (reg:SI 143)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 171 170 172 13 (set (reg:SI 145)
+        (ior:SI (reg:SI 144)
+            (reg:SI 142))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 172 171 173 13 (set (reg:SI 146)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 138)
+                    (const_int 12 [0xc])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 173 172 174 13 (set (reg:SI 147)
+        (ashift:SI (reg:SI 146)
+            (const_int 24 [0x18]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 174 173 175 13 (set (reg:SI 148)
+        (ior:SI (reg:SI 147)
+            (reg:SI 145))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 175 174 176 13 (set (reg/f:SI 57 [ _31 ])
+        (reg:SI 148)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:56 -1
+     (nil))
+(insn 176 175 177 13 (set (reg/f:SI 149)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 177 176 178 13 (set (reg:SI 150)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 178 177 179 13 (set (reg:SI 151)
+        (ashift:SI (reg:SI 150)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 179 178 180 13 (set (reg:SI 152)
+        (plus:SI (reg:SI 151)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 180 179 181 13 (set (reg:SI 153)
+        (ashift:SI (reg:SI 152)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 181 180 182 13 (set (reg:SI 152)
+        (reg:SI 153)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 182 181 183 13 (set (reg/f:SI 154)
+        (plus:SI (reg/f:SI 149)
+            (reg:SI 152))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 183 182 184 13 (set (reg:SI 155)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 154)
+                    (const_int 13 [0xd])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 184 183 185 13 (set (reg:SI 156)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 154)
+                    (const_int 14 [0xe])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 185 184 186 13 (set (reg:SI 157)
+        (ashift:SI (reg:SI 156)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 186 185 187 13 (set (reg:SI 158)
+        (ior:SI (reg:SI 157)
+            (reg:SI 155))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 187 186 188 13 (set (reg:SI 159)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 154)
+                    (const_int 15 [0xf])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 188 187 189 13 (set (reg:SI 160)
+        (ashift:SI (reg:SI 159)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 189 188 190 13 (set (reg:SI 161)
+        (ior:SI (reg:SI 160)
+            (reg:SI 158))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 190 189 191 13 (set (reg:SI 162)
+        (zero_extend:SI (mem/u/c:QI (plus:SI (reg/f:SI 154)
+                    (const_int 16 [0x10])) [0  S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 191 190 192 13 (set (reg:SI 163)
+        (ashift:SI (reg:SI 162)
+            (const_int 24 [0x18]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 192 191 193 13 (set (reg:SI 164)
+        (ior:SI (reg:SI 163)
+            (reg:SI 161))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(insn 193 192 194 13 (set (reg/f:SI 58 [ _32 ])
+        (reg:SI 164)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":97:56 -1
+     (nil))
+(debug_insn 194 193 195 13 (var_location:QI D#2 (mem/u:QI (plus:SI (mult:SI (reg/v:SI 42 [ i ])
+                (const_int 18 [0x12]))
+            (const:SI (plus:SI (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+                    (const_int 17 [0x11])))) [0 bootloader_flash_qe_support_list[i_26].status_qio_bit+0 S1 A8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 195 194 196 13 (set (reg/f:SI 165)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:SI ("bootloader_flash_qe_support_list") [flags 0x2]  <var_decl 0000000006dde2d0 bootloader_flash_qe_support_list>)
+        (nil)))
+(insn 196 195 197 13 (set (reg:SI 166)
+        (reg/v:SI 42 [ i ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 197 196 198 13 (set (reg:SI 167)
+        (ashift:SI (reg:SI 166)
+            (const_int 3 [0x3]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 198 197 199 13 (set (reg:SI 168)
+        (plus:SI (reg:SI 167)
+            (reg/v:SI 42 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 9 [0x9]))
+        (nil)))
+(insn 199 198 200 13 (set (reg:SI 169)
+        (ashift:SI (reg:SI 168)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 200 199 201 13 (set (reg:SI 168)
+        (reg:SI 169)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (expr_list:REG_EQUAL (mult:SI (reg/v:SI 42 [ i ])
+            (const_int 18 [0x12]))
+        (nil)))
+(insn 201 200 202 13 (set (reg:SI 170)
+        (plus:SI (reg/f:SI 165)
+            (reg:SI 168))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 202 201 203 13 (set (reg/f:SI 171)
+        (plus:SI (reg:SI 170)
+            (const_int 17 [0x11]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":98:56 -1
+     (nil))
+(insn 203 202 204 13 (set (reg:SI 60 [ _34 ])
+        (zero_extend:SI (mem/u:QI (reg/f:SI 171) [0 bootloader_flash_qe_support_list[i_26].status_qio_bit+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 204 203 205 13 (var_location:SI read_status_fn (reg/f:SI 57 [ _31 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 205 204 206 13 (var_location:SI write_status_fn (reg/f:SI 58 [ _32 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 206 205 207 13 (var_location:QI status_qio_bit (debug_expr:QI D#2)) -1
+     (nil))
+(debug_insn 207 206 208 13 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":124:18 -1
+     (nil))
+(debug_insn 208 207 209 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":128:5 -1
+     (nil))
+(debug_insn 209 208 210 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":130:5 -1
+     (nil))
+(insn 210 209 211 13 (set (reg:SI 172)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":130:5 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 211 210 212 13 (set (reg:SI 10 a10)
+        (reg:SI 172)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":130:5 -1
+     (nil))
+(call_insn 212 211 213 13 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":130:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 213 212 214 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":132:5 -1
+     (nil))
+(call_insn 214 213 215 13 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 57 [ _31 ]) [0 *_31 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":132:14 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (nil))
+(insn 215 214 216 13 (set (reg/v:SI 62 [ status ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":132:14 -1
+     (nil))
+(debug_insn 216 215 217 13 (var_location:SI status (reg/v:SI 62 [ status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":132:14 -1
+     (nil))
+(debug_insn 217 216 218 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":133:5 -1
+     (nil))
+(debug_insn 218 217 219 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":133:5 -1
+     (nil))
+(debug_insn 219 218 220 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":133:5 -1
+     (nil))
+(debug_insn 220 219 221 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":135:5 -1
+     (nil))
+(insn 221 220 222 13 (set (reg:SI 173)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":135:22 -1
+     (nil))
+(insn 222 221 223 13 (set (reg:SI 64 [ _39 ])
+        (ashift:SI (reg:SI 173)
+            (reg:SI 60 [ _34 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":135:22 -1
+     (nil))
+(insn 223 222 224 13 (set (reg:SI 174)
+        (and:SI (reg/v:SI 62 [ status ])
+            (reg:SI 64 [ _39 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":135:17 -1
+     (nil))
+(jump_insn 224 223 225 13 (set (pc)
+        (if_then_else (ne (reg:SI 174)
+                (const_int 0 [0]))
+            (label_ref 268)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":135:8 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 268)
+(note 225 224 226 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 226 225 227 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (nil))
+(insn 227 226 228 14 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (nil))
+(insn 228 227 229 14 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (nil))
+(insn 229 228 230 14 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (nil))
+(insn 230 229 231 14 (set (reg:SI 10 a10)
+        (const_int 6 [0x6])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (nil))
+(call_insn 231 230 232 14 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":136:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 232 231 233 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":137:9 -1
+     (nil))
+(insn 233 232 234 14 (set (reg:SI 175)
+        (ior:SI (reg/v:SI 62 [ status ])
+            (reg:SI 64 [ _39 ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":137:9 -1
+     (nil))
+(insn 234 233 235 14 (set (reg:SI 10 a10)
+        (reg:SI 175)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":137:9 -1
+     (nil))
+(call_insn 235 234 236 14 (call (mem:SI (reg/f:SI 58 [ _32 ]) [0 *_32 S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":137:9 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 236 235 237 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":139:9 -1
+     (nil))
+(insn 237 236 238 14 (set (reg:SI 176)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":139:9 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("g_rom_flashchip") [flags 0x40]  <var_decl 00000000066e33f0 g_rom_flashchip>)
+        (nil)))
+(insn 238 237 239 14 (set (reg:SI 10 a10)
+        (reg:SI 176)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":139:9 -1
+     (nil))
+(call_insn 239 238 240 14 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>) [0 esp_rom_spiflash_wait_idle S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":139:9 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_wait_idle") [flags 0x41]  <function_decl 0000000006bd3d00 esp_rom_spiflash_wait_idle>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 240 239 241 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":141:9 -1
+     (nil))
+(call_insn 241 240 242 14 (set (reg:SI 10 a10)
+        (call (mem:SI (reg/f:SI 57 [ _31 ]) [0 *_31 S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":141:18 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (nil))
+(insn 242 241 243 14 (set (reg/v:SI 67 [ status ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":141:18 -1
+     (nil))
+(debug_insn 243 242 244 14 (var_location:SI status (reg/v:SI 67 [ status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":141:18 -1
+     (nil))
+(debug_insn 244 243 245 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":142:9 -1
+     (nil))
+(debug_insn 245 244 246 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":142:9 -1
+     (nil))
+(debug_insn 246 245 247 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":142:9 -1
+     (nil))
+(debug_insn 247 246 248 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":143:9 -1
+     (nil))
+(insn 248 247 249 14 (set (reg:SI 177)
+        (and:SI (reg:SI 64 [ _39 ])
+            (reg/v:SI 67 [ status ]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":143:21 -1
+     (nil))
+(jump_insn 249 248 250 14 (set (pc)
+        (if_then_else (ne (reg:SI 177)
+                (const_int 0 [0]))
+            (label_ref 268)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":143:12 -1
+     (int_list:REG_BR_PROB 1062574916 (nil))
+ -> 268)
+(note 250 249 251 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 251 250 252 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(debug_insn 252 251 253 15 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(insn 253 252 254 15 (set (reg/f:SI 178)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("esp_log_default_level") [flags 0x40]  <var_decl 0000000006dde360 esp_log_default_level>)
+        (nil)))
+(insn 254 253 255 15 (set (reg:SI 179)
+        (mem/c:SI (reg/f:SI 178) [1 esp_log_default_level+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(jump_insn 255 254 256 15 (set (pc)
+        (if_then_else (eq (reg:SI 179)
+                (const_int 0 [0]))
+            (label_ref:SI 297)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 62 {*btrue}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 297)
+(note 256 255 257 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 257 256 258 16 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(call_insn 258 257 259 16 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>) [0 esp_log_timestamp S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_log_timestamp") [flags 0x41]  <function_decl 0000000006e21200 esp_log_timestamp>)
+        (nil))
+    (nil))
+(insn 259 258 260 16 (set (reg:SI 70 [ _45 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(insn 260 259 261 16 (set (reg:SI 180)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC5") [flags 0x2]  <var_decl 0000000006fa47e0 *.LC5>)
+        (nil)))
+(insn 261 260 262 16 (set (reg:SI 181)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC12") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC11") [flags 0x2]  <var_decl 00000000070e2120 *.LC11>)
+        (nil)))
+(insn 262 261 263 16 (set (reg:SI 12 a12)
+        (reg:SI 180)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(insn 263 262 264 16 (set (reg:SI 11 a11)
+        (reg:SI 70 [ _45 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(insn 264 263 265 16 (set (reg:SI 10 a10)
+        (reg:SI 181)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (nil))
+(call_insn 265 264 266 16 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>) [0 esp_rom_printf S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_printf") [flags 0x41]  <function_decl 0000000006e10700 esp_rom_printf>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(jump_insn 266 265 267 16 (set (pc)
+        (label_ref:SI 297)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":144:13 84 {jump}
+     (nil)
+ -> 297)
+(barrier 267 266 268)
+(code_label 268 267 269 17 16 (nil) [2 uses])
+(note 269 268 270 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 270 269 271 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":149:9 -1
+     (nil))
+(debug_insn 271 270 272 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":152:5 -1
+     (nil))
+(debug_insn 272 271 273 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":152:5 -1
+     (nil))
+(debug_insn 273 272 274 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":152:5 -1
+     (nil))
+(debug_insn 274 273 275 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":154:5 -1
+     (nil))
+(debug_insn 275 274 276 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":158:5 -1
+     (nil))
+(debug_insn 276 275 277 17 (var_location:SI mode (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":158:10 -1
+     (nil))
+(debug_insn 277 276 278 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":161:5 -1
+     (nil))
+(insn 278 277 279 17 (set (reg:SI 10 a10)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":161:5 -1
+     (nil))
+(call_insn 279 278 280 17 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_config_readmode") [flags 0x41]  <function_decl 0000000006bd3000 esp_rom_spiflash_config_readmode>) [0 esp_rom_spiflash_config_readmode S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":161:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_config_readmode") [flags 0x41]  <function_decl 0000000006bd3000 esp_rom_spiflash_config_readmode>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 280 279 281 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":163:5 -1
+     (nil))
+(debug_insn 281 280 282 17 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":105:13 -1
+     (nil))
+(debug_insn 282 281 283 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (nil))
+(call_insn 283 282 284 17 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("flash_get_wp_pin") [flags 0x41]  <function_decl 0000000006f24900 flash_get_wp_pin>) [0 flash_get_wp_pin S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:38 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("flash_get_wp_pin") [flags 0x41]  <function_decl 0000000006f24900 flash_get_wp_pin>)
+        (nil))
+    (nil))
+(insn 284 283 285 17 (set (reg:SI 72 [ _48 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:38 -1
+     (nil))
+(call_insn 285 284 286 17 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("esp_rom_efuse_get_flash_gpio_info") [flags 0x41]  <function_decl 0000000006e21d00 esp_rom_efuse_get_flash_gpio_info>) [0 esp_rom_efuse_get_flash_gpio_info S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_efuse_get_flash_gpio_info") [flags 0x41]  <function_decl 0000000006e21d00 esp_rom_efuse_get_flash_gpio_info>)
+        (nil))
+    (nil))
+(insn 286 285 287 17 (set (reg:SI 74 [ _50 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (nil))
+(insn 287 286 288 17 (set (reg:SI 182)
+        (and:SI (reg:SI 72 [ _48 ])
+            (const_int 255 [0xff]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (nil))
+(insn 288 287 289 17 (set (reg:SI 11 a11)
+        (reg:SI 74 [ _50 ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (nil))
+(insn 289 288 290 17 (set (reg:SI 10 a10)
+        (reg:SI 182)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (nil))
+(call_insn 290 289 293 17 (call (mem:SI (symbol_ref:SI ("esp_rom_spiflash_select_qio_pins") [flags 0x41]  <function_decl 0000000006bd3e00 esp_rom_spiflash_select_qio_pins>) [0 esp_rom_spiflash_select_qio_pins S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":110:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("esp_rom_spiflash_select_qio_pins") [flags 0x41]  <function_decl 0000000006bd3e00 esp_rom_spiflash_select_qio_pins>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(debug_insn 293 290 294 17 (var_location:SI read_status_fn (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 294 293 295 17 (var_location:SI write_status_fn (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 295 294 296 17 (var_location:QI status_qio_bit (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(debug_insn 296 295 297 17 (var_location:SI status (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":96:5 -1
+     (nil))
+(code_label 297 296 298 19 9 (nil) [2 uses])
+(note 298 297 0 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+
+;; Function bootloader_read_status_8b_rdsr3 (bootloader_read_status_8b_rdsr3, funcdef_no=67, decl_uid=4230, cgraph_uid=71, symbol_order=72)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 13 a13)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 12 a12)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a10)
+        (const_int 21 [0x15])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(insn 11 10 15 2 (set (reg:SI 42 [ <retval> ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":179:12 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 2 a2)
+        (reg:SI 42 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":180:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":180:1 -1
+     (nil))
+
+;; Function bootloader_write_status_8b_wrsr3 (bootloader_write_status_8b_wrsr3, funcdef_no=71, decl_uid=4238, cgraph_uid=79, symbol_order=80)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 42 [ new_status ])
+        (reg:SI 2 a2 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":198:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 13 a13)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 12 a12)
+        (const_int 8 [0x8])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a11)
+        (reg/v:SI 42 [ new_status ])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a10)
+        (const_int 17 [0x11])) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (nil))
+(call_insn 11 10 0 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>) [0 bootloader_execute_flash_command S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c":199:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("bootloader_execute_flash_command") [flags 0x41]  <function_decl 0000000006e10100 bootloader_execute_flash_command>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))

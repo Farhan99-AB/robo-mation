@@ -1,0 +1,56 @@
+
+;; Function __chk_fail (__chk_fail, funcdef_no=373, decl_uid=6658, cgraph_uid=374, symbol_order=373) (executed once)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":15:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 42)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":15:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 0000000007d8b990 *.LC0>)
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 10 a10)
+        (reg:SI 42)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":15:2 -1
+     (nil))
+(call_insn 8 7 9 2 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 00000000073ada00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":15:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 00000000073ada00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":16:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":16:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 10 a10)
+        (const_int 2 [0x2])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":16:2 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:SI (symbol_ref:SI ("xtensa_arch_except") [flags 0x41]  <function_decl 0000000007981200 xtensa_arch_except>) [0 xtensa_arch_except S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":16:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_arch_except") [flags 0x41]  <function_decl 0000000007981200 xtensa_arch_except>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 13 12 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/lib/libc/picolibc/chk_fail.c":16:2 -1
+     (nil))
+(barrier 14 13 0)

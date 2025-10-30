@@ -1,0 +1,1462 @@
+
+;; Function xtensa_cpu_process_stack_pc (xtensa_cpu_process_stack_pc, funcdef_no=18, decl_uid=1923, cgraph_uid=19, symbol_order=20)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 39.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 48 [ pc ])
+        (reg:SI 2 a2 [ pc ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":24:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":25:2 -1
+     (nil))
+(jump_insn 9 6 10 2 (set (pc)
+        (if_then_else (ge (reg/v:SI 48 [ pc ])
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":25:5 -1
+     (int_list:REG_BR_PROB 633507684 (nil))
+ -> 33)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 11 10 12 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":29:3 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 49)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:13 -1
+     (expr_list:REG_EQUAL (const_int 1073741823 [0x3fffffff])
+        (nil)))
+(insn 13 12 14 4 (set (reg:SI 46 [ _13 ])
+        (and:SI (reg/v:SI 48 [ pc ])
+            (reg:SI 49))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:13 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 50)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC1") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":29:13 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("cause") [flags 0x2]  <var_decl 00000000066a0ab0 cause>)
+        (nil)))
+(insn 15 14 16 4 (set (reg:SI 51)
+        (const_int 20 [0x14])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":29:6 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 52)
+        (mem/c:SI (reg/f:SI 50) [2 cause+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":29:6 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (if_then_else (eq (reg:SI 52)
+                (reg:SI 51))
+            (label_ref 26)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":29:6 -1
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 26)
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:4 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:SI 53)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:27 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("mask") [flags 0x2]  <var_decl 00000000066a0a20 mask>)
+        (nil)))
+(insn 21 20 22 5 (set (reg:SI 54)
+        (mem/c:SI (reg/f:SI 53) [2 mask+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:7 -1
+     (nil))
+(insn 22 21 23 5 (set (reg/v:SI 48 [ pc ])
+        (ior:SI (reg:SI 46 [ _13 ])
+            (reg:SI 54))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:7 -1
+     (nil))
+(debug_insn 23 22 24 5 (var_location:SI pc (reg/v:SI 48 [ pc ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":30:7 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (label_ref 33)) -1
+     (nil)
+ -> 33)
+(barrier 25 24 26)
+(code_label 26 25 27 6 3 (nil) [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 28 27 29 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":32:4 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 55)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":32:7 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:SI 55)
+        (ashift:SI (reg:SI 55)
+            (const_int 30 [0x1e]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":32:7 -1
+     (expr_list:REG_EQUAL (const_int 1073741824 [0x40000000])
+        (nil)))
+(insn 31 30 32 6 (set (reg/v:SI 48 [ pc ])
+        (ior:SI (reg:SI 46 [ _13 ])
+            (reg:SI 55))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":32:7 -1
+     (nil))
+(debug_insn 32 31 33 6 (var_location:SI pc (reg/v:SI 48 [ pc ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":32:7 -1
+     (nil))
+(code_label 33 32 34 7 2 (nil) [2 uses])
+(note 34 33 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 35 34 36 7 (var_location:SI pc (reg/v:SI 48 [ pc ])) -1
+     (nil))
+(debug_insn 36 35 37 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":38:2 -1
+     (nil))
+(insn 37 36 38 7 (set (reg:SI 56)
+        (plus:SI (reg/v:SI 48 [ pc ])
+            (const_int -3 [0xfffffffffffffffd]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":38:12 -1
+     (nil))
+(insn 38 37 42 7 (set (reg:SI 47 [ <retval> ])
+        (reg:SI 56)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":38:12 -1
+     (nil))
+(insn 42 38 43 7 (set (reg/i:SI 2 a2)
+        (reg:SI 47 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":39:1 -1
+     (nil))
+(insn 43 42 0 7 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":39:1 -1
+     (nil))
+
+;; Function xtensa_ptr_executable (xtensa_ptr_executable, funcdef_no=20, decl_uid=1930, cgraph_uid=21, symbol_order=22)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Edge 2->5 redirected to 8
+Edge 3->5 redirected to 9
+Predictions for insn 25 bb 2
+  no prediction heuristics: 50.00%  exec 1073741824 (estimated locally) hit 2147483640 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 1073741824 (estimated locally) hit 2147483640 (estimated locally) (200.0%)
+Predictions for insn 40 bb 12
+  no prediction heuristics: 50.00%  exec 805306368 (estimated locally) hit 1610612730 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 805306368 (estimated locally) hit 1610612730 (estimated locally) (200.0%)
+Predictions for insn 65 bb 4
+  no prediction heuristics: 50.00%  exec 268435456 (estimated locally) hit 536870910 (estimated locally) (200.0%)
+  combined heuristics: 50.00%  exec 268435456 (estimated locally) hit 536870910 (estimated locally) (200.0%)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 77.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 53 [ p ])
+        (reg:SI 2 a2 [ p ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":65:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":67:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI p (reg/v/f:SI 53 [ p ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":67:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":213:20 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":215:5 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI ip (reg/v/f:SI 53 [ p ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":215:14 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:5 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 42 [ ip$7_3 ])
+        (reg/v/f:SI 53 [ p ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 55)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC3") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (expr_list:REG_EQUAL (const_int -1074593792 [0xffffffffbff30000])
+        (nil)))
+(insn 16 15 20 2 (set (reg:SI 54)
+        (plus:SI (reg:SI 42 [ ip$7_3 ])
+            (reg:SI 55))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (nil))
+(insn 20 16 24 2 (set (reg:QI 56)
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (nil))
+(insn 24 20 25 2 (set (reg:SI 58)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (expr_list:REG_EQUAL (const_int 3342335 [0x32ffff])
+        (nil)))
+(jump_insn 25 24 91 2 (set (pc)
+        (if_then_else (geu (reg:SI 58)
+                (reg:SI 54))
+            (label_ref 27)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 27)
+(note 91 25 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 26 91 27 4 (set (reg:QI 56)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":216:32 -1
+     (nil))
+(code_label 27 26 92 5 7 (nil) [1 uses])
+(note 92 27 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 92 29 5 (set (reg:SI 59)
+        (zero_extend:SI (reg:QI 56))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(jump_insn 29 28 93 5 (set (pc)
+        (if_then_else (ne (reg:SI 59)
+                (const_int 0 [0]))
+            (label_ref:SI 86)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 62 {*btrue}
+     (int_list:REG_BR_PROB 268435460 (nil))
+ -> 86)
+(note 93 29 30 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 30 93 31 6 (set (reg:SI 61)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC5") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (expr_list:REG_EQUAL (const_int -1074233344 [0xffffffffbff88000])
+        (nil)))
+(insn 31 30 35 6 (set (reg:SI 60)
+        (plus:SI (reg:SI 42 [ ip$7_3 ])
+            (reg:SI 61))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (nil))
+(insn 35 31 39 6 (set (reg:QI 62)
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (nil))
+(insn 39 35 40 6 (set (reg:SI 64)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (expr_list:REG_EQUAL (const_int 204799 [0x31fff])
+        (nil)))
+(jump_insn 40 39 94 6 (set (pc)
+        (if_then_else (geu (reg:SI 64)
+                (reg:SI 60))
+            (label_ref 42)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 42)
+(note 94 40 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 94 42 7 (set (reg:QI 62)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":217:32 -1
+     (nil))
+(code_label 42 41 95 8 8 (nil) [1 uses])
+(note 95 42 43 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 43 95 44 8 (set (reg:SI 65)
+        (zero_extend:SI (reg:QI 62))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(jump_insn 44 43 45 8 (set (pc)
+        (if_then_else (ne (reg:SI 65)
+                (const_int 0 [0]))
+            (label_ref:SI 86)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 62 {*btrue}
+     (int_list:REG_BR_PROB 357913948 (nil))
+ -> 86)
+(note 45 44 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 9 (set (reg:SI 67)
+        (const_int -1 [0xffffffffffffffff])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":218:37 -1
+     (nil))
+(insn 47 46 48 9 (set (reg:SI 67)
+        (ashift:SI (reg:SI 67)
+            (const_int 30 [0x1e]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":218:37 -1
+     (expr_list:REG_EQUAL (const_int -1073741824 [0xffffffffc0000000])
+        (nil)))
+(insn 48 47 52 9 (set (reg:SI 66)
+        (plus:SI (reg:SI 42 [ ip$7_3 ])
+            (reg:SI 67))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":218:37 -1
+     (nil))
+(insn 52 48 53 9 (set (reg:SI 68)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC7") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":218:9 -1
+     (expr_list:REG_EQUAL (const_int 458751 [0x6ffff])
+        (nil)))
+(jump_insn 53 52 54 9 (set (pc)
+        (if_then_else (geu (reg:SI 68)
+                (reg:SI 66))
+            (label_ref:SI 90)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":218:9 64 {*ubtrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 90)
+(note 54 53 55 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 10 (set (reg:SI 70)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC8") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:36 -1
+     (expr_list:REG_EQUAL (const_int -1074528256 [0xffffffffbff40000])
+        (nil)))
+(insn 56 55 60 10 (set (reg:SI 69)
+        (plus:SI (reg:SI 42 [ ip$7_3 ])
+            (reg:SI 70))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:36 -1
+     (nil))
+(insn 60 56 64 10 (set (reg:SI 71)
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(insn 64 60 65 10 (set (reg:SI 73)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC9") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (expr_list:REG_EQUAL (const_int 8191 [0x1fff])
+        (nil)))
+(jump_insn 65 64 96 10 (set (pc)
+        (if_then_else (geu (reg:SI 73)
+                (reg:SI 69))
+            (label_ref 67)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 67)
+(note 96 65 66 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 66 96 67 11 (set (reg:SI 71)
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(code_label 67 66 97 12 9 (nil) [1 uses])
+(note 97 67 68 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 68 97 83 12 (set (reg:SI 47 [ iftmp$6_12 ])
+        (reg:SI 71)) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(jump_insn 83 68 84 12 (set (pc)
+        (label_ref 69)) -1
+     (nil)
+ -> 69)
+(barrier 84 83 86)
+(code_label 86 84 85 13 10 (nil) [2 uses])
+(note 85 86 4 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 4 85 87 13 (set (reg:SI 47 [ iftmp$6_12 ])
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(jump_insn 87 4 88 13 (set (pc)
+        (label_ref 69)) -1
+     (nil)
+ -> 69)
+(barrier 88 87 90)
+(code_label 90 88 89 14 11 (nil) [1 uses])
+(note 89 90 5 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 5 89 69 14 (set (reg:SI 47 [ iftmp$6_12 ])
+        (const_int 1 [0x1])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(code_label 69 5 70 15 6 (nil) [2 uses])
+(note 70 69 71 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 71 70 72 15 (var_location:SI p (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":67:9 -1
+     (nil))
+(insn 72 71 73 15 (set (reg:QI 74)
+        (subreg:QI (reg:SI 47 [ iftmp$6_12 ]) 0)) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(insn 73 72 74 15 (set (reg:SI 75)
+        (and:SI (subreg:SI (reg:QI 74) 0)
+            (const_int 1 [0x1]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(insn 74 73 75 15 (set (reg:QI 74)
+        (subreg:QI (reg:SI 75) 0)) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":223:9 -1
+     (nil))
+(insn 75 74 76 15 (set (reg:SI 76)
+        (zero_extend:SI (reg:QI 74))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":67:9 -1
+     (nil))
+(insn 76 75 80 15 (set (reg:SI 52 [ <retval> ])
+        (reg:SI 76)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":67:9 -1
+     (nil))
+(insn 80 76 81 15 (set (reg/i:SI 2 a2)
+        (reg:SI 52 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":77:1 -1
+     (nil))
+(insn 81 80 0 15 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":77:1 -1
+     (nil))
+
+;; Function xtensa_stack_ptr_is_sane (xtensa_stack_ptr_is_sane, funcdef_no=19, decl_uid=1926, cgraph_uid=20, symbol_order=21)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Edge 2->5 redirected to 8
+Edge 3->5 redirected to 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 51.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 46 [ sp ])
+        (reg:SI 2 a2 [ sp ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":42:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":43:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":46:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI sp (reg/v:SI 46 [ sp ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":46:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":337:20 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":339:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI sp (reg/v:SI 46 [ sp ])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":339:5 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker:BLK) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":312:20 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:5 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 48)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC10") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:39 -1
+     (expr_list:REG_EQUAL (const_int -1073405968 [0xffffffffc0051ff0])
+        (nil)))
+(insn 17 16 20 2 (set (reg:SI 47)
+        (plus:SI (reg/v:SI 46 [ sp ])
+            (reg:SI 48))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:39 -1
+     (nil))
+(insn 20 17 21 2 (set (reg:SI 49)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC11") [flags 0x2]) [0  S4 A32])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:12 -1
+     (expr_list:REG_EQUAL (const_int 335840 [0x51fe0])
+        (nil)))
+(jump_insn 21 20 22 2 (set (pc)
+        (if_then_else (ltu (reg:SI 49)
+                (reg:SI 47))
+            (label_ref:SI 60)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:12 64 {*ubtrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 60)
+(note 22 21 23 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 4 (set (reg:SI 50)
+        (and:SI (reg/v:SI 46 [ sp ])
+            (const_int 15 [0xf]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:76 -1
+     (nil))
+(jump_insn 24 23 25 4 (set (pc)
+        (if_then_else (ne (reg:SI 50)
+                (const_int 0 [0]))
+            (label_ref:SI 64)
+            (pc))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:12 62 {*btrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 64)
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 5 (var_location:SI sp (reg/v:SI 46 [ sp ])) -1
+     (nil))
+(debug_insn 27 26 28 5 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":41:20 -1
+     (nil))
+(debug_insn 28 27 29 5 (var_location:QI valid (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":46:10 -1
+     (nil))
+(debug_insn 29 28 30 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":57:2 -1
+     (nil))
+(debug_insn 30 29 31 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:3 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 12 a12)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 10 a10)
+        (reg/v:SI 46 [ sp ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (nil))
+(call_insn 34 33 35 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_is_outside_stack_bounds") [flags 0x41]  <function_decl 00000000067ffb00 xtensa_is_outside_stack_bounds>) [0 xtensa_is_outside_stack_bounds S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_is_outside_stack_bounds") [flags 0x41]  <function_decl 00000000067ffb00 xtensa_is_outside_stack_bounds>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(insn 35 34 36 5 (set (reg:SI 51)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 44 [ _9 ])
+        (reg:SI 51)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:12 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:QI 52)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:3 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:SI 53)
+        (xor:SI (reg:SI 44 [ _9 ])
+            (subreg:SI (reg:QI 52) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:3 -1
+     (nil))
+(insn 39 38 40 5 (set (reg/v:SI 45 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 53) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":58:3 -1
+     (nil))
+(debug_insn 40 39 41 5 (var_location:QI valid (subreg:QI (reg/v:SI 45 [ <retval> ]) 0)) -1
+     (nil))
+(debug_insn 41 40 42 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":61:2 -1
+     (nil))
+(debug_insn 42 41 43 5 (var_location:SI sp (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 43 42 57 5 (var_location:QI valid (clobber (const_int 0 [0]))) -1
+     (nil))
+(jump_insn 57 43 58 5 (set (pc)
+        (label_ref 44)) -1
+     (nil)
+ -> 44)
+(barrier 58 57 60)
+(code_label 60 58 59 6 16 (nil) [1 uses])
+(note 59 60 4 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 4 59 61 6 (set (reg/v:SI 45 [ <retval> ])
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:12 -1
+     (nil))
+(jump_insn 61 4 62 6 (set (pc)
+        (label_ref 44)) -1
+     (nil)
+ -> 44)
+(barrier 62 61 64)
+(code_label 64 62 63 7 17 (nil) [1 uses])
+(note 63 64 5 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 5 63 44 7 (set (reg/v:SI 45 [ <retval> ])
+        (const_int 0 [0])) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":315:12 -1
+     (nil))
+(code_label 44 5 45 8 15 (nil) [2 uses])
+(note 45 44 46 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 8 (var_location:SI sp (clobber (const_int 0 [0]))) "d:\git_repo\robo-mation\zephyrproject\modules\hal\espressif\components\esp_hw_support\include\esp_memory_utils.h":339:12 -1
+     (nil))
+(debug_insn 47 46 48 8 (var_location:SI sp (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":46:10 -1
+     (nil))
+(debug_insn 48 47 49 8 (var_location:QI valid (subreg:QI (reg/v:SI 45 [ <retval> ]) 0)) -1
+     (nil))
+(debug_insn 49 48 50 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":61:2 -1
+     (nil))
+(insn 50 49 54 8 (set (reg/v:SI 45 [ <retval> ])
+        (reg/v:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":61:9 -1
+     (nil))
+(insn 54 50 55 8 (set (reg/i:SI 2 a2)
+        (reg/v:SI 45 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":62:1 -1
+     (nil))
+(insn 55 54 0 8 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":62:1 -1
+     (nil))
+
+;; Function xtensa_backtrace_get_next_frame (xtensa_backtrace_get_next_frame, funcdef_no=21, decl_uid=1279, cgraph_uid=22, symbol_order=23)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+Edge 2->6 redirected to 9
+Edge 3->5 redirected to 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 60.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 56 [ frame ])
+        (reg:SI 2 a2 [ frame ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":80:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 12 a12)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 11 a11)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 10 a10)
+        (mem:SI (plus:SI (reg/v/f:SI 56 [ frame ])
+                (const_int 4 [0x4])) [2 frame_8(D)->sp+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_is_outside_stack_bounds") [flags 0x41]  <function_decl 00000000067ffb00 xtensa_is_outside_stack_bounds>) [0 xtensa_is_outside_stack_bounds S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_is_outside_stack_bounds") [flags 0x41]  <function_decl 00000000067ffb00 xtensa_is_outside_stack_bounds>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(insn 13 12 14 2 (set (reg:SI 57)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 43 [ _2 ])
+        (reg:SI 57)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:6 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:SI 43 [ _2 ])
+                (const_int 0 [0]))
+            (label_ref:SI 69)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":84:5 62 {*btrue}
+     (int_list:REG_BR_PROB 548896828 (nil))
+ -> 69)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (var_location:SI frame (reg/v/f:SI 56 [ frame ])) -1
+     (nil))
+(debug_insn 18 17 19 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":79:6 -1
+     (nil))
+(debug_insn 19 18 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":93:2 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/v/f:SI 45 [ base_save ])
+        (mem:SI (plus:SI (reg/v/f:SI 56 [ frame ])
+                (const_int 4 [0x4])) [2 frame_8(D)->sp+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":93:8 -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:SI base_save (reg/v/f:SI 45 [ base_save ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":93:8 -1
+     (nil))
+(debug_insn 22 21 23 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":95:2 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 58)
+        (mem:SI (plus:SI (reg/v/f:SI 56 [ frame ])
+                (const_int 8 [0x8])) [2 frame_8(D)->next_pc+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":95:12 -1
+     (nil))
+(insn 24 23 25 4 (set (mem:SI (reg/v/f:SI 56 [ frame ]) [2 frame_8(D)->pc+0 S4 A32])
+        (reg:SI 58)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":95:12 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":99:2 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 59)
+        (reg/v/f:SI 45 [ base_save ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":99:17 -1
+     (nil))
+(insn 27 26 28 4 (set (reg/f:SI 60)
+        (plus:SI (reg/v/f:SI 45 [ base_save ])
+            (const_int -16 [0xfffffffffffffff0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":99:17 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 47 [ _13 ])
+        (mem:SI (reg/f:SI 60) [2 MEM[(uint32_t *)base_save_11 + 4294967280B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":99:17 -1
+     (nil))
+(insn 29 28 30 4 (set (mem:SI (plus:SI (reg/v/f:SI 56 [ frame ])
+                (const_int 8 [0x8])) [2 frame_8(D)->next_pc+0 S4 A32])
+        (reg:SI 47 [ _13 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":99:17 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":100:2 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 61)
+        (reg/v/f:SI 45 [ base_save ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":100:12 -1
+     (nil))
+(insn 32 31 33 4 (set (reg/f:SI 62)
+        (plus:SI (reg/v/f:SI 45 [ base_save ])
+            (const_int -12 [0xfffffffffffffff4]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":100:12 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:SI 48 [ _14 ])
+        (mem:SI (reg/f:SI 62) [2 MEM[(uint32_t *)base_save_11 + 4294967284B]+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":100:12 -1
+     (nil))
+(insn 34 33 35 4 (set (mem:SI (plus:SI (reg/v/f:SI 56 [ frame ])
+                (const_int 4 [0x4])) [2 frame_8(D)->sp+0 S4 A32])
+        (reg:SI 48 [ _14 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":100:12 -1
+     (nil))
+(debug_insn 35 34 36 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:2 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:SI 10 a10)
+        (reg:SI 48 [ _14 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:10 -1
+     (nil))
+(call_insn 37 36 38 4 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_stack_ptr_is_sane") [flags 0x3]  <function_decl 00000000067ffe00 xtensa_stack_ptr_is_sane>) [0 xtensa_stack_ptr_is_sane S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:10 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_stack_ptr_is_sane") [flags 0x3]  <function_decl 00000000067ffe00 xtensa_stack_ptr_is_sane>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 38 37 39 4 (set (reg:SI 63)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:10 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:SI 49 [ _15 ])
+        (reg:SI 63)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:10 -1
+     (nil))
+(jump_insn 40 39 41 4 (set (pc)
+        (if_then_else (eq (reg:SI 49 [ _15 ])
+                (const_int 0 [0]))
+            (label_ref:SI 73)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 62 {*btrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 73)
+(note 41 40 42 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 5 (set (reg:SI 10 a10)
+        (mem:SI (reg/v/f:SI 56 [ frame ]) [2 frame_8(D)->pc+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":107:5 -1
+     (nil))
+(call_insn/i 43 42 44 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>) [0 xtensa_cpu_process_stack_pc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":107:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 44 43 45 5 (set (reg:SI 51 [ _17 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":107:5 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:SI 10 a10)
+        (reg:SI 51 [ _17 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":106:4 -1
+     (nil))
+(call_insn/u 46 45 47 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_ptr_executable") [flags 0x3]  <function_decl 00000000067fff00 xtensa_ptr_executable>) [0 xtensa_ptr_executable S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":106:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_ptr_executable") [flags 0x3]  <function_decl 00000000067fff00 xtensa_ptr_executable>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 47 46 48 5 (set (reg:SI 64)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":106:4 -1
+     (nil))
+(insn 48 47 49 5 (set (reg:SI 53 [ _19 ])
+        (reg:SI 64)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":106:4 -1
+     (nil))
+(insn 49 48 70 5 (set (reg:SI 54 [ iftmp$0_20 ])
+        (reg:SI 53 [ _19 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 -1
+     (nil))
+(jump_insn 70 49 71 5 (set (pc)
+        (label_ref 50)) -1
+     (nil)
+ -> 50)
+(barrier 71 70 73)
+(code_label 73 71 72 6 22 (nil) [1 uses])
+(note 72 73 4 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 4 72 50 6 (set (reg:SI 54 [ iftmp$0_20 ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 -1
+     (nil))
+(code_label 50 4 51 7 20 (nil) [1 uses])
+(note 51 50 52 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 7 (set (reg:QI 65)
+        (subreg:QI (reg:SI 54 [ iftmp$0_20 ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 -1
+     (nil))
+(insn 53 52 54 7 (set (reg:SI 66)
+        (and:SI (subreg:SI (reg:QI 65) 0)
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:SI 55 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 66) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":105:46 -1
+     (nil))
+(debug_insn 55 54 56 7 (var_location:SI frame (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 56 55 66 7 (var_location:SI base_save (clobber (const_int 0 [0]))) -1
+     (nil))
+(jump_insn 66 56 67 7 (set (pc)
+        (label_ref 57)) -1
+     (nil)
+ -> 57)
+(barrier 67 66 69)
+(code_label 69 67 68 8 21 (nil) [1 uses])
+(note 68 69 5 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 5 68 57 8 (set (reg:SI 55 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":85:10 -1
+     (nil))
+(code_label 57 5 58 9 19 (nil) [1 uses])
+(note 58 57 59 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 63 9 (set (reg:SI 55 [ <retval> ])
+        (reg:SI 55 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":108:1 -1
+     (nil))
+(insn 63 59 64 9 (set (reg/i:SI 2 a2)
+        (reg:SI 55 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":108:1 -1
+     (nil))
+(insn 64 63 0 9 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":108:1 -1
+     (nil))
+
+;; Function xtensa_backtrace_print (xtensa_backtrace_print, funcdef_no=22, decl_uid=1282, cgraph_uid=23, symbol_order=24)
+
+Partition 0: size 12 align 4
+	stk_frame
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+Edge 8->10 redirected to 26
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 23 to 26.
+Forwarding edge 15->16 to 13 failed.
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Forwarding edge 24->25 to 21 failed.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 15->16 to 13 failed.
+Forwarding edge 24->25 to 21 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (reg/v:SI 68 [ depth ])
+        (reg:SI 2 a2 [ depth ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":111:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 69 [ interrupted_stack ])
+        (reg:SI 3 a3 [ interrupted_stack ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":111:1 -1
+     (nil))
+(note 4 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 11 4 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":113:2 -1
+     (nil))
+(jump_insn 14 11 28 2 (set (pc)
+        (if_then_else (lt (reg/v:SI 68 [ depth ])
+                (const_int 1 [0x1]))
+            (pc)
+            (label_ref 18))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":113:5 -1
+     (int_list:REG_BR_PROB 1058065196 (nil))
+ -> 18)
+(code_label 28 14 15 4 27 (nil) [1 uses])
+(note 15 28 8 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 8 15 16 4 (set (reg/v:SI 67 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":114:10 -1
+     (nil))
+(jump_insn 16 8 17 4 (set (pc)
+        (label_ref:SI 199)) 84 {jump}
+     (nil)
+ -> 199)
+(barrier 17 16 18)
+(code_label 18 17 19 5 25 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":117:2 -1
+     (nil))
+(debug_insn 21 20 22 5 (var_location:SI frame (reg/v/f:SI 69 [ interrupted_stack ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":117:33 -1
+     (nil))
+(debug_insn 22 21 23 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":118:2 -1
+     (nil))
+(debug_insn 23 22 24 5 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:2 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 10 a10)
+        (reg/v/f:SI 69 [ interrupted_stack ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:7 -1
+     (nil))
+(call_insn 25 24 26 5 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_is_frame_pointer_valid") [flags 0x41]  <function_decl 00000000067ffc00 xtensa_is_frame_pointer_valid>) [0 xtensa_is_frame_pointer_valid S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:7 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_is_frame_pointer_valid") [flags 0x41]  <function_decl 00000000067ffc00 xtensa_is_frame_pointer_valid>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 26 25 27 5 (set (reg:SI 70)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:7 -1
+     (nil))
+(insn 27 26 29 5 (set (reg/v:SI 56 [ corrupted ])
+        (reg:SI 70)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:7 -1
+     (nil))
+(jump_insn 29 27 30 5 (set (pc)
+        (if_then_else (eq (reg/v:SI 56 [ corrupted ])
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":125:5 -1
+     (int_list:REG_BR_PROB 22441212 (nil))
+ -> 28)
+(note 30 29 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":129:2 -1
+     (nil))
+(debug_insn 32 31 33 6 (var_location:SI bsa (mem/f:SI (reg/v/f:SI 69 [ interrupted_stack ]) [3 MEM[(struct _xtensa_irq_stack_frame_raw_t *)interrupted_stack_37(D)].ptr_to_bsa+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":129:6 -1
+     (nil))
+(debug_insn 33 32 34 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":130:2 -1
+     (nil))
+(insn 34 33 35 6 (set (reg/f:SI 71)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC13") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":130:8 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("cause") [flags 0x2]  <var_decl 00000000066a0ab0 cause>)
+        (nil)))
+(insn 35 34 36 6 (set (reg/f:SI 72)
+        (mem/f:SI (reg/v/f:SI 69 [ interrupted_stack ]) [3 MEM[(struct _xtensa_irq_stack_frame_raw_t *)interrupted_stack_37(D)].ptr_to_bsa+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":130:13 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 73)
+        (mem:SI (plus:SI (reg/f:SI 72)
+                (const_int 8 [0x8])) [6 bsa_41->exccause+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":130:8 -1
+     (nil))
+(insn 37 36 38 6 (set (mem/c:SI (reg/f:SI 71) [2 cause+0 S4 A32])
+        (reg:SI 73)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":130:8 -1
+     (nil))
+(debug_insn 38 37 39 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":133:2 -1
+     (nil))
+(debug_insn 39 38 40 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 74)
+        (plus:SI (reg/f:SI 37 virtual-stack-vars)
+            (const_int 8 [0x8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:SI 75)
+        (plus:SI (reg/f:SI 37 virtual-stack-vars)
+            (const_int 4 [0x4]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 42 41 43 6 (set (reg:SI 13 a13)
+        (reg/v/f:SI 69 [ interrupted_stack ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 43 42 44 6 (set (reg:SI 12 a12)
+        (reg:SI 74)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:SI 11 a11)
+        (reg:SI 75)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(insn 45 44 46 6 (set (reg:SI 10 a10)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (nil))
+(call_insn 46 45 47 6 (call (mem:SI (symbol_ref:SI ("xtensa_backtrace_get_start") [flags 0x41]  <function_decl 00000000066f3e00 xtensa_backtrace_get_start>) [0 xtensa_backtrace_get_start S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":135:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_backtrace_get_start") [flags 0x41]  <function_decl 00000000066f3e00 xtensa_backtrace_get_start>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (expr_list:SI (use (reg:SI 13 a13))
+                    (nil))))))
+(debug_insn 47 46 48 6 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":138:2 -1
+     (nil))
+(insn 48 47 49 6 (set (reg/f:SI 76)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC13") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":138:12 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("cause") [flags 0x2]  <var_decl 00000000066a0ab0 cause>)
+        (nil)))
+(insn 49 48 50 6 (set (reg:SI 77)
+        (const_int 20 [0x14])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":138:5 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:SI 78)
+        (mem/c:SI (reg/f:SI 76) [2 cause+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":138:5 -1
+     (nil))
+(jump_insn 51 50 52 6 (set (pc)
+        (if_then_else (eq (reg:SI 78)
+                (reg:SI 77))
+            (label_ref 60)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":138:5 -1
+     (int_list:REG_BR_PROB 365072228 (nil))
+ -> 60)
+(note 52 51 53 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:3 -1
+     (nil))
+(insn 54 53 55 7 (set (reg/f:SI 79)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC14") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:8 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("mask") [flags 0x2]  <var_decl 00000000066a0a20 mask>)
+        (nil)))
+(insn 55 54 56 7 (set (reg:SI 81)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [2 stk_frame.pc+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:23 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:SI 82)
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:23 -1
+     (nil))
+(insn 57 56 58 7 (set (reg:SI 82)
+        (ashift:SI (reg:SI 82)
+            (const_int 30 [0x1e]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:23 -1
+     (expr_list:REG_EQUAL (const_int -1073741824 [0xffffffffc0000000])
+        (nil)))
+(insn 58 57 59 7 (set (reg:SI 80)
+        (and:SI (reg:SI 81)
+            (reg:SI 82))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:23 -1
+     (nil))
+(insn 59 58 60 7 (set (mem/c:SI (reg/f:SI 79) [2 mask+0 S4 A32])
+        (reg:SI 80)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":139:8 -1
+     (nil))
+(code_label 60 59 61 8 28 (nil) [1 uses])
+(note 61 60 62 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 62 61 63 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":141:2 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 83)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC16") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":141:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC15") [flags 0x2]  <var_decl 0000000006986510 *.LC15>)
+        (nil)))
+(insn 64 63 65 8 (set (reg:SI 10 a10)
+        (reg:SI 83)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":141:2 -1
+     (nil))
+(call_insn 65 64 66 8 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":141:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 66 65 67 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(insn 67 66 68 8 (set (reg:SI 10 a10)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [2 stk_frame.pc+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(call_insn/i 68 67 69 8 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>) [0 xtensa_cpu_process_stack_pc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 69 68 70 8 (set (reg:SI 48 [ _8 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(insn 70 69 71 8 (set (reg:SI 84)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC18") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC17") [flags 0x2]  <var_decl 00000000069e0000 *.LC17>)
+        (nil)))
+(insn 71 70 72 8 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [2 stk_frame.sp+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(insn 72 71 73 8 (set (reg:SI 11 a11)
+        (reg:SI 48 [ _8 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(insn 73 72 74 8 (set (reg:SI 10 a10)
+        (reg:SI 84)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (nil))
+(call_insn 74 73 75 8 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":142:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(debug_insn 75 74 76 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:2 -1
+     (nil))
+(insn 76 75 77 8 (set (reg:SI 10 a10)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [2 stk_frame.sp+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:21 -1
+     (nil))
+(call_insn 77 76 78 8 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_stack_ptr_is_sane") [flags 0x3]  <function_decl 00000000067ffe00 xtensa_stack_ptr_is_sane>) [0 xtensa_stack_ptr_is_sane S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:21 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_stack_ptr_is_sane") [flags 0x3]  <function_decl 00000000067ffe00 xtensa_stack_ptr_is_sane>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 78 77 79 8 (set (reg:SI 85)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:21 -1
+     (nil))
+(insn 79 78 80 8 (set (reg:SI 51 [ _11 ])
+        (reg:SI 85)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:21 -1
+     (nil))
+(insn 80 79 81 8 (set (reg/v:SI 66 [ depth ])
+        (plus:SI (reg/v:SI 68 [ depth ])
+            (const_int -1 [0xffffffffffffffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(jump_insn 81 80 82 8 (set (pc)
+        (if_then_else (eq (reg:SI 51 [ _11 ])
+                (const_int 0 [0]))
+            (label_ref 106)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:19 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 106)
+(note 82 81 83 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 9 (set (reg:SI 10 a10)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [2 stk_frame.pc+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:5 -1
+     (nil))
+(call_insn/i 84 83 85 9 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>) [0 xtensa_cpu_process_stack_pc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:5 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 85 84 86 9 (set (reg:SI 53 [ _14 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:5 -1
+     (nil))
+(insn 86 85 87 9 (set (reg:SI 10 a10)
+        (reg:SI 53 [ _14 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":148:6 -1
+     (nil))
+(call_insn/u 87 86 88 9 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_ptr_executable") [flags 0x3]  <function_decl 00000000067fff00 xtensa_ptr_executable>) [0 xtensa_ptr_executable S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":148:6 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_ptr_executable") [flags 0x3]  <function_decl 00000000067fff00 xtensa_ptr_executable>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 88 87 89 9 (set (reg:SI 86)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":148:6 -1
+     (nil))
+(insn 89 88 90 9 (set (reg:SI 55 [ _16 ])
+        (reg:SI 86)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":148:6 -1
+     (nil))
+(jump_insn 90 89 91 9 (set (pc)
+        (if_then_else (ne (reg:SI 55 [ _16 ])
+                (const_int 0 [0]))
+            (label_ref:SI 206)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:19 62 {*btrue}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 206)
+(note 91 90 92 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 10 (set (reg/f:SI 87)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC13") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":151:11 -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("cause") [flags 0x2]  <var_decl 00000000066a0ab0 cause>)
+        (nil)))
+(insn 93 92 94 10 (set (reg:SI 89)
+        (mem/c:SI (reg/f:SI 87) [2 cause+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 94 93 95 10 (set (reg:SI 91)
+        (plus:SI (reg:SI 89)
+            (const_int -20 [0xffffffffffffffec]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 95 94 96 10 (set (reg:SI 92)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 96 95 97 10 (set (reg:SI 93)
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 97 96 98 10 (set (reg:SI 90)
+        (if_then_else:SI (ne (reg:SI 91)
+                (const_int 0 [0]))
+            (reg:SI 92)
+            (reg:SI 93))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 98 97 99 10 (set (reg:QI 88)
+        (subreg:QI (reg:SI 90) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(insn 99 98 100 10 (set (reg/v:SI 56 [ corrupted ])
+        (zero_extend:SI (reg:QI 88))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":149:48 -1
+     (nil))
+(debug_insn 100 99 101 10 (var_location:QI corrupted (subreg:QI (reg/v:SI 56 [ corrupted ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:7 -1
+     (nil))
+(debug_insn 101 100 102 10 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:2 -1
+     (nil))
+(debug_insn 102 101 103 10 (var_location:QI corrupted (subreg:QI (reg/v:SI 56 [ corrupted ]) 0)) -1
+     (nil))
+(debug_insn 103 102 104 10 (var_location:SI depth (reg/v:SI 68 [ depth ])) -1
+     (nil))
+(debug_insn 104 103 105 10 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:47 -1
+     (nil))
+(debug_insn 105 104 203 10 (var_location:SI depth (plus:SI (reg/v:SI 68 [ depth ])
+        (const_int -1 [0xffffffffffffffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(jump_insn 203 105 204 10 (set (pc)
+        (label_ref 106)) -1
+     (nil)
+ -> 106)
+(barrier 204 203 206)
+(code_label 206 204 205 11 38 (nil) [1 uses])
+(note 205 206 5 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 5 205 106 11 (set (reg/v:SI 56 [ corrupted ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":147:7 -1
+     (nil))
+(code_label 106 5 107 12 29 (nil) [2 uses])
+(note 107 106 108 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 108 107 109 12 (var_location:QI corrupted (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 109 108 110 12 (var_location:SI depth (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(jump_insn 110 109 111 12 (set (pc)
+        (label_ref 137)) -1
+     (nil)
+ -> 137)
+(barrier 111 110 145)
+(code_label 145 111 112 13 34 (nil) [1 uses])
+(note 112 145 113 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 113 112 114 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:3 -1
+     (nil))
+(insn 114 113 115 13 (set (reg:SI 10 a10)
+        (reg/f:SI 37 virtual-stack-vars)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:8 -1
+     (nil))
+(call_insn 115 114 116 13 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_backtrace_get_next_frame") [flags 0x3]  <function_decl 00000000066f3f00 xtensa_backtrace_get_next_frame>) [0 xtensa_backtrace_get_next_frame S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:8 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_backtrace_get_next_frame") [flags 0x3]  <function_decl 00000000066f3f00 xtensa_backtrace_get_next_frame>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 116 115 117 13 (set (reg:SI 94)
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:8 -1
+     (nil))
+(insn 117 116 118 13 (set (reg:SI 58 [ _19 ])
+        (reg:SI 94)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:8 -1
+     (nil))
+(insn 118 117 119 13 (set (reg:QI 95)
+        (const_int 1 [0x1])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:6 -1
+     (nil))
+(insn 119 118 120 13 (set (reg:SI 96)
+        (xor:SI (reg:SI 58 [ _19 ])
+            (subreg:SI (reg:QI 95) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:6 -1
+     (nil))
+(insn 120 119 121 13 (set (reg/v:SI 56 [ corrupted ])
+        (zero_extend:SI (subreg:QI (reg:SI 96) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":155:6 -1
+     (nil))
+(debug_insn 121 120 122 13 (var_location:QI corrupted (subreg:QI (reg/v:SI 56 [ corrupted ]) 0)) -1
+     (nil))
+(debug_insn 122 121 123 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(insn 123 122 124 13 (set (reg:SI 10 a10)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [2 stk_frame.pc+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(call_insn/i 124 123 125 13 (set (reg:SI 10 a10)
+        (call (mem:SI (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>) [0 xtensa_cpu_process_stack_pc S4 A32])
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("xtensa_cpu_process_stack_pc") [flags 0x3]  <function_decl 00000000067ffd00 xtensa_cpu_process_stack_pc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(insn 125 124 126 13 (set (reg:SI 60 [ _21 ])
+        (reg:SI 10 a10)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(insn 126 125 127 13 (set (reg:SI 97)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC18") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC17") [flags 0x2]  <var_decl 00000000069e0000 *.LC17>)
+        (nil)))
+(insn 127 126 128 13 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [2 stk_frame.sp+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(insn 128 127 129 13 (set (reg:SI 11 a11)
+        (reg:SI 60 [ _21 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(insn 129 128 130 13 (set (reg:SI 10 a10)
+        (reg:SI 97)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (nil))
+(call_insn 130 129 131 13 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":158:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (expr_list:SI (use (reg:SI 12 a12))
+                (nil)))))
+(debug_insn 131 130 132 13 (var_location:QI corrupted (subreg:QI (reg/v:SI 56 [ corrupted ]) 0)) -1
+     (nil))
+(debug_insn 132 131 133 13 (var_location:SI depth (reg/v:SI 66 [ depth ])) -1
+     (nil))
+(debug_insn 133 132 134 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:47 -1
+     (nil))
+(insn 134 133 135 13 (set (reg/v:SI 66 [ depth ])
+        (plus:SI (reg/v:SI 66 [ depth ])
+            (const_int -1 [0xffffffffffffffff]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(debug_insn 135 134 136 13 (var_location:SI depth (reg/v:SI 66 [ depth ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(jump_insn 136 135 137 13 (set (pc)
+        (if_then_else (eq (reg/v:SI 66 [ depth ])
+                (const_int -1 [0xffffffffffffffff]))
+            (label_ref 149)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:47 -1
+     (int_list:REG_BR_PROB 39298956 (nil))
+ -> 149)
+(code_label 137 136 138 14 30 (nil) [1 uses])
+(note 138 137 139 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 139 138 140 14 (var_location:QI corrupted (subreg:QI (reg/v:SI 56 [ corrupted ]) 0)) -1
+     (nil))
+(debug_insn 140 139 141 14 (var_location:SI depth (reg/v:SI 66 [ depth ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:14 -1
+     (nil))
+(insn 141 140 142 14 (set (reg:SI 98)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [2 stk_frame.next_pc+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:21 -1
+     (nil))
+(jump_insn 142 141 143 14 (set (pc)
+        (if_then_else (eq (reg:SI 98)
+                (const_int 0 [0]))
+            (label_ref 190)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:21 -1
+     (int_list:REG_BR_PROB 39298956 (nil))
+ -> 190)
+(note 143 142 144 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 144 143 148 15 (set (pc)
+        (if_then_else (ne (reg/v:SI 56 [ corrupted ])
+                (const_int 0 [0]))
+            (label_ref 155)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":153:47 -1
+     (int_list:REG_BR_PROB 39298956 (nil))
+ -> 155)
+(note 148 144 146 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 146 148 147 16 (set (pc)
+        (label_ref 145)) -1
+     (nil)
+ -> 145)
+(barrier 147 146 149)
+(code_label 149 147 150 17 31 (nil) [1 uses])
+(note 150 149 151 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 151 150 152 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:2 -1
+     (nil))
+(debug_insn 152 151 153 17 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:6 -1
+     (nil))
+(debug_insn 153 152 154 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":164:2 -1
+     (nil))
+(jump_insn 154 153 155 17 (set (pc)
+        (if_then_else (eq (reg/v:SI 56 [ corrupted ])
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":164:5 -1
+     (int_list:REG_BR_PROB 1073741828 (nil))
+ -> 166)
+(code_label 155 154 156 18 33 (nil) [2 uses])
+(note 156 155 157 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 157 156 158 18 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:6 -1
+     (nil))
+(debug_insn 158 157 159 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":165:3 -1
+     (nil))
+(insn 159 158 160 18 (set (reg:SI 99)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC20") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":165:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC19") [flags 0x2]  <var_decl 00000000069e0090 *.LC19>)
+        (nil)))
+(insn 160 159 161 18 (set (reg:SI 10 a10)
+        (reg:SI 99)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":165:3 -1
+     (nil))
+(call_insn 161 160 162 18 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":165:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 162 161 163 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":166:3 -1
+     (nil))
+(debug_insn 163 162 6 18 (var_location:SI ret (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":166:7 -1
+     (nil))
+(insn 6 163 164 18 (set (reg/v:SI 67 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":166:7 -1
+     (nil))
+(jump_insn 164 6 165 18 (set (pc)
+        (label_ref 178)) -1
+     (nil)
+ -> 178)
+(barrier 165 164 166)
+(code_label 166 165 167 19 35 (nil) [1 uses])
+(note 167 166 168 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 168 167 169 19 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":167:9 -1
+     (nil))
+(insn 169 168 170 19 (set (reg:SI 100)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [2 stk_frame.next_pc+0 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":167:12 -1
+     (nil))
+(jump_insn 170 169 171 19 (set (pc)
+        (if_then_else (eq (reg:SI 100)
+                (const_int 0 [0]))
+            (label_ref 176)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":167:12 -1
+     (int_list:REG_BR_PROB 368903804 (nil))
+ -> 176)
+(note 171 170 172 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 172 171 173 20 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":168:3 -1
+     (nil))
+(insn 173 172 174 20 (set (reg:SI 101)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC22") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":168:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC21") [flags 0x2]  <var_decl 00000000069e0120 *.LC21>)
+        (nil)))
+(insn 174 173 175 20 (set (reg:SI 10 a10)
+        (reg:SI 101)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":168:3 -1
+     (nil))
+(call_insn 175 174 176 20 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":168:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(code_label 176 175 177 21 37 (nil) [2 uses])
+(note 177 176 7 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 7 177 178 21 (set (reg/v:SI 67 [ <retval> ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:6 -1
+     (nil))
+(code_label 178 7 179 22 36 (nil) [1 uses])
+(note 179 178 180 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 180 179 181 22 (var_location:SI ret (reg/v:SI 67 [ <retval> ])) -1
+     (nil))
+(debug_insn 181 180 182 22 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":170:2 -1
+     (nil))
+(insn 182 181 183 22 (set (reg:SI 102)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC24") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":170:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC23") [flags 0x2]  <var_decl 00000000069e01b0 *.LC23>)
+        (nil)))
+(insn 183 182 184 22 (set (reg:SI 10 a10)
+        (reg:SI 102)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":170:2 -1
+     (nil))
+(call_insn 184 183 185 22 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":170:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000006708f00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 185 184 188 22 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":171:2 -1
+     (nil))
+(jump_insn 188 185 189 22 (set (pc)
+        (label_ref 199)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":172:1 -1
+     (nil)
+ -> 199)
+(barrier 189 188 190)
+(code_label 190 189 191 24 32 (nil) [1 uses])
+(note 191 190 192 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 192 191 193 24 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:2 -1
+     (nil))
+(debug_insn 193 192 194 24 (var_location:SI ret (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":162:6 -1
+     (nil))
+(debug_insn 194 193 195 24 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":164:2 -1
+     (nil))
+(jump_insn 195 194 198 24 (set (pc)
+        (if_then_else (ne (reg/v:SI 56 [ corrupted ])
+                (const_int 0 [0]))
+            (label_ref 155)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":164:5 -1
+     (int_list:REG_BR_PROB 4 (nil))
+ -> 155)
+(note 198 195 196 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 196 198 197 25 (set (pc)
+        (label_ref 176)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":164:5 -1
+     (nil)
+ -> 176)
+(barrier 197 196 199)
+(code_label 199 197 202 26 24 (nil) [2 uses])
+(note 202 199 200 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 200 202 201 26 (set (reg/i:SI 2 a2)
+        (reg/v:SI 67 [ <retval> ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":172:1 -1
+     (nil))
+(insn 201 200 0 26 (use (reg/i:SI 2 a2)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/arch/xtensa/core/xtensa_backtrace.c":172:1 -1
+     (nil))

@@ -1,0 +1,33 @@
+empty_file.o: \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/misc/empty_file.c \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32_wrover_e_n4r8.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/common/mem.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/common/freq.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/common/skeleton.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_macro.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_internal.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_loops.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_listify.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32_clock.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp-xtensa-intmux.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc-pinctrl.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-gpio-sigmap.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x1000_amp.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x1000_amp_4M.dtsi \
+ D:/GIT_Repo/robo-mation/zephyrproject/apps/chatterbox/boards/esp32_devkitc_esp32_procpu.overlay

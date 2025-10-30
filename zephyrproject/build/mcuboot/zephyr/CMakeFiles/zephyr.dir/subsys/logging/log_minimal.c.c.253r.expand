@@ -1,0 +1,660 @@
+
+;; Function z_log_minimal_printk (z_log_minimal_printk, funcdef_no=381, decl_uid=3938, cgraph_uid=382, symbol_order=381)
+
+Partition 0: size 12 align 4
+	ap
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 13 4 14 2 (set (reg:SI 44)
+        (reg:SI 7 a7)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 14 13 9 2 (set (reg/f:SI 7 a7)
+        (unspec_volatile:SI [
+                (const_int 0 [0])
+            ] 1)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 9 14 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 20 [0x14])) [0  S4 A32])
+        (reg:SI 3 a3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 24 [0x18])) [0  S4 A32])
+        (reg:SI 4 a4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 28 [0x1c])) [0  S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 12 11 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 32 [0x20])) [0  S4 A32])
+        (reg:SI 6 a6)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 15 12 2 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 36 [0x24])) [0  S4 A32])
+        (reg:SI 44)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 2 15 3 2 (set (reg/v/f:SI 42 [ fmt ])
+        (reg:SI 2 a2 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":16:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":17:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 8 7 16 2 (set (reg:SI 43)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 16 8 17 2 (set (reg:SI 45)
+        (plus:SI (reg/f:SI 37 virtual-stack-vars)
+            (const_int 16 [0x10]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [10 MEM[(struct  *)&ap].__va_reg+0 S4 A32])
+        (reg:SI 45)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 46)
+        (plus:SI (reg/f:SI 36 virtual-incoming-args)
+            (const_int -32 [0xffffffffffffffe0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:SI (reg/f:SI 37 virtual-stack-vars) [10 MEM[(struct  *)&ap].__va_stk+0 S4 A128])
+        (reg:SI 46)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 47)
+        (const_int 4 [0x4])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [5 MEM[(struct  *)&ap].__va_ndx+0 S4 A64])
+        (reg:SI 47)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":19:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 11 a11)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [11 ap+0 S4 A128])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [11 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [11 ap+8 S4 A64])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 42 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (nil))
+(call_insn 27 26 28 2 (call (mem:SI (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 0000000005a6c900 vprintk>) [0 vprintk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":20:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 0000000005a6c900 vprintk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list (use (reg:SI 13 a13))
+            (expr_list (use (reg:SI 12 a12))
+                (expr_list (use (reg:SI 11 a11))
+                    (nil))))))
+(debug_insn 28 27 0 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":21:2 -1
+     (nil))
+
+;; Function z_log_minimal_vprintk (z_log_minimal_vprintk, funcdef_no=382, decl_uid=3936, cgraph_uid=383, symbol_order=382)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 42 [ fmt ])
+        (reg:SI 2 a2 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":26:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [11 ap+0 S4 A32])
+        (reg:SI 3 a3)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":26:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [11 ap+4 S4 A32])
+        (reg:SI 4 a4)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":26:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [11 ap+8 S4 A32])
+        (reg:SI 5 a5)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":26:1 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 6 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 11 a11)
+        (mem/c:SI (reg/f:SI 37 virtual-stack-vars) [11 ap+0 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 12 a12)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 4 [0x4])) [11 ap+4 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 13 a13)
+        (mem/c:SI (plus:SI (reg/f:SI 37 virtual-stack-vars)
+                (const_int 8 [0x8])) [11 ap+8 S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 10 a10)
+        (reg/v/f:SI 42 [ fmt ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (nil))
+(call_insn 14 13 0 2 (call (mem:SI (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 0000000005a6c900 vprintk>) [0 vprintk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":27:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("vprintk") [flags 0x41]  <function_decl 0000000005a6c900 vprintk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list (use (reg:SI 13 a13))
+            (expr_list (use (reg:SI 12 a12))
+                (expr_list (use (reg:SI 11 a11))
+                    (nil))))))
+
+;; Function z_log_minimal_hexdump_print (z_log_minimal_hexdump_print, funcdef_no=384, decl_uid=3933, cgraph_uid=385, symbol_order=384)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+Edge 3->5 redirected to 24
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 19->20 to 24 failed.
+Forwarding edge 22->23 to 24 failed.
+Removing jump 159.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 19->20 to 24 failed.
+Deleted label in block 20.
+Forwarding edge 22->23 to 24 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 11 3 2 (set (reg/v:SI 61 [ level ])
+        (reg:SI 2 a2 [ level ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":55:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 62 [ data ])
+        (reg:SI 3 a3 [ data ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":55:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 63 [ size ])
+        (reg:SI 4 a4 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":55:1 -1
+     (nil))
+(note 5 4 13 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 13 5 14 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":56:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI data_buffer (reg/v/f:SI 62 [ data ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":56:14 -1
+     (nil))
+(debug_insn 15 14 10 2 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":57:2 -1
+     (nil))
+(insn 10 15 16 2 (set (reg/v:SI 43 [ size ])
+        (reg/v:SI 63 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":57:8 -1
+     (nil))
+(jump_insn 16 10 17 2 (set (pc)
+        (label_ref 149)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":57:8 -1
+     (nil)
+ -> 149)
+(barrier 17 16 156)
+(code_label 156 17 18 4 14 (nil) [1 uses])
+(note 18 156 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 19 18 20 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (nil))
+(debug_insn 20 19 21 4 (var_location:SI level (reg/v:SI 61 [ level ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (nil))
+(debug_insn 21 20 22 4 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/logging/log_core.h":232:20 -1
+     (nil))
+(debug_insn 22 21 23 4 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/logging/log_core.h":234:2 -1
+     (nil))
+(insn 23 22 26 4 (set (reg:SI 55 [ _29 ])
+        (plus:SI (reg/v:SI 61 [ level ])
+            (const_int -1 [0xffffffffffffffff]))) -1
+     (nil))
+(jump_insn 26 23 27 4 (set (pc)
+        (if_then_else (ltu (reg:SI 55 [ _29 ])
+                (const_int 4 [0x4]))
+            (pc)
+            (label_ref:SI 167))) 65 {*ubfalse}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 167)
+(note 27 26 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 5 (set (reg/f:SI 64)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC0") [flags 0x2]) [0  S4 A32])) -1
+     (expr_list:REG_EQUAL (symbol_ref:SI ("CSWTCH$4") [flags 0x2]  <var_decl 00000000071402d0 CSWTCH$4>)
+        (nil)))
+(insn 29 28 30 5 (set (reg/f:SI 65)
+        (plus:SI (reg/f:SI 64)
+            (reg:SI 55 [ _29 ]))) -1
+     (nil))
+(insn 30 29 164 5 (set (reg:SI 56 [ _32 ])
+        (zero_extend:SI (mem/u:QI (reg/f:SI 65) [0 CSWTCH$4[_29]+0 S1 A8]))) -1
+     (nil))
+(jump_insn 164 30 165 5 (set (pc)
+        (label_ref 31)) -1
+     (nil)
+ -> 31)
+(barrier 165 164 167)
+(code_label 167 165 166 6 16 (nil) [1 uses])
+(note 166 167 6 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 6 166 31 6 (set (reg:SI 56 [ _32 ])
+        (const_int 63 [0x3f])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/include/zephyr/logging/log_core.h":234:2 -1
+     (nil))
+(code_label 31 6 32 7 5 (nil) [1 uses])
+(note 32 31 33 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 33 32 34 7 (var_location:SI level (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:18 -1
+     (nil))
+(insn 34 33 35 7 (set (reg:SI 66)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC2") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 000000000721c990 *.LC1>)
+        (nil)))
+(insn 35 34 36 7 (set (reg:SI 11 a11)
+        (reg:SI 56 [ _32 ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (nil))
+(insn 36 35 37 7 (set (reg:SI 10 a10)
+        (reg:SI 66)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (nil))
+(call_insn 37 36 38 7 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":58:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(debug_insn 38 37 39 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 39 38 40 7 (var_location:SI data (reg/v/f:SI 44 [ data_buffer ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 40 39 41 7 (var_location:SI length (reg/v:SI 43 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 41 40 42 7 (debug_marker:BLK) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":30:13 -1
+     (nil))
+(debug_insn 42 41 43 7 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 43 42 7 7 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:24 -1
+     (nil))
+(insn 7 43 71 7 (set (reg/v:SI 49 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:14 -1
+     (nil))
+(code_label 71 7 44 8 8 (nil) [1 uses])
+(note 44 71 45 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 8 (var_location:SI i (reg/v:SI 49 [ i ])) -1
+     (nil))
+(debug_insn 46 45 47 8 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":33:3 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (if_then_else (geu (reg/v:SI 49 [ i ])
+                (reg/v:SI 43 [ size ]))
+            (label_ref 59)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":33:6 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 59)
+(note 48 47 49 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 49 48 50 9 (var_location:SI i (reg/v:SI 49 [ i ])) -1
+     (nil))
+(debug_insn 50 49 51 9 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 67)
+        (plus:SI (reg/v/f:SI 44 [ data_buffer ])
+            (reg/v:SI 49 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:39 -1
+     (nil))
+(insn 52 51 53 9 (set (reg:SI 68)
+        (zero_extend:SI (mem:QI (reg:SI 67) [0 MEM[(const char *)_34]+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (nil))
+(insn 53 52 54 9 (set (reg:SI 69)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC4") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC3") [flags 0x2]  <var_decl 000000000721ca20 *.LC3>)
+        (nil)))
+(insn 54 53 55 9 (set (reg:SI 11 a11)
+        (reg:SI 68)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:SI 10 a10)
+        (reg:SI 69)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (nil))
+(call_insn 56 55 57 9 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":34:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(jump_insn 57 56 58 9 (set (pc)
+        (label_ref 65)) -1
+     (nil)
+ -> 65)
+(barrier 58 57 59)
+(code_label 59 58 60 10 6 (nil) [1 uses])
+(note 60 59 61 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 61 60 62 10 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":36:4 -1
+     (nil))
+(insn 62 61 63 10 (set (reg:SI 70)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC6") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":36:4 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC5") [flags 0x2]  <var_decl 000000000721cab0 *.LC5>)
+        (nil)))
+(insn 63 62 64 10 (set (reg:SI 10 a10)
+        (reg:SI 70)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":36:4 -1
+     (nil))
+(call_insn 64 63 65 10 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":36:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(code_label 65 64 66 11 7 (nil) [1 uses])
+(note 66 65 67 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 67 66 68 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:50 -1
+     (nil))
+(insn 68 67 69 11 (set (reg/v:SI 49 [ i ])
+        (plus:SI (reg/v:SI 49 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:50 -1
+     (nil))
+(debug_insn 69 68 70 11 (var_location:SI i (reg/v:SI 49 [ i ])) -1
+     (nil))
+(debug_insn 70 69 72 11 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:24 -1
+     (nil))
+(jump_insn 72 70 73 11 (set (pc)
+        (if_then_else (ne (reg/v:SI 49 [ i ])
+                (const_int 8 [0x8]))
+            (label_ref 71)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":32:24 -1
+     (int_list:REG_BR_PROB 954449108 (nil))
+ -> 71)
+(note 73 72 74 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 74 73 75 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":40:2 -1
+     (nil))
+(insn 75 74 76 12 (set (reg:SI 71)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC8") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":40:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC7") [flags 0x2]  <var_decl 000000000721cb40 *.LC7>)
+        (nil)))
+(insn 76 75 77 12 (set (reg:SI 10 a10)
+        (reg:SI 71)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":40:2 -1
+     (nil))
+(call_insn 77 76 78 12 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":40:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 78 77 79 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:2 -1
+     (nil))
+(debug_insn 79 78 80 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:7 -1
+     (nil))
+(debug_insn 80 79 81 12 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 81 80 8 12 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:24 -1
+     (nil))
+(insn 8 81 123 12 (set (reg/v:SI 45 [ i ])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:14 -1
+     (nil))
+(code_label 123 8 82 13 12 (nil) [1 uses])
+(note 82 123 83 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 83 82 84 13 (var_location:SI i (reg/v:SI 45 [ i ])) -1
+     (nil))
+(debug_insn 84 83 85 13 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":43:3 -1
+     (nil))
+(jump_insn 85 84 86 13 (set (pc)
+        (if_then_else (geu (reg/v:SI 45 [ i ])
+                (reg/v:SI 43 [ size ]))
+            (label_ref 111)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":43:6 -1
+     (int_list:REG_BR_PROB 354334804 (nil))
+ -> 111)
+(note 86 85 87 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 87 86 88 14 (var_location:SI i (reg/v:SI 45 [ i ])) -1
+     (nil))
+(debug_insn 88 87 89 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":44:4 -1
+     (nil))
+(insn 89 88 90 14 (set (reg:SI 72)
+        (plus:SI (reg/v/f:SI 44 [ data_buffer ])
+            (reg/v:SI 45 [ i ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":44:18 -1
+     (nil))
+(insn 90 89 91 14 (set (reg/v:SI 50 [ c ])
+        (zero_extend:SI (mem:QI (reg:SI 72) [0 MEM[(const char *)_47]+0 S1 A8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":44:18 -1
+     (nil))
+(debug_insn 91 90 92 14 (var_location:QI c (subreg:QI (reg/v:SI 50 [ c ]) 0)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":44:18 -1
+     (nil))
+(debug_insn 92 91 93 14 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (nil))
+(debug_insn 93 92 94 14 (var_location:SI c (zero_extend:SI (subreg:QI (reg/v:SI 50 [ c ]) 0))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:18 -1
+     (nil))
+(debug_insn 94 93 95 14 (debug_marker:BLK) "c:\users\farha\zephyr-sdk-0.17.4\xtensa-espressif_esp32_zephyr-elf\picolibc\include\ctype.h":146:30 -1
+     (nil))
+(debug_insn 95 94 96 14 (debug_marker) "c:\users\farha\zephyr-sdk-0.17.4\xtensa-espressif_esp32_zephyr-elf\picolibc\include\ctype.h":148:5 -1
+     (nil))
+(debug_insn 96 95 97 14 (var_location:SI c (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:18 -1
+     (nil))
+(insn 97 96 100 14 (set (reg:SI 73)
+        (plus:SI (reg/v:SI 50 [ c ])
+            (const_int -32 [0xffffffffffffffe0]))) "c:\users\farha\zephyr-sdk-0.17.4\xtensa-espressif_esp32_zephyr-elf\picolibc\include\ctype.h":148:21 -1
+     (nil))
+(insn 100 97 101 14 (set (reg:SI 74)
+        (const_int 94 [0x5e])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (nil))
+(jump_insn 101 100 102 14 (set (pc)
+        (if_then_else (geu (reg:SI 74)
+                (reg:SI 73))
+            (label_ref 103)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 103)
+(note 102 101 9 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 9 102 103 15 (set (reg/v:SI 50 [ c ])
+        (const_int 46 [0x2e])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (nil))
+(code_label 103 9 104 16 10 (nil) [1 uses])
+(note 104 103 105 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 16 (set (reg:SI 75)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC10") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC9") [flags 0x2]  <var_decl 000000000721cbd0 *.LC9>)
+        (nil)))
+(insn 106 105 107 16 (set (reg:SI 11 a11)
+        (reg/v:SI 50 [ c ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (nil))
+(insn 107 106 108 16 (set (reg:SI 10 a10)
+        (reg:SI 75)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (nil))
+(call_insn 108 107 109 16 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":46:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (expr_list:SI (use (reg:SI 11 a11))
+            (nil))))
+(jump_insn 109 108 110 16 (set (pc)
+        (label_ref 117)) -1
+     (nil)
+ -> 117)
+(barrier 110 109 111)
+(code_label 111 110 112 17 9 (nil) [1 uses])
+(note 112 111 113 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 113 112 114 17 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":48:4 -1
+     (nil))
+(insn 114 113 115 17 (set (reg:SI 76)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC12") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":48:4 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC11") [flags 0x2]  <var_decl 000000000721cc60 *.LC11>)
+        (nil)))
+(insn 115 114 116 17 (set (reg:SI 10 a10)
+        (reg:SI 76)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":48:4 -1
+     (nil))
+(call_insn 116 115 117 17 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":48:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(code_label 117 116 118 18 11 (nil) [1 uses])
+(note 118 117 119 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 119 118 120 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:50 -1
+     (nil))
+(insn 120 119 121 18 (set (reg/v:SI 45 [ i ])
+        (plus:SI (reg/v:SI 45 [ i ])
+            (const_int 1 [0x1]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:50 -1
+     (nil))
+(debug_insn 121 120 122 18 (var_location:SI i (reg/v:SI 45 [ i ])) -1
+     (nil))
+(debug_insn 122 121 124 18 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:24 -1
+     (nil))
+(jump_insn 124 122 125 18 (set (pc)
+        (if_then_else (ne (reg/v:SI 45 [ i ])
+                (const_int 8 [0x8]))
+            (label_ref 123)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":42:24 -1
+     (int_list:REG_BR_PROB 954449108 (nil))
+ -> 123)
+(note 125 124 126 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 126 125 127 19 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":51:2 -1
+     (nil))
+(insn 127 126 128 19 (set (reg:SI 77)
+        (mem/u/c:SI (symbol_ref/u:SI ("*.LC14") [flags 0x2]) [0  S4 A32])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":51:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC13") [flags 0x2]  <var_decl 000000000721ccf0 *.LC13>)
+        (nil)))
+(insn 128 127 129 19 (set (reg:SI 10 a10)
+        (reg:SI 77)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":51:2 -1
+     (nil))
+(call_insn 129 128 130 19 (call (mem:SI (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>) [0 printk S4 A32])
+        (const_int 0 [0])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":51:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printk") [flags 0x41]  <function_decl 0000000005a6cf00 printk>)
+        (nil))
+    (expr_list:SI (use (reg:SI 10 a10))
+        (nil)))
+(debug_insn 130 129 131 19 (var_location:SI data (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 131 130 132 19 (var_location:SI length (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 132 131 133 19 (var_location:QI c (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 133 132 134 19 (var_location:SI i (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 134 133 135 19 (var_location:SI i (clobber (const_int 0 [0]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":59:3 -1
+     (nil))
+(debug_insn 135 134 138 19 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":61:3 -1
+     (nil))
+(jump_insn 138 135 139 19 (set (pc)
+        (if_then_else (ltu (reg/v:SI 43 [ size ])
+                (const_int 8 [0x8]))
+            (pc)
+            (label_ref 142))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":61:6 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 142)
+(note 139 138 140 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 140 139 141 20 (set (pc)
+        (label_ref 162)) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":68:1 -1
+     (nil)
+ -> 162)
+(barrier 141 140 142)
+(code_label 142 141 143 21 13 (nil) [1 uses])
+(note 143 142 144 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 144 143 145 21 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":65:3 -1
+     (nil))
+(insn 145 144 146 21 (set (reg/v:SI 43 [ size ])
+        (plus:SI (reg/v:SI 43 [ size ])
+            (const_int -8 [0xfffffffffffffff8]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":65:8 -1
+     (nil))
+(debug_insn 146 145 147 21 (var_location:SI size (reg/v:SI 43 [ size ])) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":65:8 -1
+     (nil))
+(debug_insn 147 146 148 21 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":66:3 -1
+     (nil))
+(debug_insn 148 147 149 21 (var_location:SI data_buffer (minus:SI (plus:SI (reg/v/f:SI 62 [ data ])
+            (reg/v:SI 63 [ size ]))
+        (reg/v:SI 43 [ size ]))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":66:15 -1
+     (nil))
+(code_label 149 148 150 22 4 (nil) [1 uses])
+(note 150 149 151 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 151 150 152 22 (set (reg:SI 78)
+        (plus:SI (reg/v/f:SI 62 [ data ])
+            (reg/v:SI 63 [ size ]))) -1
+     (nil))
+(insn 152 151 153 22 (set (reg/v/f:SI 44 [ data_buffer ])
+        (minus:SI (reg:SI 78)
+            (reg/v:SI 43 [ size ]))) -1
+     (nil))
+(debug_insn 153 152 154 22 (var_location:SI data_buffer (reg/v/f:SI 44 [ data_buffer ])) -1
+     (nil))
+(debug_insn 154 153 155 22 (var_location:SI size (reg/v:SI 43 [ size ])) -1
+     (nil))
+(debug_insn 155 154 157 22 (debug_marker) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":57:14 -1
+     (nil))
+(jump_insn 157 155 161 22 (set (pc)
+        (if_then_else (ne (reg/v:SI 43 [ size ])
+                (const_int 0 [0]))
+            (label_ref 156)
+            (pc))) "D:/GIT_Repo/robo-mation/zephyrproject/zephyr/subsys/logging/log_minimal.c":57:14 -1
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 156)
+(note 161 157 162 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(code_label 162 161 163 24 3 (nil) [1 uses])
+(note 163 162 0 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
