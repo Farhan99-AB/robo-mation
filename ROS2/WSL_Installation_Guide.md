@@ -7,25 +7,6 @@ Install distro wsl --install Ubuntu-22.04
 Create username and password
 Verify version by running wsl -l -v. Should see version 2 
 
-***Running executables***
-sudo apt update 
-sudo apt install ros-humble-turtlesim
-
-To check installed packages use:
-ros2 pkg lst 
-ros2 pkg executables 
-ros2 pkg executables <name of executable> (will tell executable for the given package)
-
-to runnodes
-ros2 run <package> <node> (ex: ros2 run turtlesim turtlesim_node)
-
-to get info about the node 
-ros2 node info <node name> (ex: ros2 node info /turtlesim)
-
-//todo write and revise all commands
-
-***ROS Workspace***
-
 ***What I tried***
 ran wsl --install again things worked (this will install latest ubuntu24)
 
@@ -42,15 +23,6 @@ lsb_release -a -> to check ubuntu version
  wsl --list
  wsl --list --verbose 
  wsl --setdefault DISTRO-NAME
-
-
-
- ***INFO***
- -Sourcing -> helping your pc know where your installations are located
- you can achieve sourcing by running:
- source /opt/ros/humble/setup.bash
- or 
- better way is to paste this inside .bashrc.
 
 
 
