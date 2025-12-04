@@ -20,6 +20,30 @@
         task1_led = &task1_led;
         task2_led = &task2_led;
         task3_led = &task3_led;
+        display = &ssd1306_ssd1306_128x64;
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+    sda-gpios = <&gpio0 21 GPIO_OPEN_DRAIN>;
+    scl-gpios = <&gpio0 22 GPIO_OPEN_DRAIN>;
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default";
+
+    ssd1306_ssd1306_128x64: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        segment-remap;
+        com-invdir;
+        multiplex-ratio = <63>;
+        prechargep = <0x22>;
     };
 };
 
