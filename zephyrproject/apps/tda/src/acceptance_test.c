@@ -21,12 +21,19 @@ void utilization_bound_test(struct task_params **params, unsigned int task_id,
 	/*--------------------------------------------------------------------
 	 * TODO 1: Implement the Utilization Bound Test from the lecture
 	 ---------------------------------------------------------------------*/
-
+	int not_scheduled_tasks = 0;
 	for (unsigned int i = 0; i <= task_id; i++) {
-		utilization += (double)params[i]->execution_time_ms / (double)params[i]->period_ms;
+		if (i == task_id || results[i].accepted == true) {
+			utilization +=
+				(double)params[i]->execution_time_ms / (double)params[i]->period_ms;
+		} else {
+			not_scheduled_tasks++;
+		}
 	}
 
-	double n = task_id + 1; // number of tasks involved
+	double n =
+		task_id + 1 - not_scheduled_tasks; // number of tasks involved (Doubt: if there is a
+						   // failed task should we consider it in n?)
 	double U_bound = n * (pow(2.0, 1.0 / n) - 1);
 
 	accepted = utilization <= U_bound;
@@ -50,8 +57,12 @@ void worst_case_simulation(struct task_params **params, unsigned int task_id,
 
 	completion_time = params[task_id]->execution_time_ms;
 	int32_t task_period_ms = params[task_id]->period_ms;
+
 	for (unsigned int i = 0; i < task_id; ++i) {
-		completion_time += ceil((double)task_period_ms / params[i]->period_ms) * params[i]->execution_time_ms;
+		if (i == task_id || results[i].accepted == true) {
+			completion_time += ceil((double)task_period_ms / params[i]->period_ms) *
+					   params[i]->execution_time_ms;
+		}
 	}
 	accepted = (completion_time <= params[task_id]->period_ms);
 
@@ -72,7 +83,7 @@ void time_demand_analysis(struct task_params **params, unsigned int task_id,
 	/*--------------------------------------------------------------------
 	 * TODO 3: Implement the Time Demand Analysis from the lecture
 	 ---------------------------------------------------------------------*/
-    int32_t t_prev = 0;
+	int32_t t_prev = 0;
 	t_next = params[task_id]->execution_time_ms;
 
 	while (t_next != t_prev && t_next <= params[task_id]->period_ms) {
@@ -80,12 +91,15 @@ void time_demand_analysis(struct task_params **params, unsigned int task_id,
 		t_next = params[task_id]->execution_time_ms;
 
 		for (unsigned int i = 0; i < task_id; i++) {
-			t_next += ceil((double)t_prev / params[i]->period_ms) * params[i]->execution_time_ms;
+			if(i == task_id ||  results[i].accepted == true){
+				t_next += ceil((double)t_prev / params[i]->period_ms) *
+					params[i]->execution_time_ms;
+			}
 		}
 	}
 
 	accepted = (t_next <= params[task_id]->period_ms);
-	
+
 	results[task_id].accepted = accepted;
 	results[task_id].info.tda_result = t_next;
 
@@ -108,14 +122,13 @@ void acceptance_test(struct task_params **params, unsigned int task_id,
 	 *  only if the task encoded by params[task_id] can be scheduled.
 	 ---------------------------------------------------------------------*/
 
-	 // 1. UBT → fast check (sufficient)
+	// 1. UBT → fast check (sufficient)
 	utilization_bound_test(params, task_id, results);
-	if (results[task_id].accepted) {
-		// if accepted, no need to perform further tests
-		if (results[task_id].accepted)
-			printf("==> Task %d is SCHEDULABLE\n", params[task_id]->task_id);
-		else
-			printf("==> Task %d CANNOT be scheduled\n", params[task_id]->task_id);
+	if (!results[task_id].accepted && results[task_id].info.util > 1) {
+		printf("==> Task %d CANNOT be scheduled\n", params[task_id]->task_id);
+		return;
+	} else if (results[task_id].accepted) {
+		printf("==> Task %d is SCHEDULABLE\n", params[task_id]->task_id);
 		return;
 	}
 
@@ -127,8 +140,9 @@ void acceptance_test(struct task_params **params, unsigned int task_id,
 	// 3. TDA → must pass (necessary & sufficient)
 	time_demand_analysis(params, task_id, results);
 
-	if (results[task_id].accepted)
+	if (results[task_id].accepted) {
 		printf("==> Task %d is SCHEDULABLE\n", params[task_id]->task_id);
-	else
+	} else {
 		printf("==> Task %d CANNOT be scheduled\n", params[task_id]->task_id);
+	}
 }

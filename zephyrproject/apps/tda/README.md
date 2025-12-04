@@ -10,15 +10,13 @@ Esther Ürek :- 3531932
 
 Code Description
 ****************
-1. Utilization Bound Test (UBT) – A sufficient test that checks whether total CPU utilization stays below the Liu & Layland bound. Fast but conservative.
+1. Utilization Bound Test (UBT) – A sufficient test that checks whether total CPU utilization stays below the Liu & Layland bound. Also making sure that the utilization should be less than 1 if not we can directly say that the task is not scheduable.Fast but conservative. 
 
 2. Worst-Case Simulation (WCS) – An approximation test that is neither necessary nor sufficient; it estimates worst-case workload but cannot guarantee correctness.
-
 3. Time-Demand Analysis (TDA) – A necessary and sufficient test that iteratively checks if worst-case interference fits within the task’s deadline.
-
 4. Overall Flow
-   1. Run UBT. If it passes, the task set is schedulable stop.  
-   2. If UBT fails, run WCS (approximation only; never return based on this).  
+   1. Run UBT. If it passes, the task set is schedulable stop.
+   2. If UBT fails, run WCS (approximation only; never return based on this).
    3. Finally, run TDA. Its result gives the final schedulability decision.
 
 ***Calculated Values***
@@ -36,7 +34,6 @@ TDA:-
 Task 1: 2
 Task 2: 4
 Task 3: 7
-
 
 ***Observed Values***
 UBT:-
