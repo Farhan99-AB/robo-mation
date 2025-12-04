@@ -1,1 +1,0 @@
-"mcuboot":"D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot":"D:/GIT_Repo/robo-mation/zephyrproject/bootloader/mcuboot/boot/zephyr/sysbuild"
