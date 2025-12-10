@@ -14,7 +14,8 @@ fixes, and reference materials.
 2.  Install WSL:
 
     ``` bash
-    wsl --install    ```
+    wsl --install
+    ```
 3.  Restart your system.
 4.  List available Linux distros:
 
