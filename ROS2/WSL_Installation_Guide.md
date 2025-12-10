@@ -1,37 +1,72 @@
-***Install WSL***
-Open Powershell in admin mode 
-Run wsl --install
-Restart 
-Run wsl --list --online to see available linux distros
-Install distro wsl --install Ubuntu-22.04
-Create username and password
-Verify version by running wsl -l -v. Should see version 2 
-
-***What I tried***
-ran wsl --install again things worked (this will install latest ubuntu24)
-
-also on windows power shell type wsl to get ubuntu terminal 
-
-apart from humble hawksbill u can use jazzy jalisco
-
-if step 6 (now wsl intall ubuntu 22 ) doesn't work try
-wsl --install --web-download -d Ubuntu-22.04
-
-lsb_release -a -> to check ubuntu version
-
-***some WSL commands***
- wsl --list
- wsl --list --verbose 
- wsl --setdefault DISTRO-NAME
+# WSL Installation & Troubleshooting Guide
 
 
+## 🚀 Install WSL
 
-***Errors***
-if you ger this error
-E: The repository 'http://packages.ros.org/ros2/ubuntu jammy InRelease' is not signed.
-try running sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+1. Open **PowerShell in Administrator mode**
+2. Run:
 
+   ```bash
+   wsl --install
+   ```
+3. Restart your system
+4. Check available Linux distros:
 
+   ```bash
+   wsl --list --online
+   ```
+5. Install a distro (example: Ubuntu 22.04):
 
-***REFERENCES***
-YT link: https://www.youtube.com/watch?v=HJAE5Pk8Nyw
+   ```bash
+   wsl --install Ubuntu-22.04
+   ```
+6. Create your **username** and **password**
+7. Verify WSL version:
+
+   ```bash
+   wsl -l -v
+   ```
+
+   → Should show **Version 2**
+
+---
+
+## 💡 What I Tried (Fixes / Notes)
+
+- Running `wsl --install` again solved issues in some cases  
+
+  → This installs the **latest Ubuntu (24.x)**
+- If you type `wsl` in PowerShell, you directly get the Ubuntu terminal
+- ROS supports multiple distros:
+  - Humble → Ubuntu 22.04
+  - Jazzy → Ubuntu 24.04
+- If installing Ubuntu 22.04 fails, try:
+
+  ```bash
+  wsl --install --web-download -d Ubuntu-22.04
+  ```
+- Check Ubuntu version:
+
+  ```bash
+  lsb_release -a
+  ```
+
+---
+
+## 🧰 Useful WSL Commands
+
+- List distros:
+
+  ```bash
+  wsl -l -v
+  ```
+- Shutdown WSL:
+
+  ```bash
+  wsl --shutdown
+  ```
+- Unregister (delete) a distro:
+
+  ```bash
+  wsl --unregister <DistroName>
+  ```
