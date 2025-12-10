@@ -1,65 +1,156 @@
-***Install WSL***
-Open Powershell in admin mode 
-Run wsl --install
-Restart 
-Run wsl --list --online to see available linux distros
-Install distro wsl --install Ubuntu-22.04
-Create username and password
-Verify version by running wsl -l -v. Should see version 2 
+# ROS2 on WSL -- Setup & Notes
 
-***Running executables***
-sudo apt update 
+
+This document contains my setup steps and learning notes while working
+with **ROS2 (Humble/Jazzy)** using **WSL2** on Windows. It includes
+installation instructions, commonly used commands, troubleshooting
+fixes, and reference materials.
+
+------------------------------------------------------------------------
+
+## 1. Install WSL
+
+1.  Open **PowerShell** in Administrator mode.
+2.  Install WSL:
+
+    ``` bash
+    wsl --install    ```
+3.  Restart your system.
+4.  List available Linux distros:
+
+    ``` bash
+    wsl --list --online
+    ```
+5.  Install Ubuntu 22.04:
+
+    ``` bash
+    wsl --install Ubuntu-22.04
+    ```
+6.  Create your username and password.
+7.  Verify WSL version:
+
+    ``` bash
+    wsl -l -v
+    ```
+
+    You should see **Version 2**.
+
+------------------------------------------------------------------------
+
+## 2. Running ROS2 Executables
+
+Install turtlesim:
+
+``` bash
+sudo apt update
 sudo apt install ros-humble-turtlesim
+```
 
-To check installed packages use:
-ros2 pkg lst 
-ros2 pkg executables 
-ros2 pkg executables <name of executable> (will tell executable for the given package)
+Check installed packages:
 
-to runnodes
-ros2 run <package> <node> (ex: ros2 run turtlesim turtlesim_node)
+``` bash
+ros2 pkg list
+ros2 pkg executables
+ros2 pkg executables <package_name>
+```
 
-to get info about the node 
-ros2 node info <node name> (ex: ros2 node info /turtlesim)
+Run nodes:
 
-//todo write and revise all commands
+``` bash
+ros2 run <package> <node>
+# Example:
+ros2 run turtlesim turtlesim_node
+```
 
-***ROS Workspace***
+Get node info:
 
-***What I tried***
-ran wsl --install again things worked (this will install latest ubuntu24)
+``` bash
+ros2 node info <node_name>
+# Example:
+ros2 node info /turtlesim
+```
 
-also on windows power shell type wsl to get ubuntu terminal 
+> TODO: Write and revise all commands.
 
-apart from humble hawksbill u can use jazzy jalisco
+------------------------------------------------------------------------
 
-if step 6 (now wsl intall ubuntu 22 ) doesn't work try
-wsl --install --web-download -d Ubuntu-22.04
+## 3. ROS2 Workspace
 
-lsb_release -a -> to check ubuntu version
+*(Reserved for notes on creating workspaces, building packages, CMake,
+colcon, etc.)*
 
-***some WSL commands***
- wsl --list
- wsl --list --verbose 
- wsl --setdefault DISTRO-NAME
+------------------------------------------------------------------------
 
+## 4. What I Tried / Additional Notes
 
+-   Running `wsl --install` again installed **Ubuntu 24**, which worked
 
- ***INFO***
- -Sourcing -> helping your pc know where your installations are located
- you can achieve sourcing by running:
- source /opt/ros/humble/setup.bash
- or 
- better way is to paste this inside .bashrc.
+    properly.
+-   In Windows PowerShell, typing:
 
+    ``` bash
+    wsl
+    ```
 
+    opens the Ubuntu terminal.
+-   Apart from **Humble Hawksbill**, you can also use **Jazzy Jalisco**.
+-   If installing Ubuntu 22.04 fails, try:
 
-***Errors***
-if you ger this error
-E: The repository 'http://packages.ros.org/ros2/ubuntu jammy InRelease' is not signed.
-try running sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+    ``` bash
+    wsl --install --web-download -d Ubuntu-22.04
+    ```
+-   Check Ubuntu version:
 
+    ``` bash
+    lsb_release -a
+    ```
 
+------------------------------------------------------------------------
 
-***REFERENCES***
-YT link: https://www.youtube.com/watch?v=HJAE5Pk8Nyw
+## 5. Useful WSL Commands
+
+``` bash
+wsl --list
+wsl --list --verbose
+wsl --setdefault <DISTRO-NAME>
+```
+
+------------------------------------------------------------------------
+
+## 6. Important Info
+
+### Sourcing (Required for ROS2)
+
+Sourcing lets your terminal know where ROS2 is installed.
+
+Temporary sourcing:
+
+``` bash
+source /opt/ros/humble/setup.bash
+```
+
+Permanent sourcing (recommended):\
+Add the above line to your `~/.bashrc` file.
+
+------------------------------------------------------------------------
+
+## 7. Errors & Fixes
+
+### Error: Repository Not Signed
+
+If you encounter:
+
+    E: The repository 'http://packages.ros.org/ros2/ubuntu jammy InRelease' is not signed.
+
+Fix:
+
+``` bash
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+```
+
+------------------------------------------------------------------------
+
+## 8. References
+
+YouTube tutorial:\
+https://www.youtube.com/watch?v=HJAE5Pk8Nyw
