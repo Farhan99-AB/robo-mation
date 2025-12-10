@@ -2,7 +2,7 @@
 
 
 This document contains my setup steps and learning notes while working
-with **ROS2 (Humble/Jazzy)** using **WSL2** on Windows. It includes
+with **ROS2 (Humble)** using **WSL2** on Windows. It includes
 installation instructions, commonly used commands, troubleshooting
 fixes, and reference materials.
 
