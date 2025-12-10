@@ -12,6 +12,9 @@ The repository is structured into the following sections:
 - **AIAndDataProjects/**  
   Features Python projects focused on AI, machine learning, and data processing, highlighting applications in image classification and data engineering.
 
+- **ROS2/**  
+  Contains hands-on work with ROS2 (humble) using WSL2, covering environment setup, exploring packages and nodes, building workspaces, and running robotics simulations.
+
 ## Key Features
 
 - **Diverse Technologies**: Explores Arduino and Python for robotics, AI, and hardware design.
