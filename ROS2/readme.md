@@ -114,6 +114,7 @@ colcon, etc.)*
 wsl --list
 wsl --list --verbose
 wsl --setdefault <DISTRO-NAME>
+\\wsl$\Ubuntu -: type this in file explorer which can open the folder space and you will be able to paste media.
 ```
 
 ------------------------------------------------------------------------
