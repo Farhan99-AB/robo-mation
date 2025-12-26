@@ -125,7 +125,7 @@ wsl --setdefault <DISTRO-NAME>
 
 Sourcing lets your terminal know where ROS2 is installed.
 
-Temporary sourcing:
+Temporary sourcing (to be done every new terminal session):
 
 ``` bash
 source /opt/ros/humble/setup.bash
@@ -133,6 +133,10 @@ source /opt/ros/humble/setup.bash
 
 Permanent sourcing (recommended):\
 Add the above line to your `~/.bashrc` file.
+
+``` bash
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+```
 
 ------------------------------------------------------------------------
 
