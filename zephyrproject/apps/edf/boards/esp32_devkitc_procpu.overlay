@@ -1,0 +1,32 @@
+/ {
+    custom_gpio {
+        compatible = "gpio-keys";
+
+        task1_led: task1_led {
+            gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
+            label = "Task 1 LED";
+        };
+        task2_led: task2_led {
+            gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+            label = "Task 2 LED";
+        };
+        task3_led: task3_led {
+            gpios = <&gpio0 18 GPIO_ACTIVE_HIGH>;
+            label = "Task 3 LED";
+        };
+    };
+
+    /* TODO (Part b): Configure a button input on PIN 15 */
+
+    chosen {
+        task1_led = &task1_led;
+        task2_led = &task2_led;
+        task3_led = &task3_led;
+	// Uncomment after specifying *ssd1306* and *button*
+        // display = &ssd1306;
+	// sw0 = &button;
+    };
+};
+
+/* TODO: Configure I2C for the SSD1306 display. 
+* You can reuse your solution from the previous exercise. */
