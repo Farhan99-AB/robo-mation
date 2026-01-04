@@ -16,6 +16,7 @@ int main()
 	 *  - https://docs.zephyrproject.org/latest/kernel/iterable_sections/index.html
 	 *  - https://docs.zephyrproject.org/latest/doxygen/html/group__iterable__section__apis.html
 	 */
+	init_button_gpio();
 	STRUCT_SECTION_FOREACH(task_params, params) {
 		if (params->type == DEFERRABLE_SERVER || acceptance_test(params)) {
 			k_thread_create(params->thread, task_stacks[params->task_id], STACKSIZE,

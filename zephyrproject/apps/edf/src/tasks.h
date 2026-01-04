@@ -55,6 +55,11 @@ void deferrable_server_implementation(void *params, void *p1, void *p2);
  */
 void start_time_keeper(void);
 
+int init_button_gpio();
+
+void button_press_callback(const struct device *dev, struct gpio_callback *cb,
+			  uint32_t pins);
+
 /**
  * @brief Macro for initializing tasks.
  */
