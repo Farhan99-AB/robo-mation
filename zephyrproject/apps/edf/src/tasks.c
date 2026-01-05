@@ -1,3 +1,12 @@
+/*
+	Team Members
+	************
+	Ganesh Patil :- 3823129
+	Farhan Balekundri :- 3823048
+	Varadraj Dundappa Yalamalli :- 3822751
+	Esther Ürek :- 3531932
+*/
+
 #include <assert.h>
 #include <stdio.h>
 
@@ -70,7 +79,6 @@ void thread_deadline_set(struct k_thread *thread, int deadline)
 	 * in CPU cycle counts.
 	 * Hint: You can use k_yield() after updating the deadline
 	 * to dequeue the thread from the ready queue. */
-	// self note Available only when the following Kconfig option is enabled: CONFIG_SCHED_DEADLINE.
 	int32_t newdl = k_uptime_get() + deadline;
 	printf("setting deadline for thread: %d\n", newdl);
 	z_impl_k_thread_absolute_deadline_set((k_tid_t)thread, newdl);
@@ -197,9 +205,6 @@ int init_button_gpio()
         return ret;
     }
 
-	// gpio_pin_interrupt_configure_dt(&button, GPIO_INT_DISABLE); // Disable any existing 
-																   // interrupts first, helps with 
-																   // debouncing (tried saw no effect)
     ret = gpio_pin_interrupt_configure_dt(&button, GPIO_INT_EDGE_TO_ACTIVE);
     if (ret < 0) {
         return ret;
