@@ -106,6 +106,9 @@ bool acceptance_test(struct task_params *params)
 	 * */
 	printf("acceptance test\n");
 	double density = 0;
+	double execution_time_ds = 0;
+	double period_ds = 0;
+	double utilization_ds = 0;
 	STRUCT_SECTION_FOREACH(task_params, current_params) {
 		if (current_params->type == PERIODIC_TASK) {
 			if (current_params->task_id == params->task_id) {
@@ -118,7 +121,18 @@ bool acceptance_test(struct task_params *params)
 			}
 		}
 	}
+
+	STRUCT_SECTION_FOREACH(task_params, current_params) {
+		if (current_params->type == DEFERRABLE_SERVER) {
+			execution_time_ds = (double)current_params->execution_time_ms;
+			period_ds = (double)current_params->period_ms;
+			utilization_ds =  (double)execution_time_ds/(double)period_ds;
+		}
+	}
+
 	density += (double)params->execution_time_ms / (double)params->period_ms;
+	density += (double)utilization_ds *
+			   (1+((double)(period_ds - execution_time_ds)/(double)params->period_ms));   //since deadline = period
 	bool accepted = density <= 1.0;
 	acceptance_test_results[params->task_id] = accepted;
 	printf(" Task %d: density = %.2f -> %s\n", params->task_id, density,

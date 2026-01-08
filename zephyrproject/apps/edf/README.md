@@ -22,7 +22,8 @@ This project demonstrates a real-time system implemented using **Zephyr RTOS**, 
 
 ### 1. Density-Based Acceptance Test
 
-- Implemented an **iterative system density test** for periodic tasks.
+- Implemented an **iterative system density test** for periodic tasks while also considering 
+deferrable server.
 - Only previously accepted tasks contribute to the density calculation.
 - Task specifications are retrieved using `STRUCT_SECTION_FOREACH`, ensuring scalability and correctness.
 - A task is accepted if the cumulative density is ≤ 1.0.
