@@ -2,3 +2,5 @@ RoboticsAndAutomationProjects/arduino_codes_and_libs/private/
 zephyrproject/apps/chatterbox.zip
 zephyrproject/apps/tda_app.zip
 zephyrproject/build/
+zephyrproject/CMakeCache.txt
+zephyrproject/CMakeFiles/

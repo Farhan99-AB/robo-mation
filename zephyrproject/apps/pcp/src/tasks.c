@@ -1,3 +1,12 @@
+/*
+	Team Members
+	************
+	Ganesh Patil :- 3823129
+	Farhan Balekundri :- 3823048
+	Varadraj Dundappa Yalamalli :- 3822751
+	Esther Ürek :- 3531932
+*/
+
 #include <assert.h>
 #include <stdio.h>
 #include <zephyr/sys/dlist.h>
@@ -11,7 +20,33 @@
  */
 bool acceptance_test(struct task_params *params)
 {
-	params->accepted = true;
+	int32_t block_time = blocking_time(params);
+
+	int32_t t_prev = -1;
+	int32_t t_next = params->execution_time_ms + block_time;
+
+	while (t_next != t_prev && t_next <= params->period_ms) {
+		t_prev = t_next;
+		t_next = params->execution_time_ms + block_time;
+
+		STRUCT_SECTION_FOREACH(task_params, hp) {
+
+			/* higher-priority tasks only */
+			if (hp->priority < params->priority && hp->accepted) {
+
+				t_next +=
+					ceil((double)t_prev / hp->period_ms) *
+					hp->execution_time_ms;
+			}
+		}
+	}
+
+	params->accepted = (t_next <= params->period_ms);
+
+	printf("Acceptance Test (Task %d): W = %d ms, block_time = %d ms → %s\n",
+	       params->task_id, t_next, block_time,
+	       params->accepted ? "accepted" : "rejected");
+
 	return params->accepted;
 }
 
