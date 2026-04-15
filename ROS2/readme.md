@@ -1,24 +1,5 @@
 # ROS2 on WSL -- Setup & Notes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 This document contains my setup steps and learning notes while working
 with **ROS2 (Humble)** using **WSL2** on Windows. It includes
 installation instructions, commonly used commands, troubleshooting
@@ -173,6 +154,31 @@ ros2 action send_goal /turtle1/rotate absolute turtlesim/action/RotateAbsolute "
 
 *(Reserved for notes on creating workspaces, building packages, CMake,
 colcon, etc.)*
+
+ROS WS is basically a folder
+package builder used colcon.
+
+Steps to create a WS and setup colcon:
+* install colcon using 
+    sudo apt install python3-colcon-common-extensions
+* create a folder 
+* create a folder named src
+    can use mkdir -p ~/ros2_ws/src and then cd ~/ros2_ws
+* git clone a repo for testing 
+    eg: git clone https://github.com/ros/ros_tutorials.git -b humble
+* setup colon tab completion (auto complete):
+    echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
+* do colon simlink install 
+    colcon build --symlink-install
+* do ls n check for build install and log files
+* Source overlay from ros2 ws
+    source install/local_setup.bash
+* next to make sure our changes reflect we will do changes in turtle_frame.cpp (ctrl+p to search) 
+at line 52 change the window title to "MyTurtleSim"
+* then build n source again
+    colcon build --symlink-install
+    source install/local_setup.bash
+    ros2 run turtlesim turtlesim_node 
 
 ------------------------------------------------------------------------
 
