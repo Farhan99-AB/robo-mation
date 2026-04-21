@@ -180,6 +180,30 @@ at line 52 change the window title to "MyTurtleSim"
     source install/local_setup.bash
     ros2 run turtlesim turtlesim_node 
 
+Steps to create a package:
+* to create a package
+    ros2 pkg create --build-type ament_cmake --node-name my_node my_package
+* to build 
+    colcon build -- packages-select my_package
+* Source overlay from ros2 ws
+    source install/local_setup.bash
+* run node 
+    ros2 run my_package my_node
+
+Creating Pub Sub package
+* Install CMake extension to view CMakeLists.txt files with syntax coloring. 
+* Create package from package folder with the following CMakeLists.txt , and  ~/ros2_ws/src . 
+  We will make a  cpp_pubsub generated include , package. xml
+  
+  ros2 pkg create --build-type ament_cmake cpp_pubsub
+
+Chhecking missing dependencies
+* rosdep install -i --from-path src --rosdistro humble -y
+
+Running launch files
+* ros2 launch <package_name> <launch_file>
+    eg: ros2 launch gazebo_tutorial gazebo.launch.py
+
 ------------------------------------------------------------------------
 
 ## 4. What I Tried / Additional Notes
@@ -256,6 +280,16 @@ This is like calling a function with parameters.
 
 Actions are similar to client service model but along with a goal, feedback and result. This can be seen with the 
 rotate command of turtlesim which is an action.
+
+### Publisher and Subscriber 
+
+After creating a publisher and subscriber you would also need to edit the CMakelist.txt and packagexml
+files too. 
+
+### Launch Files 
+
+These are kinda like the automation files which helps run the commands which we need to build and run ros pacakges.
+Basically they help with automating running the commands frorm terminal to launch a package.
 ------------------------------------------------------------------------
 
 ## 7. Errors & Fixes
