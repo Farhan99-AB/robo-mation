@@ -1,3 +1,0 @@
-[console_scripts]
-dual_arm_sim_node = dual_arm_simulation.dual_arm_sim_node:main
-
