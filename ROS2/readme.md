@@ -204,6 +204,14 @@ Running launch files
 * ros2 launch <package_name> <launch_file>
     eg: ros2 launch gazebo_tutorial gazebo.launch.py
 
+Running URDF(s)
+* can use similar syntax ffor link, joints etc.
+* ros2 launch urdf_tutorial display.launch.py model:= urdf/01-simple-link.urdf
+
+Running XACRO
+* xacro model..xacro > model.urdf
+* other way is to use the robot state publisher
+* another way is to use the URDF launch
 ------------------------------------------------------------------------
 
 ## 4. What I Tried / Additional Notes
@@ -290,6 +298,35 @@ files too.
 
 These are kinda like the automation files which helps run the commands which we need to build and run ros pacakges.
 Basically they help with automating running the commands frorm terminal to launch a package.
+
+### URDF (Unified Robotics Description Format)
+
+Just an xml file which describes the visual, physics and connections of a robot with
+joints and links.
+
+main contents in the file (general structure):
+#### Links
+* visual
+* geometry
+* collision
+* inertial
+
+#### Joints
+* parent 
+* child
+
+
+### XACRO
+
+Xacro is like a macros defining file where you can define functions that you will be 
+reusing.
+you can use it to write a xacro property which is used across multiple urdff.
+And also can you the XACRO macro
+
+### RVIZ
+
+visualisation tool
+  
 ------------------------------------------------------------------------
 
 ## 7. Errors & Fixes
